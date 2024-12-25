@@ -34,8 +34,6 @@ website:
     collapse-below: lg
     title: false
     left:
-      - text: "Blog"
-        href: https://bthek1.github.io/B_Blog/
 
       - text: "Deep Learning"
         menu:
@@ -88,7 +86,10 @@ website:
           href: https://bthek1.github.io/Finances/ 
         - text: "Other"
           href: https://bthek1.github.io/Other/
-
+          
+      - text: "Blog"
+        href: https://bthek1.github.io/B_Blog/
+        
       - text: "Help"
         menu:
           - text: "Report a Bug"
