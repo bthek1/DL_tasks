@@ -8,9 +8,13 @@ format:
       dark: darkly
     css: styles.css
     toc: true
+  typst:
+    author: "Benedict Thekkel"
+    section-numbering: 1.1.a
+    show-outline: true
     
 website:
-  title: "Benedict Thekkel"
+  author: "Benedict Thekkel"
   image: "Logo.svg"
   favicon: "favi.svg"
   reader-mode: true
@@ -65,6 +69,8 @@ website:
         menu:
         - text: "Software Tools"
           href: https://bthek1.github.io/Software_Tools/ 
+        - text: "Hardware Tools"
+          href: https://bthek1.github.io/Hardware_Tools/ 
         - text: "Python Libraries"
           href: https://bthek1.github.io/Python_Libs/
         - text: "Nbdev Automation"
