@@ -3,6 +3,7 @@ project:
 
 format:
   html:
+    author: "Benedict Thekkel"
     theme:
       light: flatly
       dark: darkly
@@ -14,7 +15,6 @@ format:
     show-outline: true
     
 website:
-  author: "Benedict Thekkel"
   image: "Logo.svg"
   favicon: "favi.svg"
   reader-mode: true
