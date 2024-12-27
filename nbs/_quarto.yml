@@ -9,10 +9,6 @@ format:
       dark: darkly
     css: styles.css
     toc: true
-  typst:
-    author: "Benedict Thekkel"
-    section-numbering: 1.1.a
-    show-outline: true
     
 website:
   image: "Logo.svg"
