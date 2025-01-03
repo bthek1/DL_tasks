@@ -3,6 +3,7 @@ project:
 
 format:
   html:
+    author: "Benedict Thekkel"
     theme:
       light: flatly
       dark: darkly
@@ -10,7 +11,6 @@ format:
     toc: true
     
 website:
-  title: "Benedict Thekkel"
   image: "Logo.svg"
   favicon: "favi.svg"
   reader-mode: true
@@ -30,8 +30,6 @@ website:
     collapse-below: lg
     title: false
     left:
-      - text: "Blog"
-        href: https://bthek1.github.io/B_Blog/
 
       - text: "Deep Learning"
         menu:
@@ -48,19 +46,29 @@ website:
           href: https://bthek1.github.io/ML_methods/
         - text: "Time series"
           href: https://bthek1.github.io/TimeSeriesML/
-
+ 
+      - text: "Web"
+        menu:
+        - text: "Web Development"
+          href: https://bthek1.github.io/WEB_doc/
+        - text: "Front End"
+          href: https://bthek1.github.io/Front_End/
+        - text: "Back End"
+          href: https://bthek1.github.io/Back_End/
+        - text: "Docker Containers"
+          href: https://bthek1.github.io/Docker_Containers/
           
-      - text: "Web Development"
-        href: https://bthek1.github.io/WEB_doc/
-
+          
       - text: "Tools"
         menu:
-        - text: "Computer Setup"
-          href: https://bthek1.github.io/Computer_Setup/
+        - text: "Software Tools"
+          href: https://bthek1.github.io/Software_Tools/ 
+        - text: "Hardware Tools"
+          href: https://bthek1.github.io/Hardware_Tools/ 
         - text: "Python Libraries"
           href: https://bthek1.github.io/Python_Libs/
         - text: "Nbdev Automation"
-          href: https://bthek1.github.io/nbdevAuto/    
+          href: https://bthek1.github.io/nbdevAuto/
 
       - text: "Business"
         menu:
@@ -68,7 +76,14 @@ website:
           href: https://bthek1.github.io/Business_doc/
         - text: "Ideas Doc"
           href: https://bthek1.github.io/Philosophy_doc/
-
+        - text: "Finances"
+          href: https://bthek1.github.io/Finances/ 
+        - text: "Other"
+          href: https://bthek1.github.io/Other/
+          
+      - text: "Blog"
+        href: https://bthek1.github.io/B_Blog/
+        
       - text: "Help"
         menu:
           - text: "Report a Bug"

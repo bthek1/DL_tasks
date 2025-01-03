@@ -69,8 +69,6 @@ website:
           href: https://bthek1.github.io/Python_Libs/
         - text: "Nbdev Automation"
           href: https://bthek1.github.io/nbdevAuto/
-        - text: "Computer Setup"
-          href: https://bthek1.github.io/Computer_Setup/
 
       - text: "Business"
         menu:
