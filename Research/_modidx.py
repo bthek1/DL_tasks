@@ -5,4 +5,4 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://bthek1.github.io',
                 'git_url': 'https://github.com/bthek1/Research',
                 'lib_path': 'Research'},
-  'syms': {'Research.core': {'Research.core.foo': ('mathematics_foundations.html#foo', 'Research/core.py')}}}
+  'syms': {}}
