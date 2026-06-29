@@ -82,19 +82,19 @@ website:
           href: https://bthek1.github.io/Other/
           
       - text: "Blog"
-        href: https://bthek1.github.io/B_Blog/
+        href: https://bthek1.github.io/bthek1_blog/
         
       - text: "Help"
         menu:
           - text: "Report a Bug"
             icon: "bug"
-            href: "https://github.com/bthek1/B_Blog/issues"
+            href: "https://github.com/bthek1/bthek1_blog/issues"
           - text: "Ask a Question"
             icon: "chat-right-text"
-            href: "https://github.com/bthek1/B_Blog/issues"
+            href: "https://github.com/bthek1/bthek1_blog/issues"
           - text: "FAQ"
             icon: "question-circle"
-            href: "https://github.com/bthek1/B_Blog/issues"
+            href: "https://github.com/bthek1/bthek1_blog/issues"
           
     tools:
       - icon: github
@@ -110,9 +110,9 @@ website:
       - text: "About"
         href: "index.ipynb"
       - text: "FAQ"
-        href: "https://github.com/bthek1/B_Blog/issues"    
+        href: "https://github.com/bthek1/bthek1_blog/issues"    
       - text: "License"
-        href: "https://bthek1.github.io/benedicts_blog/Index.html"
+        href: "https://bthek1.github.io/bthek1_blog/index.html"
       - text: "Trademark"
         href: "index.ipynb"
         
