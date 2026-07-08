@@ -1,5 +1,182 @@
 {
+  "Other/00_Graph_Machine_Learning.ipynb": {
+    "graph_machine_learning.html": "ac147fee"
+  },
+  "Theory/01_1_Electromagnetic_Equations.ipynb": {
+    "1_electromagnetic_equations.html": "92f37edf"
+  },
+  "Theory/00_1_Discrete_Maths.ipynb": {
+    "1_discrete_maths.html": "e918d813"
+  },
+  "Theory/01_0_Physics_Equations.ipynb": {
+    "0_physics_equations.html": "ebc73254"
+  },
+  "Theory/01_2_Deep_Learning_Equations.ipynb": {
+    "2_deep_learning_equations.html": "4f2ec010"
+  },
+  "Theory/11_ForResNet.ipynb": {
+    "forresnet.html": "241879c6"
+  },
+  "Theory/00_0_Mathematics_Foundations.ipynb": {
+    "0_mathematics_foundations.html": "77a7c949"
+  },
+  "Theory/02_Electricity_Equations.ipynb": {
+    "electricity_equations.html": "123776b6"
+  },
+  "Natural_Language_Processing/06_Summarization.ipynb": {
+    "summarization.html": "1d708d9c"
+  },
+  "Natural_Language_Processing/08_Text_Generation.ipynb": {
+    "text_generation.html": "3aaeb345"
+  },
+  "Natural_Language_Processing/03_Question_Answering.ipynb": {
+    "question_answering.html": "cdaec806"
+  },
+  "Natural_Language_Processing/02_Table_Question_Answering.ipynb": {
+    "table_question_answering.html": "2019f704"
+  },
+  "Natural_Language_Processing/04_Zero_Shot_Classification.ipynb": {
+    "zero_shot_classification.html": "56bc3197"
+  },
+  "Natural_Language_Processing/07_Feature_Extraction.ipynb": {
+    "feature_extraction.html": "42fb7982"
+  },
+  "Natural_Language_Processing/05_Translation.ipynb": {
+    "translation.html": "2db7afde"
+  },
+  "Natural_Language_Processing/01_Token_Classification.ipynb": {
+    "token_classification.html": "11988ac4"
+  },
+  "Natural_Language_Processing/10_Sentence_Similarity.ipynb": {
+    "sentence_similarity.html": "b2f248fd"
+  },
+  "Natural_Language_Processing/11_Text_Ranking.ipynb": {
+    "text_ranking.html": "743e15f1"
+  },
+  "Natural_Language_Processing/00_Text_Classification.ipynb": {
+    "text_classification.html": "24ee580a"
+  },
+  "Natural_Language_Processing/09_Fill_Mask.ipynb": {
+    "fill_mask.html": "c6024588"
+  },
   "index.ipynb": {
-    "README.md": "4c0b4a07"
+    "index.html": "3a34e4b7"
+  },
+  "Audio/04_Audio_Classification.ipynb": {
+    "audio_classification.html": "e9cb8abf"
+  },
+  "Audio/03_Audio_to_Audio.ipynb": {
+    "audio_to_audio.html": "55f058ab"
+  },
+  "Audio/02_Automatic_Speech_Recognition.ipynb": {
+    "automatic_speech_recognition.html": "ec77ce7f"
+  },
+  "Audio/00_Text_to_Speech.ipynb": {
+    "text_to_speech.html": "6d139ba6"
+  },
+  "Audio/05_Voice_Activity_Detection.ipynb": {
+    "voice_activity_detection.html": "6a0b5a2a"
+  },
+  "Audio/01_Text_to_Audio.ipynb": {
+    "text_to_audio.html": "8bd98cc9"
+  },
+  "Computer_Vision/16_Image_Feature_Extraction.ipynb": {
+    "image_feature_extraction.html": "09cbef46"
+  },
+  "Computer_Vision/18_Video_to_Video.ipynb": {
+    "video_to_video.html": "146a0d9f"
+  },
+  "Computer_Vision/05_Image_to_Text.ipynb": {
+    "image_to_text.html": "95c4637e"
+  },
+  "Computer_Vision/04_Text_to_Image.ipynb": {
+    "text_to_image.html": "d099dca6"
+  },
+  "Computer_Vision/15_Image_to_3D.ipynb": {
+    "image_to_3d.html": "e4d379ef"
+  },
+  "Computer_Vision/06_Image_to_Image.ipynb": {
+    "image_to_image.html": "62c4fea9"
+  },
+  "Computer_Vision/03_Image_Segmentation.ipynb": {
+    "image_segmentation.html": "2f4ff5b7"
+  },
+  "Computer_Vision/17_Keypoint_Detection.ipynb": {
+    "keypoint_detection.html": "f2cbc540"
+  },
+  "Computer_Vision/02_Object_Detection.ipynb": {
+    "object_detection.html": "87c6d31a"
+  },
+  "Computer_Vision/12_Mask_Generation.ipynb": {
+    "mask_generation.html": "44655681"
+  },
+  "Computer_Vision/11_Zero_Shot_Image_Classification.ipynb": {
+    "zero_shot_image_classification.html": "60dd9650"
+  },
+  "Computer_Vision/00_Depth_Estimation.ipynb": {
+    "depth_estimation.html": "ce355b71"
+  },
+  "Computer_Vision/13_Zero_Shot_Object_Detection.ipynb": {
+    "zero_shot_object_detection.html": "590559fd"
+  },
+  "Computer_Vision/10_Text_to_Video.ipynb": {
+    "text_to_video.html": "28434608"
+  },
+  "Computer_Vision/14_Text_to_3D.ipynb": {
+    "text_to_3d.html": "956acfe3"
+  },
+  "Computer_Vision/08_Unconditional_Image_Generation.ipynb": {
+    "unconditional_image_generation.html": "b7b7d571"
+  },
+  "Computer_Vision/01_Image_Classification.ipynb": {
+    "image_classification.html": "8ce531b8"
+  },
+  "Computer_Vision/09_Video_Classification.ipynb": {
+    "video_classification.html": "e418e35d"
+  },
+  "Computer_Vision/07_Image_to_Video.ipynb": {
+    "image_to_video.html": "ea8aa3f0"
+  },
+  "Reinforcement_Learning/00_Reinforcement_Learning.ipynb": {
+    "reinforcement_learning.html": "d97ee154"
+  },
+  "Reinforcement_Learning/01_Robotics.ipynb": {
+    "robotics.html": "6c32c6f5"
+  },
+  "Tabular/01_Tabular_Regression.ipynb": {
+    "tabular_regression.html": "d77a345c"
+  },
+  "Tabular/00_Tabular_Classification.ipynb": {
+    "tabular_classification.html": "763f0929"
+  },
+  "Tabular/02_Time_Series_Forecasting.ipynb": {
+    "time_series_forecasting.html": "c74eeee1"
+  },
+  "Multimodal/02_Image_Text_to_Image.ipynb": {
+    "image_text_to_image.html": "43eb366d"
+  },
+  "Multimodal/03_Image_Text_to_Video.ipynb": {
+    "image_text_to_video.html": "0fe0e957"
+  },
+  "Multimodal/06_Video_Text_to_Text.ipynb": {
+    "video_text_to_text.html": "d908ed1d"
+  },
+  "Multimodal/00_Audio_Text_to_Text.ipynb": {
+    "audio_text_to_text.html": "018836d6"
+  },
+  "Multimodal/01_Image_Text_to_Text.ipynb": {
+    "image_text_to_text.html": "c9a89c91"
+  },
+  "Multimodal/04_Visual_Question_Answering.ipynb": {
+    "visual_question_answering.html": "ed588780"
+  },
+  "Multimodal/07_Visual_Document_Retrieval.ipynb": {
+    "visual_document_retrieval.html": "61f91454"
+  },
+  "Multimodal/05_Document_Question_Answering.ipynb": {
+    "document_question_answering.html": "6fe0f401"
+  },
+  "Multimodal/08_Any_to_Any.ipynb": {
+    "any_to_any.html": "cba5b319"
   }
 }

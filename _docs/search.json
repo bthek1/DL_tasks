@@ -1,0 +1,2075 @@
+[
+  {
+    "objectID": "Multimodal/any_to_any.html",
+    "href": "Multimodal/any_to_any.html",
+    "title": "Any-to-Any",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Any-to-Any"
+    ]
+  },
+  {
+    "objectID": "Multimodal/any_to_any.html#overview",
+    "href": "Multimodal/any_to_any.html#overview",
+    "title": "Any-to-Any",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Any-to-Any"
+    ]
+  },
+  {
+    "objectID": "Multimodal/visual_document_retrieval.html",
+    "href": "Multimodal/visual_document_retrieval.html",
+    "title": "Visual Document Retrieval",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Visual Document Retrieval"
+    ]
+  },
+  {
+    "objectID": "Multimodal/visual_document_retrieval.html#overview",
+    "href": "Multimodal/visual_document_retrieval.html#overview",
+    "title": "Visual Document Retrieval",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Visual Document Retrieval"
+    ]
+  },
+  {
+    "objectID": "Multimodal/image_text_to_text.html",
+    "href": "Multimodal/image_text_to_text.html",
+    "title": "Image-Text-to-Text",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Image-Text-to-Text"
+    ]
+  },
+  {
+    "objectID": "Multimodal/image_text_to_text.html#overview",
+    "href": "Multimodal/image_text_to_text.html#overview",
+    "title": "Image-Text-to-Text",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Image-Text-to-Text"
+    ]
+  },
+  {
+    "objectID": "Multimodal/video_text_to_text.html",
+    "href": "Multimodal/video_text_to_text.html",
+    "title": "Video-Text-to-Text",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Video-Text-to-Text"
+    ]
+  },
+  {
+    "objectID": "Multimodal/video_text_to_text.html#overview",
+    "href": "Multimodal/video_text_to_text.html#overview",
+    "title": "Video-Text-to-Text",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Video-Text-to-Text"
+    ]
+  },
+  {
+    "objectID": "Multimodal/image_text_to_image.html",
+    "href": "Multimodal/image_text_to_image.html",
+    "title": "Image-Text-to-Image",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Image-Text-to-Image"
+    ]
+  },
+  {
+    "objectID": "Multimodal/image_text_to_image.html#overview",
+    "href": "Multimodal/image_text_to_image.html#overview",
+    "title": "Image-Text-to-Image",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Image-Text-to-Image"
+    ]
+  },
+  {
+    "objectID": "Tabular/tabular_classification.html",
+    "href": "Tabular/tabular_classification.html",
+    "title": "Tabular Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Tabular",
+      "Tabular Classification"
+    ]
+  },
+  {
+    "objectID": "Tabular/tabular_classification.html#overview",
+    "href": "Tabular/tabular_classification.html#overview",
+    "title": "Tabular Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Tabular",
+      "Tabular Classification"
+    ]
+  },
+  {
+    "objectID": "Reinforcement_Learning/robotics.html",
+    "href": "Reinforcement_Learning/robotics.html",
+    "title": "Robotics",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Reinforcement Learning",
+      "Robotics"
+    ]
+  },
+  {
+    "objectID": "Reinforcement_Learning/robotics.html#overview",
+    "href": "Reinforcement_Learning/robotics.html#overview",
+    "title": "Robotics",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Reinforcement Learning",
+      "Robotics"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_to_video.html",
+    "href": "Computer_Vision/image_to_video.html",
+    "title": "Image-to-Video",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image-to-Video"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_to_video.html#overview",
+    "href": "Computer_Vision/image_to_video.html#overview",
+    "title": "Image-to-Video",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image-to-Video"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_classification.html",
+    "href": "Computer_Vision/image_classification.html",
+    "title": "Image Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image Classification"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_classification.html#overview",
+    "href": "Computer_Vision/image_classification.html#overview",
+    "title": "Image Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image Classification"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/text_to_3d.html",
+    "href": "Computer_Vision/text_to_3d.html",
+    "title": "Text-to-3D",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Text-to-3D"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/text_to_3d.html#overview",
+    "href": "Computer_Vision/text_to_3d.html#overview",
+    "title": "Text-to-3D",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Text-to-3D"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/zero_shot_object_detection.html",
+    "href": "Computer_Vision/zero_shot_object_detection.html",
+    "title": "Zero-Shot Object Detection",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Zero-Shot Object Detection"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/zero_shot_object_detection.html#overview",
+    "href": "Computer_Vision/zero_shot_object_detection.html#overview",
+    "title": "Zero-Shot Object Detection",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Zero-Shot Object Detection"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/zero_shot_image_classification.html",
+    "href": "Computer_Vision/zero_shot_image_classification.html",
+    "title": "Zero-Shot Image Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Zero-Shot Image Classification"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/zero_shot_image_classification.html#overview",
+    "href": "Computer_Vision/zero_shot_image_classification.html#overview",
+    "title": "Zero-Shot Image Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Zero-Shot Image Classification"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/object_detection.html",
+    "href": "Computer_Vision/object_detection.html",
+    "title": "Object Detection",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Object Detection"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/object_detection.html#overview",
+    "href": "Computer_Vision/object_detection.html#overview",
+    "title": "Object Detection",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Object Detection"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_segmentation.html",
+    "href": "Computer_Vision/image_segmentation.html",
+    "title": "Image Segmentation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image Segmentation"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_segmentation.html#overview",
+    "href": "Computer_Vision/image_segmentation.html#overview",
+    "title": "Image Segmentation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image Segmentation"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_to_3d.html",
+    "href": "Computer_Vision/image_to_3d.html",
+    "title": "Image-to-3D",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image-to-3D"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_to_3d.html#overview",
+    "href": "Computer_Vision/image_to_3d.html#overview",
+    "title": "Image-to-3D",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image-to-3D"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_to_text.html",
+    "href": "Computer_Vision/image_to_text.html",
+    "title": "Image-to-Text",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image-to-Text"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_to_text.html#overview",
+    "href": "Computer_Vision/image_to_text.html#overview",
+    "title": "Image-to-Text",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image-to-Text"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_feature_extraction.html",
+    "href": "Computer_Vision/image_feature_extraction.html",
+    "title": "Image Feature Extraction",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image Feature Extraction"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_feature_extraction.html#overview",
+    "href": "Computer_Vision/image_feature_extraction.html#overview",
+    "title": "Image Feature Extraction",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image Feature Extraction"
+    ]
+  },
+  {
+    "objectID": "Audio/voice_activity_detection.html",
+    "href": "Audio/voice_activity_detection.html",
+    "title": "Voice Activity Detection",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Voice Activity Detection"
+    ]
+  },
+  {
+    "objectID": "Audio/voice_activity_detection.html#overview",
+    "href": "Audio/voice_activity_detection.html#overview",
+    "title": "Voice Activity Detection",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Voice Activity Detection"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html",
+    "href": "Audio/automatic_speech_recognition.html",
+    "title": "Automatic Speech Recognition",
+    "section": "",
+    "text": "Automatic Speech Recognition (ASR, also called speech-to-text / STT) maps a raw audio waveform to a text transcript.\nInput. Audio is a 1-D array of amplitude samples. Almost every ASR model expects 16 kHz mono audio; resample anything else first. Models do not consume the waveform directly - it is converted to a log-mel spectrogram (a time x frequency image of energy), which the neural encoder ingests.\nOutput. Plain text, optionally with:\n\nTimestamps - per segment or per word (needed for subtitles, editing tools)\nLanguage ID - which language was spoken\nTranslation - some models (Whisper) can emit English text from non-English speech in one pass\n\nNeighbouring tasks (separate models, often chained with ASR):\n\n\n\n\n\n\n\n\nTask\nWhat it does\nTypical tool\n\n\n\n\nVoice activity detection (VAD)\nFind where speech is\nSilero VAD\n\n\nSpeaker diarization\nWho spoke when\npyannote.audio\n\n\nForced alignment\nAlign a known transcript to audio\nQwen3-ForcedAligner, MFA\n\n\nText-to-speech (TTS)\nThe inverse task\nsee 00_Text_to_Speech",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#what-is-asr",
+    "href": "Audio/automatic_speech_recognition.html#what-is-asr",
+    "title": "Automatic Speech Recognition",
+    "section": "",
+    "text": "Automatic Speech Recognition (ASR, also called speech-to-text / STT) maps a raw audio waveform to a text transcript.\nInput. Audio is a 1-D array of amplitude samples. Almost every ASR model expects 16 kHz mono audio; resample anything else first. Models do not consume the waveform directly - it is converted to a log-mel spectrogram (a time x frequency image of energy), which the neural encoder ingests.\nOutput. Plain text, optionally with:\n\nTimestamps - per segment or per word (needed for subtitles, editing tools)\nLanguage ID - which language was spoken\nTranslation - some models (Whisper) can emit English text from non-English speech in one pass\n\nNeighbouring tasks (separate models, often chained with ASR):\n\n\n\n\n\n\n\n\nTask\nWhat it does\nTypical tool\n\n\n\n\nVoice activity detection (VAD)\nFind where speech is\nSilero VAD\n\n\nSpeaker diarization\nWho spoke when\npyannote.audio\n\n\nForced alignment\nAlign a known transcript to audio\nQwen3-ForcedAligner, MFA\n\n\nText-to-speech (TTS)\nThe inverse task\nsee 00_Text_to_Speech",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#how-modern-asr-works",
+    "href": "Audio/automatic_speech_recognition.html#how-modern-asr-works",
+    "title": "Automatic Speech Recognition",
+    "section": "2. How Modern ASR Works",
+    "text": "2. How Modern ASR Works\nFour architectural eras, each still alive in some niche:\n\nHMM/GMM pipelines (Kaldi era, pre-2016). Hand-built acoustic + pronunciation + language models. Legacy - only relevant for understanding older literature.\nSelf-supervised encoders + CTC (wav2vec 2.0, 2020). Pretrain an encoder on unlabeled audio, fine-tune with a CTC head. CTC predicts a character/token per frame independently - extremely fast, slightly weaker on punctuation and context.\nAttention encoder-decoder (Whisper, 2022). A transformer decoder attends over the full encoded audio - best robustness and formatting, but slow (autoregressive) and offline-only by design (fixed 30 s windows).\nTransducers and LLM decoders (2024-2026).\n\nRNN-T / TDT (Parakeet): streams natively, near-attention accuracy at 10-50x the speed.\nSALM / LLM-decoder (Canary-Qwen, Granite Speech, Qwen3-ASR): bolt a speech encoder onto a pretrained LLM. Current accuracy leaders - the LLM brings world knowledge to disambiguate hard audio.\n\n\nNearly all modern encoders are Conformers (convolution + self-attention) or close variants.\nDecoder trade-off cheat sheet:\n\n\n\nDecoder\nAccuracy\nSpeed\nStreaming\nExample\n\n\n\n\nCTC\ngood\nfastest\nyes\nwav2vec 2.0\n\n\nTDT / RNN-T\nvery good\nvery fast\nyes\nParakeet TDT\n\n\nAttention\nvery good\nslow\nno\nWhisper\n\n\nLLM (SALM)\nbest\nslowest\npartial\nCanary-Qwen, Qwen3-ASR",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#evaluation-metrics",
+    "href": "Audio/automatic_speech_recognition.html#evaluation-metrics",
+    "title": "Automatic Speech Recognition",
+    "section": "3. Evaluation Metrics",
+    "text": "3. Evaluation Metrics\nWord Error Rate (WER) - the standard metric. Edit distance between hypothesis and reference, normalised by reference length:\n\\[WER = \\frac{S + D + I}{N}\\]\nwhere S = substitutions, D = deletions, I = insertions, N = reference words. Lower is better; can exceed 100%.\nPitfalls:\n\nNormalisation dominates. Casing, punctuation and number formatting (“25” vs “twenty five”) swing WER by several points. Always compare models under the same text normalisation (the Open ASR Leaderboard uses the Whisper normaliser).\nCER (character error rate) is used for languages without whitespace word boundaries (Chinese, Japanese).\nRTFx (inverse real-time factor) = audio duration / processing time. RTFx 100 means 1 hour of audio transcribes in 36 s. The accuracy/speed trade-off is the key engineering decision.\n\njiwer is the standard Python package for WER:\n\n\nimport jiwer\n\nreference = \"the quick brown fox jumps over the lazy dog\"\nhypothesis = \"the quick brown fox jumped over a lazy dog\"\n\nprint(\"WER:\", jiwer.wer(reference, hypothesis))\n\nout = jiwer.process_words(reference, hypothesis)\nprint(f\"substitutions={out.substitutions} deletions={out.deletions} insertions={out.insertions}\")\n\nWER: 0.2222222222222222\nsubstitutions=2 deletions=0 insertions=0",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#the-model-landscape-mid-2026",
+    "href": "Audio/automatic_speech_recognition.html#the-model-landscape-mid-2026",
+    "title": "Automatic Speech Recognition",
+    "section": "4. The Model Landscape (mid-2026)",
+    "text": "4. The Model Landscape (mid-2026)\nWhisper is no longer the accuracy leader, but remains the ecosystem default. The Open ASR Leaderboard is the reference ranking (avg WER over 8+ English test sets).\n\n\n\n\n\n\n\n\n\n\n\nModel\nParams\nLicense\nLanguages\nDecoder\nBest for\n\n\n\n\nNVIDIA Canary-Qwen 2.5B\n2.5B\nCC-BY-4.0\nen\nSALM\nmax English accuracy (~5.6% avg WER)\n\n\nIBM Granite Speech\n2-8B\nApache 2.0\nen + few\nLLM\naccuracy per parameter (~5.3% WER)\n\n\nNVIDIA Parakeet TDT\n0.6-1.1B\nCC-BY-4.0\nen (v2), 25 (v3)\nTDT\nbulk transcription (RTFx ~2000)\n\n\nQwen3-ASR\n0.6B / 1.7B\nApache 2.0\n52 (incl. dialects)\nLLM\nmultilingual open SOTA, language ID\n\n\nVoxtral Transcribe 2\n4B\nApache 2.0\n13\nstreaming\nnative real-time streaming\n\n\nWhisper large-v3\n1.5B\nMIT\n99+\nattention\nlong-tail languages, ecosystem\n\n\nMoonshine\n27-60M\nMIT\nen\nattention\nedge / embedded / Raspberry Pi\n\n\n\nLicense nuance. MIT/Apache models are open source in the full sense. NVIDIA’s CC-BY-4.0 is a content license - commercial use is fine but attribution is required, and purists do not call it open source. Watch out: older Canary checkpoints (pre-Qwen) were CC-BY-NC (non-commercial only). Qwen3-ASR-Flash (the 52-language flagship numbers) is API-only on Alibaba Cloud; the open 0.6B/1.7B checkpoints cover fewer languages. Training data is closed for all of them - you get weights, not reproducibility.",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#setup",
+    "href": "Audio/automatic_speech_recognition.html#setup",
+    "title": "Automatic Speech Recognition",
+    "section": "5. Setup",
+    "text": "5. Setup\nEverything below runs on a single modest GPU (tested on a 6 GB GTX 1660 SUPER) or CPU. Package roles:\n\ntransformers + torch - Whisper, Moonshine, Qwen3-ASR (via qwen-asr)\ndatasets + torchcodec - test clips with reference transcripts (LibriSpeech)\njiwer - WER computation\nfaster-whisper - CTranslate2 Whisper runtime (optional, section 7)\nqwen-asr - Qwen3-ASR package (optional, section 8)\nnemo_toolkit[asr] - NVIDIA Parakeet/Canary (optional, heavy, section 9)\n\n\n\n# Core dependencies (uncomment to install)\n# %pip install -q torch transformers datasets torchcodec jiwer soundfile\n\n# Optional per-section extras\n# %pip install -q faster-whisper          # section 7\n# %pip install -q qwen-asr                # section 8\n# %pip install -q \"nemo_toolkit[asr]\"     # section 9 (heavy)\n# %pip install -q sounddevice             # section 12\n\n\nimport time\nimport urllib.request\nfrom pathlib import Path\n\nimport torch\n\ndevice = \"cuda:0\" if torch.cuda.is_available() else \"cpu\"\nif device != \"cpu\":\n    print(torch.cuda.get_device_name(0))\nprint(\"device:\", device)\n\n# A ~14 s English sample clip (from the Qwen3-ASR repo)\nSAMPLE = Path(\"sample_en.wav\")\nif not SAMPLE.exists():\n    urllib.request.urlretrieve(\n        \"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-ASR-Repo/asr_en.wav\",\n        SAMPLE,\n    )\n\n\nfrom datasets import load_dataset\n\n# 73 short LibriSpeech clips with reference transcripts - our eval set\nds = load_dataset(\"hf-internal-testing/librispeech_asr_dummy\", \"clean\", split=\"validation\")\n\ndef to_audio_input(audio):\n    \"Normalize a datasets audio entry to the dict transformers pipelines expect.\"\n    if isinstance(audio, dict):  # datasets &lt; 4.x\n        return {\"array\": audio[\"array\"], \"sampling_rate\": audio[\"sampling_rate\"]}\n    samples = audio.get_all_samples()  # datasets &gt;= 4.x returns a torchcodec AudioDecoder\n    return {\"array\": samples.data.numpy().squeeze(), \"sampling_rate\": samples.sample_rate}\n\nrow = ds[0]\nprint(to_audio_input(row[\"audio\"])[\"array\"].shape)\nprint(\"ref:\", row[\"text\"][:70])",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#whisper-with-transformers",
+    "href": "Audio/automatic_speech_recognition.html#whisper-with-transformers",
+    "title": "Automatic Speech Recognition",
+    "section": "6. Whisper with transformers",
+    "text": "6. Whisper with transformers\nThe automatic-speech-recognition pipeline handles decoding (via ffmpeg), resampling, batching and chunking. Model sizes: tiny (39M) -&gt; base -&gt; small (244M) -&gt; medium -&gt; large-v3 (1.5B). small is a good accuracy/VRAM compromise on 6 GB cards.\n\n\nfrom transformers import pipeline\n\nasr = pipeline(\"automatic-speech-recognition\", model=\"openai/whisper-small\", device=device)\n\nt0 = time.perf_counter()\nresult = asr(str(SAMPLE), return_timestamps=True)\nprint(f\"{time.perf_counter() - t0:.1f}s\")\nprint(result[\"text\"])\nfor chunk in result[\"chunks\"]:\n    print(chunk[\"timestamp\"], chunk[\"text\"])\n\n\n# Long-form audio: chunk the input and batch the chunks\nlong_form = pipeline(\n    \"automatic-speech-recognition\",\n    model=\"openai/whisper-small\",\n    chunk_length_s=30,\n    batch_size=8,\n    device=device,\n)\n\n# Word-level timestamps and forced language / task selection:\nresult = asr(\n    str(SAMPLE),\n    return_timestamps=\"word\",\n    generate_kwargs={\"language\": \"en\", \"task\": \"transcribe\"},  # task=\"translate\" -&gt; English output from any language\n)\nprint(result[\"chunks\"][:5])",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#faster-whisper-ctranslate2",
+    "href": "Audio/automatic_speech_recognition.html#faster-whisper-ctranslate2",
+    "title": "Automatic Speech Recognition",
+    "section": "7. faster-whisper (CTranslate2)",
+    "text": "7. faster-whisper (CTranslate2)\nThe same Whisper weights on the CTranslate2 inference engine: ~4x faster than the reference implementation, with int8 quantisation that halves memory at negligible accuracy cost. The usual production choice for batch Whisper workloads.\n\n\n# %pip install -q faster-whisper\nfrom faster_whisper import WhisperModel\n\n# compute_type: \"float16\" (GPU), \"int8\" (CPU or low VRAM)\nfw = WhisperModel(\"small\", device=\"cuda\" if device != \"cpu\" else \"cpu\", compute_type=\"int8\")\n\nt0 = time.perf_counter()\nsegments, info = fw.transcribe(str(SAMPLE), beam_size=5)\nprint(\"language:\", info.language, f\"(p={info.language_probability:.2f})\")\nfor seg in segments:\n    print(f\"[{seg.start:6.2f} -&gt; {seg.end:6.2f}] {seg.text}\")\nprint(f\"{time.perf_counter() - t0:.1f}s\")",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#qwen3-asr",
+    "href": "Audio/automatic_speech_recognition.html#qwen3-asr",
+    "title": "Automatic Speech Recognition",
+    "section": "8. Qwen3-ASR",
+    "text": "8. Qwen3-ASR\nThe strongest open multilingual family (Apache 2.0, Jan 2026). 52 languages/dialects with built-in language ID, singing-voice robustness, and an optional forced aligner for timestamps. The 0.6B checkpoint fits comfortably in 6 GB; the qwen-asr package wraps transformers (and optionally vLLM for streaming/batch serving).\n\n\n# %pip install -q qwen-asr\nfrom qwen_asr import Qwen3ASRModel\n\n# Note: bfloat16 needs an Ampere+ GPU; use float16 on GTX 16xx / older cards\nqwen = Qwen3ASRModel.from_pretrained(\n    \"Qwen/Qwen3-ASR-0.6B\",\n    dtype=torch.float16 if device != \"cpu\" else torch.float32,\n    device_map=device,\n    max_inference_batch_size=8,\n    max_new_tokens=256,\n)\n\nresults = qwen.transcribe(audio=str(SAMPLE), language=None)  # language=None -&gt; auto-detect\nprint(results[0].language)\nprint(results[0].text)\n\n# For word/segment timestamps, load with:\n#   forced_aligner=\"Qwen/Qwen3-ForcedAligner-0.6B\", and pass return_time_stamps=True",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#nvidia-parakeet-and-canary-nemo",
+    "href": "Audio/automatic_speech_recognition.html#nvidia-parakeet-and-canary-nemo",
+    "title": "Automatic Speech Recognition",
+    "section": "9. NVIDIA Parakeet and Canary (NeMo)",
+    "text": "9. NVIDIA Parakeet and Canary (NeMo)\nThe Open ASR Leaderboard toppers. Parakeet TDT is the speed king (RTFx ~2000 - an hour of audio in under 2 s on a datacenter GPU); Canary-Qwen 2.5B is the English accuracy king. Both CC-BY-4.0, both need the (heavy) NeMo toolkit rather than plain transformers.\n\n\n# %pip install -q \"nemo_toolkit[asr]\"   # large install; needs a fairly recent GPU stack\nimport nemo.collections.asr as nemo_asr\n\nparakeet = nemo_asr.models.ASRModel.from_pretrained(\"nvidia/parakeet-tdt-0.6b-v2\")\n\nout = parakeet.transcribe([str(SAMPLE)], timestamps=True)\nprint(out[0].text)\nfor stamp in out[0].timestamp[\"segment\"]:\n    print(f\"[{stamp['start']:6.2f} -&gt; {stamp['end']:6.2f}] {stamp['segment']}\")",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#moonshine-edge-devices",
+    "href": "Audio/automatic_speech_recognition.html#moonshine-edge-devices",
+    "title": "Automatic Speech Recognition",
+    "section": "10. Moonshine (edge devices)",
+    "text": "10. Moonshine (edge devices)\nPurpose-built for embedded real-time ASR: tiny is 27M params (~27 MB quantised), and unlike Whisper it processes variable-length windows instead of always padding to 30 s - so short commands transcribe with proportionally less compute. English-only, MIT license, runs happily on CPU / Raspberry Pi.\n\n\nmoonshine = pipeline(\n    \"automatic-speech-recognition\",\n    model=\"UsefulSensors/moonshine-tiny\",\n    device=device,  # or device=\"cpu\" - it is fast enough\n)\n\nt0 = time.perf_counter()\nprint(moonshine(str(SAMPLE))[\"text\"])\nprint(f\"{time.perf_counter() - t0:.1f}s\")",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#head-to-head-benchmark",
+    "href": "Audio/automatic_speech_recognition.html#head-to-head-benchmark",
+    "title": "Automatic Speech Recognition",
+    "section": "11. Head-to-head Benchmark",
+    "text": "11. Head-to-head Benchmark\nSame clips, same normalisation, WER + wall clock per model. Caveats: this is a tiny English-only sample of clean read speech - treat it as a smoke test, not a leaderboard. For real evaluation use the full LibriSpeech test sets, or noisy/conversational sets like AMI and Earnings-22 (both on the Open ASR Leaderboard).\nMeasured here on a GTX 1660 SUPER (5 clips): whisper-tiny 10.6% WER / 2.4 s, moonshine-tiny 12.6% WER / 1.3 s.\n\n\nimport jiwer\n\nN = 20  # clips to evaluate (max 73)\n\nnormalize = jiwer.Compose([\n    jiwer.ToLowerCase(),\n    jiwer.RemovePunctuation(),\n    jiwer.RemoveMultipleSpaces(),\n    jiwer.Strip(),\n])\n\ndef benchmark(name, transcribe_fn):\n    \"Run transcribe_fn over the eval set; return (wer, seconds).\"\n    refs, hyps = [], []\n    t0 = time.perf_counter()\n    for row in ds.select(range(N)):\n        hyps.append(transcribe_fn(to_audio_input(row[\"audio\"])))\n        refs.append(row[\"text\"])\n    elapsed = time.perf_counter() - t0\n    wer = jiwer.wer(normalize(refs), normalize(hyps))\n    print(f\"{name:25s} WER {wer:6.2%}   {elapsed:5.1f}s / {N} clips\")\n    return wer, elapsed\n\n\nresults = {}\n\nfor model_id in [\"openai/whisper-tiny\", \"openai/whisper-small\", \"UsefulSensors/moonshine-tiny\"]:\n    asr_pipe = pipeline(\"automatic-speech-recognition\", model=model_id, device=device)\n    results[model_id] = benchmark(model_id, lambda a: asr_pipe(a)[\"text\"])\n    del asr_pipe\n    if device != \"cpu\":\n        torch.cuda.empty_cache()\n\n# faster-whisper takes (array, sr) via a file or ndarray; qwen accepts (ndarray, sr) tuples:\n# results[\"faster-whisper-small\"] = benchmark(\n#     \"faster-whisper-small\",\n#     lambda a: \" \".join(s.text for s in fw.transcribe(a[\"array\"])[0]),\n# )\n# results[\"Qwen3-ASR-0.6B\"] = benchmark(\n#     \"Qwen3-ASR-0.6B\",\n#     lambda a: qwen.transcribe(audio=(a[\"array\"], a[\"sampling_rate\"]))[0].text,\n# )\n\n\nimport pandas as pd\n\ndf = pd.DataFrame(\n    [(k, wer, sec) for k, (wer, sec) in results.items()],\n    columns=[\"model\", \"wer\", \"seconds\"],\n).sort_values(\"wer\")\ndf",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#real-time-microphone-input",
+    "href": "Audio/automatic_speech_recognition.html#real-time-microphone-input",
+    "title": "Automatic Speech Recognition",
+    "section": "12. Real-time Microphone Input",
+    "text": "12. Real-time Microphone Input\nQuick capture-then-transcribe loop with sounddevice. For true streaming (partial results while speaking) use a natively streaming model - Voxtral Transcribe 2, Qwen3-ASR via its vLLM backend, or Parakeet/RNN-T - or a VAD-chunked wrapper project like RealtimeSTT / whisper-streaming.\n\n\n# %pip install -q sounddevice\nimport sounddevice as sd\n\nSECONDS, SR = 5, 16000\nprint(\"recording...\")\nrecording = sd.rec(int(SECONDS * SR), samplerate=SR, channels=1, dtype=\"float32\")\nsd.wait()\nprint(asr({\"array\": recording.squeeze(), \"sampling_rate\": SR})[\"text\"])",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/automatic_speech_recognition.html#going-further",
+    "href": "Audio/automatic_speech_recognition.html#going-further",
+    "title": "Automatic Speech Recognition",
+    "section": "13. Going Further",
+    "text": "13. Going Further\n\nFine-tuning. Whisper fine-tunes well on ~5-10 h of domain audio: HF fine-tuning guide. Common Voice, FLEURS and People’s Speech are the usual open training sets.\nDomain hints without fine-tuning. faster-whisper’s initial_prompt / hotwords bias decoding toward domain vocabulary (names, jargon) for free.\nDiarization + ASR. WhisperX and pyannote.audio give “who said what” with word-level alignment.\nForced alignment. Qwen3-ForcedAligner-0.6B (11 languages, up to 5 min) or the classic Montreal Forced Aligner.\nVAD preprocessing. Silero VAD to strip silence - big speed and accuracy win on real-world recordings.\n\nReferences\n\nOpen ASR Leaderboard and the leaderboard paper\nWhisper paper (Radford et al., 2022)\nQwen3-ASR on GitHub\nNVIDIA Canary-Qwen 2.5B model card\nMoonshine paper\nNorthflank: best open source STT in 2026 (benchmarks)",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Automatic Speech Recognition"
+    ]
+  },
+  {
+    "objectID": "Audio/audio_classification.html",
+    "href": "Audio/audio_classification.html",
+    "title": "Audio Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Audio Classification"
+    ]
+  },
+  {
+    "objectID": "Audio/audio_classification.html#overview",
+    "href": "Audio/audio_classification.html#overview",
+    "title": "Audio Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Audio Classification"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/fill_mask.html",
+    "href": "Natural_Language_Processing/fill_mask.html",
+    "title": "Fill-Mask",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Fill-Mask"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/fill_mask.html#overview",
+    "href": "Natural_Language_Processing/fill_mask.html#overview",
+    "title": "Fill-Mask",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Fill-Mask"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/text_ranking.html",
+    "href": "Natural_Language_Processing/text_ranking.html",
+    "title": "Text Ranking",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Text Ranking"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/text_ranking.html#overview",
+    "href": "Natural_Language_Processing/text_ranking.html#overview",
+    "title": "Text Ranking",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Text Ranking"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/token_classification.html",
+    "href": "Natural_Language_Processing/token_classification.html",
+    "title": "Token Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Token Classification"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/token_classification.html#overview",
+    "href": "Natural_Language_Processing/token_classification.html#overview",
+    "title": "Token Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Token Classification"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/feature_extraction.html",
+    "href": "Natural_Language_Processing/feature_extraction.html",
+    "title": "Feature Extraction",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Feature Extraction"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/feature_extraction.html#overview",
+    "href": "Natural_Language_Processing/feature_extraction.html#overview",
+    "title": "Feature Extraction",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Feature Extraction"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/table_question_answering.html",
+    "href": "Natural_Language_Processing/table_question_answering.html",
+    "title": "Table Question Answering",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Table Question Answering"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/table_question_answering.html#overview",
+    "href": "Natural_Language_Processing/table_question_answering.html#overview",
+    "title": "Table Question Answering",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Table Question Answering"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/text_generation.html",
+    "href": "Natural_Language_Processing/text_generation.html",
+    "title": "Text Generation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Text Generation"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/text_generation.html#overview",
+    "href": "Natural_Language_Processing/text_generation.html#overview",
+    "title": "Text Generation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Text Generation"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html",
+    "href": "Theory/electricity_equations.html",
+    "title": "Electricity Equations",
+    "section": "",
+    "text": "Ohm’s Law states the relationship between voltage (\\(V\\)), current (\\(I\\)), and resistance (\\(R\\)):\n\\[ V = IR \\]\n\n\nIf \\(I = 2A\\) and \\(R = 10\\Omega\\), then: \\[ V = (2A)(10\\Omega) = 20V \\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html#ohms-law",
+    "href": "Theory/electricity_equations.html#ohms-law",
+    "title": "Electricity Equations",
+    "section": "",
+    "text": "Ohm’s Law states the relationship between voltage (\\(V\\)), current (\\(I\\)), and resistance (\\(R\\)):\n\\[ V = IR \\]\n\n\nIf \\(I = 2A\\) and \\(R = 10\\Omega\\), then: \\[ V = (2A)(10\\Omega) = 20V \\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html#kirchhoffs-laws",
+    "href": "Theory/electricity_equations.html#kirchhoffs-laws",
+    "title": "Electricity Equations",
+    "section": "2. Kirchhoff’s Laws",
+    "text": "2. Kirchhoff’s Laws\n\nKirchhoff’s Current Law (KCL)\nThe sum of currents entering a junction is equal to the sum of currents leaving:\n\\[ \\sum I_{in} = \\sum I_{out} \\]\n\n\nKirchhoff’s Voltage Law (KVL)\nThe sum of voltage drops around a closed loop is zero:\n\\[ \\sum V = 0 \\]\n\n\nExample:\nFor a closed loop with resistors \\(R_1\\) and \\(R_2\\) and voltage source \\(V\\): \\[ V - I R_1 - I R_2 = 0 \\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html#ac-dc-circuits",
+    "href": "Theory/electricity_equations.html#ac-dc-circuits",
+    "title": "Electricity Equations",
+    "section": "3. AC & DC Circuits",
+    "text": "3. AC & DC Circuits\n\nDirect Current (DC) Circuits\nA steady flow of electric charge in one direction.\n\n\nAlternating Current (AC) Circuits\nA flow of electric charge that periodically reverses direction:\n\\[ V(t) = V_m \\sin(\\omega t) \\]\nwhere: - \\(V_m\\) = Peak voltage - \\(\\omega = 2\\pi f\\) (angular frequency) - \\(f\\) = Frequency in Hz",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html#capacitance-inductance",
+    "href": "Theory/electricity_equations.html#capacitance-inductance",
+    "title": "Electricity Equations",
+    "section": "4. Capacitance & Inductance",
+    "text": "4. Capacitance & Inductance\n\nCapacitor:\nStores electrical energy in an electric field: \\[ Q = CV \\]\nwhere: - \\(Q\\) = Charge (Coulombs) - \\(C\\) = Capacitance (Farads) - \\(V\\) = Voltage (Volts)\n\n\nInductor:\nStores energy in a magnetic field: \\[ V = L \\frac{dI}{dt} \\]\nwhere: - \\(L\\) = Inductance (Henrys) - \\(\\frac{dI}{dt}\\) = Rate of change of current",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html#power-in-electrical-circuits",
+    "href": "Theory/electricity_equations.html#power-in-electrical-circuits",
+    "title": "Electricity Equations",
+    "section": "5. Power in Electrical Circuits",
+    "text": "5. Power in Electrical Circuits\n\nDC Power:\n\\[ P = VI \\]\n\n\nAC Power:\nFor sinusoidal voltages and currents: \\[ P = VI \\cos(\\phi) \\]\nwhere: - \\(\\phi\\) = Phase angle between voltage and current\n\n\nExample:\nIf \\(V = 230V\\), \\(I = 10A\\), and \\(\\phi = 30^\\circ\\): \\[ P = (230)(10) \\cos(30^\\circ) = 1992W \\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html#electrical-machines",
+    "href": "Theory/electricity_equations.html#electrical-machines",
+    "title": "Electricity Equations",
+    "section": "6. Electrical Machines",
+    "text": "6. Electrical Machines\n\nTransformers:\nUsed to step up or step down voltage: \\[ \\frac{V_1}{V_2} = \\frac{N_1}{N_2} \\]\nwhere: - \\(V_1, V_2\\) = Primary and secondary voltages - \\(N_1, N_2\\) = Number of turns in primary and secondary windings\n\n\nMotors & Generators:\nFaraday’s Law of Electromagnetic Induction: \\[ \\mathcal{E} = -N \\frac{d\\Phi}{dt} \\]\nwhere: - \\(\\mathcal{E}\\) = Induced EMF (Volts) - \\(N\\) = Number of turns - \\(\\Phi\\) = Magnetic flux",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html#semiconductor-devices",
+    "href": "Theory/electricity_equations.html#semiconductor-devices",
+    "title": "Electricity Equations",
+    "section": "7. Semiconductor Devices",
+    "text": "7. Semiconductor Devices\n\nDiodes:\nAllows current to flow in one direction: \\[ I = I_S \\left( e^{\\frac{V}{nV_T}} - 1 \\right) \\]\n\n\nTransistors:\nUsed for amplification and switching. For a bipolar junction transistor (BJT): \\[ I_C = \\beta I_B \\]\nwhere: - \\(I_C\\) = Collector current - \\(I_B\\) = Base current - \\(\\beta\\) = Current gain",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html#digital-electronics",
+    "href": "Theory/electricity_equations.html#digital-electronics",
+    "title": "Electricity Equations",
+    "section": "8. Digital Electronics",
+    "text": "8. Digital Electronics\n\nLogic Gates:\nBasic building blocks of digital circuits:\n\nAND: \\(Y = A \\cdot B\\)\nOR: \\(Y = A + B\\)\nNOT: \\(Y = \\overline{A}\\)\n\n\n\nFlip-Flops:\nUsed for memory storage and sequential logic.",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html#control-systems",
+    "href": "Theory/electricity_equations.html#control-systems",
+    "title": "Electricity Equations",
+    "section": "9. Control Systems",
+    "text": "9. Control Systems\nA system that regulates its own behavior. ### Transfer Function: \\[ H(s) = \\frac{Y(s)}{X(s)} \\]\n\nPID Controller:\n\\[ u(t) = K_p e(t) + K_i \\int e(t) dt + K_d \\frac{de(t)}{dt} \\]\nwhere: - \\(K_p, K_i, K_d\\) = Proportional, Integral, and Derivative gains",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/electricity_equations.html#electrical-safety",
+    "href": "Theory/electricity_equations.html#electrical-safety",
+    "title": "Electricity Equations",
+    "section": "10. Electrical Safety",
+    "text": "10. Electrical Safety\n\nGrounding: Ensures safety by redirecting excess current.\nCircuit Breakers: Protect against overcurrent.\nInsulation Resistance: Prevents current leakage.",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electricity Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/forresnet.html",
+    "href": "Theory/forresnet.html",
+    "title": "Idea - ForResNet (coming soon)",
+    "section": "",
+    "text": "from zoneinfo import ZoneInfo  # Built-in from Python 3.9+\nfrom datetime import datetime as dt, UTC\n\n\n# 11PM Brisbane Time converted to UTC\nbrisbane_tz = ZoneInfo(\"Australia/Brisbane\")\ndaily_time_brisbane = dt.now(brisbane_tz).replace(hour=23, minute=0, second=0, microsecond=0)\n\n# Convert to UTC\ndaily_time_utc = daily_time_brisbane.astimezone(UTC)\n\n\nbrisbane_tz\n\nzoneinfo.ZoneInfo(key='Australia/Brisbane')\n\n\n\nimport pytz\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Idea - ForResNet (coming soon)"
+    ]
+  },
+  {
+    "objectID": "Theory/0_physics_equations.html",
+    "href": "Theory/0_physics_equations.html",
+    "title": "Physics Equations",
+    "section": "",
+    "text": "Describes the motion of objects without considering forces.\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(v = u + at\\)\nFinal velocity (\\(v\\)) after time (\\(t\\)) with acceleration (\\(a\\))\nA car accelerates from 10 m/s at 2 m/s² for 5 s. Find \\(v\\).  \\(v = 10 + (2 \\times 5) = 20\\) m/s\n\n\n\\(s = ut + \\frac{1}{2}at^2\\)\nDisplacement (\\(s\\)) after time \\(t\\)\nA ball drops from rest under gravity for 3 s. Find \\(s\\).  \\(s = 0 + \\frac{1}{2}(9.8)(3)^2 = 44.1\\) m\n\n\n\\(v^2 = u^2 + 2as\\)\nFinal velocity squared\nA car starts at 5 m/s, accelerates at 3 m/s², and moves 20 m. Find \\(v\\).  \\(v^2 = 5^2 + 2(3)(20) = 125\\), \\(v = 11.18\\) m/s\n\n\n\n\n\n\n\nDescribes how forces affect motion.\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(F = ma\\)\nForce (\\(F\\)) is mass (\\(m\\)) times acceleration (\\(a\\))\nA 10 kg object accelerates at 5 m/s². Find \\(F\\).  \\(F = 10 \\times 5 = 50\\) N\n\n\n\\(p = mv\\)\nMomentum (\\(p\\)) is mass times velocity\nA 2 kg ball moving at 4 m/s has momentum \\(2 \\times 4 = 8\\) kg·m/s\n\n\n\\(F \\Delta t = m \\Delta v\\)\nImpulse is force times time\nA 0.5 kg ball hits a wall and bounces back with the same speed of 10 m/s. Force applied for 0.2 s is \\(F = (0.5 \\times 20)/0.2 = 50\\) N\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(W = Fd \\cos \\theta\\)\nWork done by force \\(F\\) over displacement \\(d\\)\nA force of 50 N moves an object 10 m at an angle of 30°. \\(W = 50 \\times 10 \\times \\cos 30° = 433\\) J\n\n\n\\(KE = \\frac{1}{2} mv^2\\)\nKinetic energy\nA 3 kg object moving at 5 m/s has \\(KE = 37.5\\) J\n\n\n\\(PE = mgh\\)\nGravitational potential energy\nA 2 kg object at 5 m has \\(PE = 2 \\times 9.8 \\times 5 = 98\\) J\n\n\n\\(P = \\frac{W}{t}\\)\nPower is work per time\nA machine does 1000 J in 2 s. Power is \\(500\\) W",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Physics Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_physics_equations.html#mechanics-motion-forces-and-energy",
+    "href": "Theory/0_physics_equations.html#mechanics-motion-forces-and-energy",
+    "title": "Physics Equations",
+    "section": "",
+    "text": "Describes the motion of objects without considering forces.\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(v = u + at\\)\nFinal velocity (\\(v\\)) after time (\\(t\\)) with acceleration (\\(a\\))\nA car accelerates from 10 m/s at 2 m/s² for 5 s. Find \\(v\\).  \\(v = 10 + (2 \\times 5) = 20\\) m/s\n\n\n\\(s = ut + \\frac{1}{2}at^2\\)\nDisplacement (\\(s\\)) after time \\(t\\)\nA ball drops from rest under gravity for 3 s. Find \\(s\\).  \\(s = 0 + \\frac{1}{2}(9.8)(3)^2 = 44.1\\) m\n\n\n\\(v^2 = u^2 + 2as\\)\nFinal velocity squared\nA car starts at 5 m/s, accelerates at 3 m/s², and moves 20 m. Find \\(v\\).  \\(v^2 = 5^2 + 2(3)(20) = 125\\), \\(v = 11.18\\) m/s\n\n\n\n\n\n\n\nDescribes how forces affect motion.\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(F = ma\\)\nForce (\\(F\\)) is mass (\\(m\\)) times acceleration (\\(a\\))\nA 10 kg object accelerates at 5 m/s². Find \\(F\\).  \\(F = 10 \\times 5 = 50\\) N\n\n\n\\(p = mv\\)\nMomentum (\\(p\\)) is mass times velocity\nA 2 kg ball moving at 4 m/s has momentum \\(2 \\times 4 = 8\\) kg·m/s\n\n\n\\(F \\Delta t = m \\Delta v\\)\nImpulse is force times time\nA 0.5 kg ball hits a wall and bounces back with the same speed of 10 m/s. Force applied for 0.2 s is \\(F = (0.5 \\times 20)/0.2 = 50\\) N\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(W = Fd \\cos \\theta\\)\nWork done by force \\(F\\) over displacement \\(d\\)\nA force of 50 N moves an object 10 m at an angle of 30°. \\(W = 50 \\times 10 \\times \\cos 30° = 433\\) J\n\n\n\\(KE = \\frac{1}{2} mv^2\\)\nKinetic energy\nA 3 kg object moving at 5 m/s has \\(KE = 37.5\\) J\n\n\n\\(PE = mgh\\)\nGravitational potential energy\nA 2 kg object at 5 m has \\(PE = 2 \\times 9.8 \\times 5 = 98\\) J\n\n\n\\(P = \\frac{W}{t}\\)\nPower is work per time\nA machine does 1000 J in 2 s. Power is \\(500\\) W",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Physics Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_physics_equations.html#electricity-and-magnetism",
+    "href": "Theory/0_physics_equations.html#electricity-and-magnetism",
+    "title": "Physics Equations",
+    "section": "2. Electricity and Magnetism",
+    "text": "2. Electricity and Magnetism\n\n2.1 Electric Circuits\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(V = IR\\)\nOhm’s Law (Voltage, Current, Resistance)\nA 10Ω resistor with 5A current has \\(V = 10 \\times 5 = 50V\\)\n\n\n\\(P = VI\\)\nPower in an electric circuit\nA 230V appliance draws 2A. Power is \\(460W\\)\n\n\n\\(Q = It\\)\nCharge is current times time\nA 2A current flows for 5s. Charge is \\(10C\\)\n\n\n\n\n\n\n2.2 Magnetism\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(F = BIL \\sin \\theta\\)\nForce on a wire in a magnetic field\nA 2m wire with 3A in a 0.5T field at 90° has \\(F = 3N\\)\n\n\n\\(\\Phi = B A \\cos \\theta\\)\nMagnetic flux\nA 0.1m² loop in a 2T field at 90° has \\(\\Phi = 0.2\\) Wb",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Physics Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_physics_equations.html#electromagnetic-waves-optics",
+    "href": "Theory/0_physics_equations.html#electromagnetic-waves-optics",
+    "title": "Physics Equations",
+    "section": "3. Electromagnetic Waves & Optics",
+    "text": "3. Electromagnetic Waves & Optics\n\n3.1 Wave Equations\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(v = f\\lambda\\)\nWave speed\nA 500Hz sound wave in air (\\(v = 340\\) m/s) has \\(\\lambda = 0.68\\) m\n\n\n\\(I = \\frac{P}{A}\\)\nIntensity of a wave\nA 100W light source emitting over 10m² has \\(I = 10\\) W/m²\n\n\n\n\n\n\n3.2 Optics (Reflection & Refraction)\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(n_1 \\sin \\theta_1 = n_2 \\sin \\theta_2\\)\nSnell’s Law\nLight moving from air (\\(n = 1.0\\)) to water (\\(n = 1.33\\)) at 30° bends at \\(\\theta_2 = 22°\\)",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Physics Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_physics_equations.html#thermodynamics",
+    "href": "Theory/0_physics_equations.html#thermodynamics",
+    "title": "Physics Equations",
+    "section": "4. Thermodynamics",
+    "text": "4. Thermodynamics\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(Q = mc\\Delta T\\)\nHeat energy change\nHeating 1 kg of water by 10°C takes \\(Q = 4184 \\times 1 \\times 10 = 41.84\\) kJ\n\n\n\\(PV = nRT\\)\nIdeal gas law\nA gas at 300K with \\(2\\) moles in 0.1m³ has \\(P = 4.92\\) kPa",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Physics Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_physics_equations.html#relativity",
+    "href": "Theory/0_physics_equations.html#relativity",
+    "title": "Physics Equations",
+    "section": "5. Relativity",
+    "text": "5. Relativity\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(E = mc^2\\)\nEnergy-mass equivalence\n1kg of mass converts to \\(9 \\times 10^{16}\\) J",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Physics Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_physics_equations.html#quantum-physics",
+    "href": "Theory/0_physics_equations.html#quantum-physics",
+    "title": "Physics Equations",
+    "section": "6. Quantum Physics",
+    "text": "6. Quantum Physics\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(E = hf\\)\nPhoton energy\nA 500 THz photon has energy \\(3.32 \\times 10^{-19}\\) J",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Physics Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_physics_equations.html#nuclear-physics",
+    "href": "Theory/0_physics_equations.html#nuclear-physics",
+    "title": "Physics Equations",
+    "section": "7. Nuclear Physics",
+    "text": "7. Nuclear Physics\n\n\n\n\n\n\n\n\nEquation\nDescription\nExample\n\n\n\n\n\\(N = N_0 e^{-\\lambda t}\\)\nRadioactive decay\nIf \\(\\lambda = 0.1\\) and \\(N_0 = 1000\\), after 10s: \\(N = 368\\)",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Physics Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/1_electromagnetic_equations.html",
+    "href": "Theory/1_electromagnetic_equations.html",
+    "title": "Electromagnetic Equations",
+    "section": "",
+    "text": "Maxwell’s equations describe the behavior of electric fields (\\(E\\)), magnetic fields (\\(B\\)), electric charge (\\(\\rho\\)), and current (\\(J\\)).\n\n\n\n\n\n\n\n\n\n\nEquation\nName\nDifferential Form\nIntegral Form\nMeaning\n\n\n\n\nGauss’s Law\nElectric Fields\n\\(\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0}\\)\n\\(\\oint_S \\mathbf{E} \\cdot d\\mathbf{A} = \\frac{Q_{\\text{enc}}}{\\varepsilon_0}\\)\nElectric field flux through a closed surface is proportional to enclosed charge.\n\n\nGauss’s Law for Magnetism\nMagnetic Fields\n\\(\\nabla \\cdot \\mathbf{B} = 0\\)\n\\(\\oint_S \\mathbf{B} \\cdot d\\mathbf{A} = 0\\)\nMagnetic monopoles don’t exist; net magnetic flux is always zero.\n\n\nFaraday’s Law\nElectromagnetic Induction\n\\(\\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}\\)\n\\(\\oint_C \\mathbf{E} \\cdot d\\mathbf{l} = -\\frac{d}{dt} \\int_S \\mathbf{B} \\cdot d\\mathbf{A}\\)\nA changing magnetic field creates an electric field (basis for electric generators).\n\n\nAmpère’s Law (with Maxwell’s correction)\nMagnetic Fields & Current\n\\(\\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t}\\)\n\\(\\oint_C \\mathbf{B} \\cdot d\\mathbf{l} = \\mu_0 I_{\\text{enc}} + \\mu_0 \\varepsilon_0 \\frac{d}{dt} \\int_S \\mathbf{E} \\cdot d\\mathbf{A}\\)\nElectric currents and changing electric fields create magnetic fields.",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electromagnetic Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/1_electromagnetic_equations.html#maxwells-equations-foundation-of-electromagnetism",
+    "href": "Theory/1_electromagnetic_equations.html#maxwells-equations-foundation-of-electromagnetism",
+    "title": "Electromagnetic Equations",
+    "section": "",
+    "text": "Maxwell’s equations describe the behavior of electric fields (\\(E\\)), magnetic fields (\\(B\\)), electric charge (\\(\\rho\\)), and current (\\(J\\)).\n\n\n\n\n\n\n\n\n\n\nEquation\nName\nDifferential Form\nIntegral Form\nMeaning\n\n\n\n\nGauss’s Law\nElectric Fields\n\\(\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0}\\)\n\\(\\oint_S \\mathbf{E} \\cdot d\\mathbf{A} = \\frac{Q_{\\text{enc}}}{\\varepsilon_0}\\)\nElectric field flux through a closed surface is proportional to enclosed charge.\n\n\nGauss’s Law for Magnetism\nMagnetic Fields\n\\(\\nabla \\cdot \\mathbf{B} = 0\\)\n\\(\\oint_S \\mathbf{B} \\cdot d\\mathbf{A} = 0\\)\nMagnetic monopoles don’t exist; net magnetic flux is always zero.\n\n\nFaraday’s Law\nElectromagnetic Induction\n\\(\\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}\\)\n\\(\\oint_C \\mathbf{E} \\cdot d\\mathbf{l} = -\\frac{d}{dt} \\int_S \\mathbf{B} \\cdot d\\mathbf{A}\\)\nA changing magnetic field creates an electric field (basis for electric generators).\n\n\nAmpère’s Law (with Maxwell’s correction)\nMagnetic Fields & Current\n\\(\\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t}\\)\n\\(\\oint_C \\mathbf{B} \\cdot d\\mathbf{l} = \\mu_0 I_{\\text{enc}} + \\mu_0 \\varepsilon_0 \\frac{d}{dt} \\int_S \\mathbf{E} \\cdot d\\mathbf{A}\\)\nElectric currents and changing electric fields create magnetic fields.",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electromagnetic Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/1_electromagnetic_equations.html#lorentz-force-equation-force-on-a-charged-particle",
+    "href": "Theory/1_electromagnetic_equations.html#lorentz-force-equation-force-on-a-charged-particle",
+    "title": "Electromagnetic Equations",
+    "section": "2. Lorentz Force Equation (Force on a Charged Particle)",
+    "text": "2. Lorentz Force Equation (Force on a Charged Particle)\nThe Lorentz Force describes how an electric and magnetic field acts on a moving charge.\n\\[\n\\mathbf{F} = q (\\mathbf{E} + \\mathbf{v} \\times \\mathbf{B})\n\\]\n\nExample\nA proton ($ q = 1.6 ^{-19} C $) moving at $ v = 10^6 $ m/s perpendicular to a magnetic field of $ B = 0.1 $ T experiences a force:\n\\[\nF = q v B = (1.6 \\times 10^{-19}) (10^6) (0.1) = 1.6 \\times 10^{-14} N\n\\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electromagnetic Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/1_electromagnetic_equations.html#wave-equation-for-electromagnetic-waves",
+    "href": "Theory/1_electromagnetic_equations.html#wave-equation-for-electromagnetic-waves",
+    "title": "Electromagnetic Equations",
+    "section": "3. Wave Equation for Electromagnetic Waves",
+    "text": "3. Wave Equation for Electromagnetic Waves\nFrom Maxwell’s equations, we derive the wave equation:\n\\[\n\\frac{\\partial^2 \\mathbf{E}}{\\partial t^2} = c^2 \\nabla^2 \\mathbf{E}, \\quad \\frac{\\partial^2 \\mathbf{B}}{\\partial t^2} = c^2 \\nabla^2 \\mathbf{B}\n\\]\nwhere $ c = $ is the speed of light.\n\nExample: Electromagnetic Waves in Vacuum\n\nIf $ = E_0 (kx - t) $, then $ $ is perpendicular to $ $.\nThe wave moves at speed $ c $.",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electromagnetic Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/1_electromagnetic_equations.html#energy-in-electromagnetic-fields",
+    "href": "Theory/1_electromagnetic_equations.html#energy-in-electromagnetic-fields",
+    "title": "Electromagnetic Equations",
+    "section": "4. Energy in Electromagnetic Fields",
+    "text": "4. Energy in Electromagnetic Fields\n\nPoynting Vector (Energy Flow)\nThe power per unit area carried by an EM wave:\n\\[\n\\mathbf{S} = \\frac{1}{\\mu_0} (\\mathbf{E} \\times \\mathbf{B})\n\\]\n\n\nElectromagnetic Energy Density\nTotal energy per unit volume in an EM field:\n\\[\nu = \\frac{1}{2} \\left( \\varepsilon_0 E^2 + \\frac{B^2}{\\mu_0} \\right)\n\\]\n\n\nExample: Energy Density of an EM Wave\nFor an EM wave with $ E = 1000 $ V/m and $ B = 3.33 ^{-6} $ T:\n\\[\nu = \\frac{1}{2} \\left( (8.85 \\times 10^{-12}) (1000)^2 + \\frac{(3.33 \\times 10^{-6})^2}{4\\pi \\times 10^{-7}} \\right) = 4.42 \\times 10^{-6} \\text{ J/m}^3\n\\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electromagnetic Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/1_electromagnetic_equations.html#electromagnetic-induction-faradays-lenzs-laws",
+    "href": "Theory/1_electromagnetic_equations.html#electromagnetic-induction-faradays-lenzs-laws",
+    "title": "Electromagnetic Equations",
+    "section": "5. Electromagnetic Induction (Faraday’s & Lenz’s Laws)",
+    "text": "5. Electromagnetic Induction (Faraday’s & Lenz’s Laws)\n\nFaraday’s Law of Induction\n\\[\n\\mathcal{E} = -\\frac{d\\Phi_B}{dt}\n\\] where $ _B = B A $ is the magnetic flux.\n\n\nLenz’s Law\nThe induced current flows in a direction that opposes the change in flux.\n\n\nExample\nA coil with 10 turns experiences a changing magnetic field from 0.5 T to 0.1 T in 2 s, and has an area $ A = 0.01 m^2 $.\n\\[\n\\mathcal{E} = -N \\frac{d\\Phi_B}{dt} = -10 \\times \\frac{(0.1 - 0.5) \\times 0.01}{2} = 0.02 V\n\\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electromagnetic Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/1_electromagnetic_equations.html#electromagnetic-radiation-pressure",
+    "href": "Theory/1_electromagnetic_equations.html#electromagnetic-radiation-pressure",
+    "title": "Electromagnetic Equations",
+    "section": "6. Electromagnetic Radiation Pressure",
+    "text": "6. Electromagnetic Radiation Pressure\nThe radiation pressure exerted by an electromagnetic wave is:\n\\[\nP = \\frac{S}{c} = \\frac{E \\times B}{\\mu_0 c}\n\\]\nFor solar radiation with $ S = 1361 W/m^2 $:\n\\[\nP = \\frac{1361}{3 \\times 10^8} = 4.54 \\times 10^{-6} \\text{ N/m}^2\n\\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electromagnetic Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/1_electromagnetic_equations.html#summary-table-of-electromagnetic-equations",
+    "href": "Theory/1_electromagnetic_equations.html#summary-table-of-electromagnetic-equations",
+    "title": "Electromagnetic Equations",
+    "section": "7. Summary Table of Electromagnetic Equations",
+    "text": "7. Summary Table of Electromagnetic Equations\n\n\n\n\n\n\n\n\nEquation Name\nFormula\nDescription\n\n\n\n\nGauss’s Law\n\\(\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0}\\)\nElectric flux is proportional to charge.\n\n\nGauss’s Law for Magnetism\n\\(\\nabla \\cdot \\mathbf{B} = 0\\)\nNo magnetic monopoles exist.\n\n\nFaraday’s Law\n\\(\\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}\\)\nA changing magnetic field induces an electric field.\n\n\nAmpère’s Law\n\\(\\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t}\\)\nElectric currents and changing electric fields generate magnetic fields.\n\n\nLorentz Force\n\\(\\mathbf{F} = q (\\mathbf{E} + \\mathbf{v} \\times \\mathbf{B})\\)\nForce on a charged particle.\n\n\nWave Equation\n\\(\\frac{\\partial^2 \\mathbf{E}}{\\partial t^2} = c^2 \\nabla^2 \\mathbf{E}\\)\nDescribes EM wave propagation.\n\n\nPoynting Vector\n\\(\\mathbf{S} = \\frac{1}{\\mu_0} (\\mathbf{E} \\times \\mathbf{B})\\)\nEnergy flow of an EM wave.\n\n\nInduced EMF\n\\(\\mathcal{E} = -\\frac{d\\Phi_B}{dt}\\)\nVoltage induced by changing magnetic flux.",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Electromagnetic Equations"
+    ]
+  },
+  {
+    "objectID": "Other/graph_machine_learning.html",
+    "href": "Other/graph_machine_learning.html",
+    "title": "Graph Machine Learning",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Other",
+      "Graph Machine Learning"
+    ]
+  },
+  {
+    "objectID": "Other/graph_machine_learning.html#overview",
+    "href": "Other/graph_machine_learning.html#overview",
+    "title": "Graph Machine Learning",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Other",
+      "Graph Machine Learning"
+    ]
+  },
+  {
+    "objectID": "Theory/1_discrete_maths.html",
+    "href": "Theory/1_discrete_maths.html",
+    "title": "Discrete Maths",
+    "section": "",
+    "text": "Discrete Mathematics involves the study of: - Finite or countable structures (e.g., integers, graphs, logical statements) - Non-continuous objects (unlike calculus or real analysis) - Applications in computer science, cryptography, and algorithm design.\n\n\n\nLogic and Propositional Calculus\n\nSet Theory\n\nCombinatorics\n\nGraph Theory\n\nNumber Theory\n\nBoolean Algebra\n\nAlgorithms and Complexity",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Discrete Maths"
+    ]
+  },
+  {
+    "objectID": "Theory/1_discrete_maths.html#introduction-to-discrete-mathematics",
+    "href": "Theory/1_discrete_maths.html#introduction-to-discrete-mathematics",
+    "title": "Discrete Maths",
+    "section": "",
+    "text": "Discrete Mathematics involves the study of: - Finite or countable structures (e.g., integers, graphs, logical statements) - Non-continuous objects (unlike calculus or real analysis) - Applications in computer science, cryptography, and algorithm design.\n\n\n\nLogic and Propositional Calculus\n\nSet Theory\n\nCombinatorics\n\nGraph Theory\n\nNumber Theory\n\nBoolean Algebra\n\nAlgorithms and Complexity",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Discrete Maths"
+    ]
+  },
+  {
+    "objectID": "Theory/1_discrete_maths.html#logic-and-propositional-calculus",
+    "href": "Theory/1_discrete_maths.html#logic-and-propositional-calculus",
+    "title": "Discrete Maths",
+    "section": "2. Logic and Propositional Calculus",
+    "text": "2. Logic and Propositional Calculus\nLogic is the study of reasoning and truth. In discrete math, we deal with propositional logic and predicate logic.\n\n2.1. Propositions and Truth Values\n\nProposition: A declarative statement that is either true (T) or false (F).\n\nExample:\n\n( P: ) → True\n\n( Q: ) → False\n\n\n\n\n\n2.2. Logical Connectives\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n¬\nNegation\nNot\n( ¬P )\n\n\n∧\nConjunction\nAnd\n( P ∧ Q )\n\n\n∨\nDisjunction\nOr\n( P ∨ Q )\n\n\n⇒\nImplication\nIf… then…\n( P ⇒ Q )\n\n\n⇔\nBiconditional\nIf and only if\n( P ⇔ Q )\n\n\n\n\n\n2.3. Truth Tables\nTruth tables show the truth value of logical expressions.\nExample: Truth Table for Implication (P ⇒ Q)\n\n\n\n( P )\n( Q )\n( P ⇒ Q )\n\n\n\n\nT\nT\nT\n\n\nT\nF\nF\n\n\nF\nT\nT\n\n\nF\nF\nT\n\n\n\n\n\n2.4. Logical Equivalences\nLogical statements can be simplified using equivalences: - De Morgan’s Laws:\n- ( ¬(P ∧ Q) ≡ ¬P ∨ ¬Q )\n- ( ¬(P ∨ Q) ≡ ¬P ∧ ¬Q )\n\nDouble Negation:\n\n( ¬(¬P) ≡ P )\n\nImplication Law:\n\n( P ⇒ Q ≡ ¬P ∨ Q )",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Discrete Maths"
+    ]
+  },
+  {
+    "objectID": "Theory/1_discrete_maths.html#set-theory",
+    "href": "Theory/1_discrete_maths.html#set-theory",
+    "title": "Discrete Maths",
+    "section": "3. Set Theory",
+    "text": "3. Set Theory\nSet Theory is the study of collections of distinct objects.\n\n3.1. Basic Notation and Operations\n\nSet Notation: ( A = {1, 2, 3} )\nElement of a set: ( x ∈ A )\nSubset: ( A ⊆ B )\nEmpty Set: ( ∅ )\n\n\n\n3.2. Set Operations\n\n\n\n\n\n\n\n\n\nOperation\nSymbol\nMeaning\nExample\n\n\n\n\nUnion\n( ∪ )\nElements in either set\n( A ∪ B )\n\n\nIntersection\n( ∩ )\nElements in both sets\n( A ∩ B )\n\n\nDifference\n( A  B )\nElements in A but not in B\n( A = {1, 2}, B = {2, 3} ), ( A  B = {1} )\n\n\nComplement\n( A^c )\nElements not in set A\n( A^c )\n\n\nCartesian Product\n( A × B )\nOrdered pairs\n( A = {1, 2}, B = {x, y} ), ( A × B = {(1, x), (1, y), (2, x), (2, y)} )",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Discrete Maths"
+    ]
+  },
+  {
+    "objectID": "Theory/1_discrete_maths.html#combinatorics",
+    "href": "Theory/1_discrete_maths.html#combinatorics",
+    "title": "Discrete Maths",
+    "section": "4. Combinatorics",
+    "text": "4. Combinatorics\nCombinatorics is the study of counting, arrangements, and combinations.\n\n4.1. Basic Counting Principles\n\nAddition Principle: If event A can occur in ( m ) ways and event B can occur in ( n ) ways, then either A or B can occur in ( m + n ) ways.\nMultiplication Principle: If event A can occur in ( m ) ways and for each way of A, event B can occur in ( n ) ways, then the events can occur in ( m × n ) ways.\n\n\n\n4.2. Permutations and Combinations\n\n\n\n\n\n\n\n\nType\nFormula\nExample\n\n\n\n\nPermutation\n( P(n, r) = )\nArrangements of 3 out of 5 letters\n\n\nCombination\n( C(n, r) = )\nChoosing 2 out of 4 items\n\n\n\n\n\n4.3. Binomial Theorem\n\nFormula:\n( (x + y)^n = ∑_{k=0}^{n} C(n, k) x^{n-k} y^k )\nExample:\n( (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 )",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Discrete Maths"
+    ]
+  },
+  {
+    "objectID": "Theory/1_discrete_maths.html#boolean-algebra",
+    "href": "Theory/1_discrete_maths.html#boolean-algebra",
+    "title": "Discrete Maths",
+    "section": "5. Boolean Algebra",
+    "text": "5. Boolean Algebra\nBoolean Algebra is a branch of algebra dealing with binary values (0 and 1).\n\n5.1. Basic Boolean Operations\n\n\n\n\n\n\n\n\n\nOperation\nSymbol\nMeaning\nExample\n\n\n\n\nNOT\n( ¬A )\nInversion\n( ¬1 = 0, ¬0 = 1 )\n\n\nAND\n( A ∧ B )\nLogical AND\n( 1 ∧ 1 = 1, 1 ∧ 0 = 0 )\n\n\nOR\n( A ∨ B )\nLogical OR\n( 1 ∨ 0 = 1, 0 ∨ 0 = 0 )\n\n\nXOR\n( A ⊕ B )\nExclusive OR\n( 1 ⊕ 1 = 0, 1 ⊕ 0 = 1 )\n\n\n\n\n\n5.2. Boolean Laws and Identities\n\nIdentity Laws:\n\n( A ∧ 1 = A )\n\n( A ∨ 0 = A )\n\nDomination Laws:\n\n( A ∧ 0 = 0 )\n\n( A ∨ 1 = 1 )\n\nIdempotent Laws:\n\n( A ∧ A = A )\n\n( A ∨ A = A )\n\nComplement Laws:\n\n( A ∧ ¬A = 0 )\n\n( A ∨ ¬A = 1 )\n\nDe Morgan’s Laws:\n\n( ¬(A ∧ B) = ¬A ∨ ¬B )\n\n( ¬(A ∨ B) = ¬A ∧ ¬B )\n\n\n\n\n5.3. Boolean Functions and Truth Tables\nExample: ( F = A ∧ (B ∨ ¬C) )\n\n\n\n\n\n\n\n\n\n\n\n( A )\n( B )\n( C )\n( ¬C )\n( B ∨ ¬C )\n( A ∧ (B ∨ ¬C) )\n\n\n\n\n0\n0\n0\n1\n1\n0\n\n\n0\n0\n1\n0\n0\n0\n\n\n1\n1\n0\n1\n1\n1\n\n\n1\n0\n1\n0\n0\n0",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Discrete Maths"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html",
+    "href": "Theory/2_deep_learning_equations.html",
+    "title": "Deep Learning Equations",
+    "section": "",
+    "text": "At its core, a neural network is a function \\(f(\\mathbf{x}; \\mathbf{\\theta})\\)\n- \\(\\mathbf{x}\\) = input vector\n- \\(\\mathbf{\\theta}\\) = model parameters (weights and biases)\nIt maps inputs to outputs by applying a series of linear transformations and non-linear activations.",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#the-basics-neural-network-as-a-function",
+    "href": "Theory/2_deep_learning_equations.html#the-basics-neural-network-as-a-function",
+    "title": "Deep Learning Equations",
+    "section": "",
+    "text": "At its core, a neural network is a function \\(f(\\mathbf{x}; \\mathbf{\\theta})\\)\n- \\(\\mathbf{x}\\) = input vector\n- \\(\\mathbf{\\theta}\\) = model parameters (weights and biases)\nIt maps inputs to outputs by applying a series of linear transformations and non-linear activations.",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#linear-transformation-affine-function",
+    "href": "Theory/2_deep_learning_equations.html#linear-transformation-affine-function",
+    "title": "Deep Learning Equations",
+    "section": "2. Linear Transformation (Affine Function)",
+    "text": "2. Linear Transformation (Affine Function)\nEach layer in a neural network computes: \\[\n\\mathbf{z} = \\mathbf{W} \\mathbf{x} + \\mathbf{b}\n\\]\n- \\(\\mathbf{W}\\) = weight matrix\n- \\(\\mathbf{b}\\) = bias vector\n- \\(\\mathbf{z}\\) = pre-activation output\n\nExample:\nFor a single neuron:\n\\[\nz = w_1 x_1 + w_2 x_2 + \\dots + w_n x_n + b\n\\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#activation-functions",
+    "href": "Theory/2_deep_learning_equations.html#activation-functions",
+    "title": "Deep Learning Equations",
+    "section": "3. Activation Functions",
+    "text": "3. Activation Functions\nActivation functions introduce non-linearity.\n\n\n\n\n\n\n\n\nFunction\nEquation\nPurpose\n\n\n\n\nSigmoid\n\\(\\sigma(z) = \\dfrac{1}{1 + e^{-z}}\\)\nOutputs between \\(0\\) and \\(1\\)\n\n\nTanh\n\\(\\tanh(z) = \\dfrac{e^{z} - e^{-z}}{e^{z} + e^{-z}}\\)\nOutputs between \\(-1\\) and \\(1\\)\n\n\nReLU\n\\(\\text{ReLU}(z) = \\max(0, z)\\)\nIntroduces sparsity\n\n\nLeaky ReLU\n\\(\\text{LeakyReLU}(z) = \\max(\\alpha z, z)\\)\nAvoids dying neurons\n\n\nSoftmax\n\\(\\text{Softmax}(z_i) = \\dfrac{e^{z_i}}{\\sum_{j} e^{z_j}}\\)\nOutputs probabilities",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#forward-propagation-the-core-computation",
+    "href": "Theory/2_deep_learning_equations.html#forward-propagation-the-core-computation",
+    "title": "Deep Learning Equations",
+    "section": "4. Forward Propagation (The Core Computation)",
+    "text": "4. Forward Propagation (The Core Computation)\nFor a deep neural network with \\(L\\) layers: \\[\n\\mathbf{a}^{[0]} = \\mathbf{x} \\\\\n\\mathbf{z}^{[l]} = \\mathbf{W}^{[l]} \\mathbf{a}^{[l-1]} + \\mathbf{b}^{[l]} \\\\\n\\mathbf{a}^{[l]} = g^{[l]}(\\mathbf{z}^{[l]}) \\\\\n\\text{For } l = 1, 2, \\dots, L\n\\]\n- \\(\\mathbf{a}^{[l]}\\) = activation of layer \\(l\\)\n- \\(g^{[l]}\\) = activation function for layer \\(l\\)\n\nFinal output:\n\\[\n\\hat{\\mathbf{y}} = \\mathbf{a}^{[L]}\n\\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#loss-functions-how-we-measure-error",
+    "href": "Theory/2_deep_learning_equations.html#loss-functions-how-we-measure-error",
+    "title": "Deep Learning Equations",
+    "section": "5. Loss Functions (How We Measure Error)",
+    "text": "5. Loss Functions (How We Measure Error)\n\n\n\n\n\n\n\n\nTask\nLoss Function\nEquation\n\n\n\n\nRegression\nMean Squared Error (MSE)\n\\(\\mathcal{L} = \\dfrac{1}{m} \\sum_{i=1}^{m} (y^{(i)} - \\hat{y}^{(i)})^2\\)\n\n\nBinary Classification\nBinary Cross-Entropy (Log Loss)\n\\(\\mathcal{L} = - \\dfrac{1}{m} \\sum_{i=1}^{m} \\left[ y^{(i)} \\log \\hat{y}^{(i)} + (1 - y^{(i)}) \\log(1 - \\hat{y}^{(i)}) \\right]\\)\n\n\nMulti-class Classification\nCategorical Cross-Entropy\n\\(\\mathcal{L} = - \\sum_{i=1}^{C} y_i \\log(\\hat{y}_i)\\)",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#backpropagation-how-we-learn",
+    "href": "Theory/2_deep_learning_equations.html#backpropagation-how-we-learn",
+    "title": "Deep Learning Equations",
+    "section": "6. Backpropagation (How We Learn)",
+    "text": "6. Backpropagation (How We Learn)\nIt’s gradient descent applied via the chain rule.\n\n6.1 Compute Gradients:\n\\[\n\\dfrac{\\partial \\mathcal{L}}{\\partial \\mathbf{W}^{[l]}} = \\delta^{[l]} (\\mathbf{a}^{[l-1]})^T \\\\\n\\dfrac{\\partial \\mathcal{L}}{\\partial \\mathbf{b}^{[l]}} = \\delta^{[l]}\n\\]\n\n\n6.2 Backpropagate Errors:\n\\[\n\\delta^{[l]} = (\\mathbf{W}^{[l+1]})^T \\delta^{[l+1]} \\odot g'(\\mathbf{z}^{[l]})\n\\]\n- \\(\\delta^{[l]}\\) = error at layer \\(l\\)\n- \\(\\odot\\) = element-wise multiplication",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#gradient-descent-parameter-updates",
+    "href": "Theory/2_deep_learning_equations.html#gradient-descent-parameter-updates",
+    "title": "Deep Learning Equations",
+    "section": "7. Gradient Descent (Parameter Updates)",
+    "text": "7. Gradient Descent (Parameter Updates)\nFor each parameter \\(\\theta\\) (weights or biases):\n\\[\n\\theta := \\theta - \\alpha \\dfrac{\\partial \\mathcal{L}}{\\partial \\theta}\n\\]\n- \\(\\alpha\\) = learning rate",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#optimizers-variants-of-gradient-descent",
+    "href": "Theory/2_deep_learning_equations.html#optimizers-variants-of-gradient-descent",
+    "title": "Deep Learning Equations",
+    "section": "8. Optimizers (Variants of Gradient Descent)",
+    "text": "8. Optimizers (Variants of Gradient Descent)\n\n\n\n\n\n\n\nOptimizer\nUpdate Rule\n\n\n\n\nSGD\n\\(\\theta := \\theta - \\alpha \\dfrac{\\partial \\mathcal{L}}{\\partial \\theta}\\)\n\n\nMomentum\n\\(v = \\beta v - \\alpha \\dfrac{\\partial \\mathcal{L}}{\\partial \\theta}\\)\\(\\theta := \\theta + v\\)\n\n\nAdam\nCombines Momentum + RMSprop \\[ m_t = \\beta_1 m_{t-1} + (1 - \\beta_1) g_t \\] \\[ v_t = \\beta_2 v_{t-1} + (1 - \\beta_2) g_t^2 \\] \\[ \\theta := \\theta - \\alpha \\dfrac{m_t}{\\sqrt{v_t} + \\epsilon} \\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#regularization-prevent-overfitting",
+    "href": "Theory/2_deep_learning_equations.html#regularization-prevent-overfitting",
+    "title": "Deep Learning Equations",
+    "section": "9. Regularization (Prevent Overfitting)",
+    "text": "9. Regularization (Prevent Overfitting)\n\nL2 Regularization (Weight Decay):\n\\[\n\\mathcal{L}_{\\text{reg}} = \\mathcal{L} + \\dfrac{\\lambda}{2m} \\sum_{l} \\|\\mathbf{W}^{[l]}\\|^2\n\\]\nDropout:\n\\[\n\\mathbf{a}^{[l]} = \\mathbf{a}^{[l]} \\odot \\mathbf{d}^{[l]}\n\\]\n\n\\(\\mathbf{d}^{[l]}\\) = dropout mask",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#convolution-cnns",
+    "href": "Theory/2_deep_learning_equations.html#convolution-cnns",
+    "title": "Deep Learning Equations",
+    "section": "10. Convolution (CNNs)",
+    "text": "10. Convolution (CNNs)\n\\[\n(\\mathbf{I} * \\mathbf{K})(i,j) = \\sum_m \\sum_n \\mathbf{I}(i + m, j + n) \\cdot \\mathbf{K}(m, n)\n\\]\n- \\(\\mathbf{I}\\) = input image\n- \\(\\mathbf{K}\\) = kernel (filter)",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#recurrent-neural-networks-rnns",
+    "href": "Theory/2_deep_learning_equations.html#recurrent-neural-networks-rnns",
+    "title": "Deep Learning Equations",
+    "section": "11. Recurrent Neural Networks (RNNs)",
+    "text": "11. Recurrent Neural Networks (RNNs)\n\nHidden State Update:\n\\[\n\\mathbf{h}_t = g(\\mathbf{W}_{hh} \\mathbf{h}_{t-1} + \\mathbf{W}_{xh} \\mathbf{x}_t + \\mathbf{b}_h)\n\\]\n### Output:\n\\[\n\\mathbf{y}_t = \\mathbf{W}_{hy} \\mathbf{h}_t + \\mathbf{b}_y\n\\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#attention-mechanism-transformers",
+    "href": "Theory/2_deep_learning_equations.html#attention-mechanism-transformers",
+    "title": "Deep Learning Equations",
+    "section": "12. Attention Mechanism (Transformers)",
+    "text": "12. Attention Mechanism (Transformers)\n\nSelf-Attention Equation:\n\\[\n\\text{Attention}(Q, K, V) = \\text{softmax} \\left( \\dfrac{QK^T}{\\sqrt{d_k}} \\right) V\n\\]\n- \\(Q\\) = query\n- \\(K\\) = key\n- \\(V\\) = value\n- \\(d_k\\) = dimension of \\(K\\)",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#transformer-feedforward-layer",
+    "href": "Theory/2_deep_learning_equations.html#transformer-feedforward-layer",
+    "title": "Deep Learning Equations",
+    "section": "13. Transformer Feedforward Layer",
+    "text": "13. Transformer Feedforward Layer\n\\[\n\\text{FFN}(x) = \\max(0, xW_1 + b_1)W_2 + b_2\n\\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#training-objective-put-it-all-together",
+    "href": "Theory/2_deep_learning_equations.html#training-objective-put-it-all-together",
+    "title": "Deep Learning Equations",
+    "section": "14. Training Objective (Put it all together!)",
+    "text": "14. Training Objective (Put it all together!)\n\nFind \\(\\mathbf{\\theta}\\) that minimizes the loss:\n\\[\n\\mathbf{\\theta}^* = \\underset{\\mathbf{\\theta}}{\\arg\\min} \\; \\mathcal{L}(f(\\mathbf{x}; \\mathbf{\\theta}), \\mathbf{y})\n\\]",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/2_deep_learning_equations.html#forward-looking-concepts",
+    "href": "Theory/2_deep_learning_equations.html#forward-looking-concepts",
+    "title": "Deep Learning Equations",
+    "section": "🌍 Forward-Looking Concepts",
+    "text": "🌍 Forward-Looking Concepts\n\n\n\n\n\n\n\n\nConcept\nEquation\nPurpose\n\n\n\n\nContrastive Loss (CLIP)\n\\(\\mathcal{L} = -\\log \\dfrac{\\exp(\\text{sim}(\\mathbf{x}, \\mathbf{y})/\\tau)}{\\sum_{i=1}^{N} \\exp(\\text{sim}(\\mathbf{x}, \\mathbf{y}_i)/\\tau)}\\)\nAlign different modalities (text, image)\n\n\nDiffusion Models\n\\(\\mathbf{x}_{t-1} = \\dfrac{1}{\\sqrt{\\alpha_t}} \\left( \\mathbf{x}_t - \\dfrac{\\beta_t}{\\sqrt{1 - \\bar{\\alpha}_t}} \\epsilon_\\theta(\\mathbf{x}_t, t) \\right) + \\sigma_t \\mathbf{z}\\)\nGenerate high-quality images\n\n\nReinforcement Learning\n\\(Q(s,a) = r + \\gamma \\max_{a'} Q(s', a')\\)\nOptimize sequential decision-making",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Deep Learning Equations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_mathematics_foundations.html",
+    "href": "Theory/0_mathematics_foundations.html",
+    "title": "Mathematical Symbols and Foundations",
+    "section": "",
+    "text": "Symbol\nName\nMeaning\nExample\n\n\n\n\n\\(+\\)\nPlus\nAddition\n\\(5 + 3 = 8\\)\n\n\n\\(-\\)\nMinus\nSubtraction\n\\(10 - 4 = 6\\)\n\n\n\\(\\times\\) or \\(*\\)\nMultiply\nMultiplication\n\\(4 \\times 3 = 12\\)\n\n\n\\(\\div\\) or \\(/\\)\nDivide\nDivision\n\\(12 \\div 4 = 3\\)\n\n\n\\(=\\)\nEquals\nEquality\n\\(7 + 2 = 9\\)\n\n\n\\(\\neq\\)\nNot equal\nInequality\n\\(5 \\neq 3\\)\n\n\n\\(&lt;\\)\nLess than\nComparison\n\\(2 &lt; 5\\)\n\n\n\\(&gt;\\)\nGreater than\nComparison\n\\(8 &gt; 6\\)\n\n\n\\(\\leq\\)\nLess than or equal\nComparison\n\\(4 \\leq 4\\)\n\n\n\\(\\geq\\)\nGreater than or equal\nComparison\n\\(10 \\geq 7\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(x, y, z\\)\nVariables\nUnknown values\n\\(x + 2 = 5\\)\n\n\n\\(a^n\\)\nPower\nExponentiation\n\\(2^3 = 8\\)\n\n\n\\(\\sqrt{x}\\)\nSquare Root\nRoot of a number\n\\(\\sqrt{9} = 3\\)\n\n\n\\(\\sqrt[3]{x}\\)\nCube Root\nCube root of a number\n\\(\\sqrt[3]{27} = 3\\)\n\n\n\\(|x|\\)\nAbsolute Value\nDistance from zero\n\\(|-5| = 5\\)\n\n\n\\(\\sum\\)\nSummation\nSum of a sequence\n\\(\\sum_{i=1}^{n} i = 1 + 2 + ... + n\\)\n\n\n\\(\\prod\\)\nProduct\nProduct of a sequence\n\\(\\prod_{i=1}^{n} i = 1 \\cdot 2 \\cdot ... \\cdot n\\)\n\n\n\\(\\approx\\)\nApproximately equal\nApproximate value\n\\(\\pi \\approx 3.14\\)\n\n\n\\(\\equiv\\)\nIdentical to\nCongruent or equivalent\n\\(a \\equiv b \\mod n\\)\n\n\n\\(\\Rightarrow\\)\nImplies\nLogical implication\n\\(x &gt; 2 \\Rightarrow x^2 &gt; 4\\)\n\n\n\\(\\Leftrightarrow\\)\nIf and only if\nLogical equivalence\n\\(x^2 = 4 \\Leftrightarrow x = \\pm2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(\\{\\}\\)\nSet\nCollection of elements\n\\(A = \\{1, 2, 3\\}\\)\n\n\n\\(\\in\\)\nElement of\nBelongs to a set\n\\(2 \\in A\\)\n\n\n\\(\\notin\\)\nNot an element of\nNot in a set\n\\(4 \\notin A\\)\n\n\n\\(\\emptyset\\)\nEmpty Set\nNo elements\n\\(B = \\emptyset\\)\n\n\n\\(\\cup\\)\nUnion\nElements in either set\n\\(A \\cup B\\)\n\n\n\\(\\cap\\)\nIntersection\nCommon elements in sets\n\\(A \\cap B\\)\n\n\n\\(\\subseteq\\)\nSubset\nAll elements in another set\n\\(A \\subseteq B\\)\n\n\n\\(\\subset\\)\nProper Subset\nStrictly contained\n\\(A \\subset B\\)\n\n\n\\(\\supseteq\\)\nSuperset\nContains all elements\n\\(B \\supseteq A\\)\n\n\n\\(\\setminus\\)\nSet Difference\nElements in one but not both\n\\(A \\setminus B\\)\n\n\n\\(\\times\\)\nCartesian Product\nOrdered pairs of elements\n\\(A \\times B\\)\n\n\n\\(|A|\\)\nCardinality\nNumber of elements\n\\(|A| = 3\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(\\neg\\)\nNot\nNegation\n\\(\\neg P\\)\n\n\n\\(\\wedge\\)\nAnd\nConjunction\n\\(P \\wedge Q\\)\n\n\n\\(\\vee\\)\nOr\nDisjunction\n\\(P \\vee Q\\)\n\n\n\\(\\Rightarrow\\)\nImplies\nConditional statement\n\\(P \\Rightarrow Q\\)\n\n\n\\(\\Leftrightarrow\\)\nIf and only if\nBiconditional\n\\(P \\Leftrightarrow Q\\)\n\n\n\\(\\forall\\)\nFor all\nUniversal quantifier\n\\(\\forall x, x &gt; 0\\)\n\n\n\\(\\exists\\)\nThere exists\nExistential quantifier\n\\(\\exists x, x^2 = 4\\)\n\n\n\\(\\exists!\\)\nThere exists exactly one\nUnique existence\n\\(\\exists! x, x^2 = 1\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(\\frac{d}{dx}\\)\nDerivative\nRate of change\n\\(\\frac{d}{dx} x^2 = 2x\\)\n\n\n\\(\\int\\)\nIntegral\nArea under curve\n\\(\\int x dx = \\frac{x^2}{2} + C\\)\n\n\n\\(\\nabla\\)\nNabla (Gradient)\nVector derivative\n\\(\\nabla f(x, y)\\)\n\n\n\\(\\partial\\)\nPartial Derivative\nDerivative of multivariable\n\\(\\frac{\\partial f}{\\partial x}\\)\n\n\n\\(\\infty\\)\nInfinity\nUnbounded value\n\\(\\lim_{x\\to\\infty} \\frac{1}{x} = 0\\)\n\n\n\\(\\lim\\)\nLimit\nApproaching a value\n\\(\\lim_{x\\to0} \\frac{\\sin(x)}{x} = 1\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(P(A)\\)\nProbability\nLikelihood of event A\n\\(P(A) = 0.5\\)\n\n\n\\(E(X)\\)\nExpected Value\nMean of random variable X\n\\(E(X) = \\mu\\)\n\n\n\\(\\text{Var}(X)\\)\nVariance\nSpread of random variable X\n\\(\\text{Var}(X) = \\sigma^2\\)\n\n\n\\(\\sigma\\)\nStandard Deviation\nSquare root of variance\n\\(\\sigma = \\sqrt{\\text{Var}(X)}\\)\n\n\n\\(\\sum\\)\nSummation\nSum of values\n\\(\\sum X_i\\)\n\n\n\\(n!\\)\nFactorial\nProduct of first n integers\n\\(4! = 4\\times3\\times2\\times1 = 24\\)\n\n\n\\(\\binom{n}{k}\\)\nCombination\nWays to choose k from n\n\\(\\binom{5}{2} = 10\\)\n\n\n\\(P(n, k)\\)\nPermutation\nOrdered arrangements\n\\(P(5, 2) = 20\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(i\\)\nImaginary Unit\n\\(\\sqrt{-1}\\)\n\\(i^2 = -1\\)\n\n\n\\(|v|\\)\nVector Magnitude\nLength of vector\n\\(|v| = \\sqrt{x^2 + y^2}\\)\n\n\n\\(\\cdot\\)\nDot Product\nScalar product of vectors\n\\(u \\cdot v = u_x v_x + u_y v_y\\)\n\n\n\\(\\times\\)\nCross Product\nVector product\n\\(u \\times v\\)\n\n\n\\(A^T\\)\nTranspose\nFlip matrix dimensions\n\\(A^T\\)",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Mathematical Symbols and Foundations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_mathematics_foundations.html#symbols",
+    "href": "Theory/0_mathematics_foundations.html#symbols",
+    "title": "Mathematical Symbols and Foundations",
+    "section": "",
+    "text": "Symbol\nName\nMeaning\nExample\n\n\n\n\n\\(+\\)\nPlus\nAddition\n\\(5 + 3 = 8\\)\n\n\n\\(-\\)\nMinus\nSubtraction\n\\(10 - 4 = 6\\)\n\n\n\\(\\times\\) or \\(*\\)\nMultiply\nMultiplication\n\\(4 \\times 3 = 12\\)\n\n\n\\(\\div\\) or \\(/\\)\nDivide\nDivision\n\\(12 \\div 4 = 3\\)\n\n\n\\(=\\)\nEquals\nEquality\n\\(7 + 2 = 9\\)\n\n\n\\(\\neq\\)\nNot equal\nInequality\n\\(5 \\neq 3\\)\n\n\n\\(&lt;\\)\nLess than\nComparison\n\\(2 &lt; 5\\)\n\n\n\\(&gt;\\)\nGreater than\nComparison\n\\(8 &gt; 6\\)\n\n\n\\(\\leq\\)\nLess than or equal\nComparison\n\\(4 \\leq 4\\)\n\n\n\\(\\geq\\)\nGreater than or equal\nComparison\n\\(10 \\geq 7\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(x, y, z\\)\nVariables\nUnknown values\n\\(x + 2 = 5\\)\n\n\n\\(a^n\\)\nPower\nExponentiation\n\\(2^3 = 8\\)\n\n\n\\(\\sqrt{x}\\)\nSquare Root\nRoot of a number\n\\(\\sqrt{9} = 3\\)\n\n\n\\(\\sqrt[3]{x}\\)\nCube Root\nCube root of a number\n\\(\\sqrt[3]{27} = 3\\)\n\n\n\\(|x|\\)\nAbsolute Value\nDistance from zero\n\\(|-5| = 5\\)\n\n\n\\(\\sum\\)\nSummation\nSum of a sequence\n\\(\\sum_{i=1}^{n} i = 1 + 2 + ... + n\\)\n\n\n\\(\\prod\\)\nProduct\nProduct of a sequence\n\\(\\prod_{i=1}^{n} i = 1 \\cdot 2 \\cdot ... \\cdot n\\)\n\n\n\\(\\approx\\)\nApproximately equal\nApproximate value\n\\(\\pi \\approx 3.14\\)\n\n\n\\(\\equiv\\)\nIdentical to\nCongruent or equivalent\n\\(a \\equiv b \\mod n\\)\n\n\n\\(\\Rightarrow\\)\nImplies\nLogical implication\n\\(x &gt; 2 \\Rightarrow x^2 &gt; 4\\)\n\n\n\\(\\Leftrightarrow\\)\nIf and only if\nLogical equivalence\n\\(x^2 = 4 \\Leftrightarrow x = \\pm2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(\\{\\}\\)\nSet\nCollection of elements\n\\(A = \\{1, 2, 3\\}\\)\n\n\n\\(\\in\\)\nElement of\nBelongs to a set\n\\(2 \\in A\\)\n\n\n\\(\\notin\\)\nNot an element of\nNot in a set\n\\(4 \\notin A\\)\n\n\n\\(\\emptyset\\)\nEmpty Set\nNo elements\n\\(B = \\emptyset\\)\n\n\n\\(\\cup\\)\nUnion\nElements in either set\n\\(A \\cup B\\)\n\n\n\\(\\cap\\)\nIntersection\nCommon elements in sets\n\\(A \\cap B\\)\n\n\n\\(\\subseteq\\)\nSubset\nAll elements in another set\n\\(A \\subseteq B\\)\n\n\n\\(\\subset\\)\nProper Subset\nStrictly contained\n\\(A \\subset B\\)\n\n\n\\(\\supseteq\\)\nSuperset\nContains all elements\n\\(B \\supseteq A\\)\n\n\n\\(\\setminus\\)\nSet Difference\nElements in one but not both\n\\(A \\setminus B\\)\n\n\n\\(\\times\\)\nCartesian Product\nOrdered pairs of elements\n\\(A \\times B\\)\n\n\n\\(|A|\\)\nCardinality\nNumber of elements\n\\(|A| = 3\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(\\neg\\)\nNot\nNegation\n\\(\\neg P\\)\n\n\n\\(\\wedge\\)\nAnd\nConjunction\n\\(P \\wedge Q\\)\n\n\n\\(\\vee\\)\nOr\nDisjunction\n\\(P \\vee Q\\)\n\n\n\\(\\Rightarrow\\)\nImplies\nConditional statement\n\\(P \\Rightarrow Q\\)\n\n\n\\(\\Leftrightarrow\\)\nIf and only if\nBiconditional\n\\(P \\Leftrightarrow Q\\)\n\n\n\\(\\forall\\)\nFor all\nUniversal quantifier\n\\(\\forall x, x &gt; 0\\)\n\n\n\\(\\exists\\)\nThere exists\nExistential quantifier\n\\(\\exists x, x^2 = 4\\)\n\n\n\\(\\exists!\\)\nThere exists exactly one\nUnique existence\n\\(\\exists! x, x^2 = 1\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(\\frac{d}{dx}\\)\nDerivative\nRate of change\n\\(\\frac{d}{dx} x^2 = 2x\\)\n\n\n\\(\\int\\)\nIntegral\nArea under curve\n\\(\\int x dx = \\frac{x^2}{2} + C\\)\n\n\n\\(\\nabla\\)\nNabla (Gradient)\nVector derivative\n\\(\\nabla f(x, y)\\)\n\n\n\\(\\partial\\)\nPartial Derivative\nDerivative of multivariable\n\\(\\frac{\\partial f}{\\partial x}\\)\n\n\n\\(\\infty\\)\nInfinity\nUnbounded value\n\\(\\lim_{x\\to\\infty} \\frac{1}{x} = 0\\)\n\n\n\\(\\lim\\)\nLimit\nApproaching a value\n\\(\\lim_{x\\to0} \\frac{\\sin(x)}{x} = 1\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(P(A)\\)\nProbability\nLikelihood of event A\n\\(P(A) = 0.5\\)\n\n\n\\(E(X)\\)\nExpected Value\nMean of random variable X\n\\(E(X) = \\mu\\)\n\n\n\\(\\text{Var}(X)\\)\nVariance\nSpread of random variable X\n\\(\\text{Var}(X) = \\sigma^2\\)\n\n\n\\(\\sigma\\)\nStandard Deviation\nSquare root of variance\n\\(\\sigma = \\sqrt{\\text{Var}(X)}\\)\n\n\n\\(\\sum\\)\nSummation\nSum of values\n\\(\\sum X_i\\)\n\n\n\\(n!\\)\nFactorial\nProduct of first n integers\n\\(4! = 4\\times3\\times2\\times1 = 24\\)\n\n\n\\(\\binom{n}{k}\\)\nCombination\nWays to choose k from n\n\\(\\binom{5}{2} = 10\\)\n\n\n\\(P(n, k)\\)\nPermutation\nOrdered arrangements\n\\(P(5, 2) = 20\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nName\nMeaning\nExample\n\n\n\n\n\\(i\\)\nImaginary Unit\n\\(\\sqrt{-1}\\)\n\\(i^2 = -1\\)\n\n\n\\(|v|\\)\nVector Magnitude\nLength of vector\n\\(|v| = \\sqrt{x^2 + y^2}\\)\n\n\n\\(\\cdot\\)\nDot Product\nScalar product of vectors\n\\(u \\cdot v = u_x v_x + u_y v_y\\)\n\n\n\\(\\times\\)\nCross Product\nVector product\n\\(u \\times v\\)\n\n\n\\(A^T\\)\nTranspose\nFlip matrix dimensions\n\\(A^T\\)",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Mathematical Symbols and Foundations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_mathematics_foundations.html#summary-of-mathematical-axioms-in-table-format",
+    "href": "Theory/0_mathematics_foundations.html#summary-of-mathematical-axioms-in-table-format",
+    "title": "Mathematical Symbols and Foundations",
+    "section": "Summary of Mathematical Axioms in Table Format",
+    "text": "Summary of Mathematical Axioms in Table Format\n\nMathematical axioms are fundamental truths that serve as the building blocks for all mathematical reasoning. Here is a comprehensive table summarizing the main axioms of mathematics along with examples.\n\n\n\n1. Axioms of Real Numbers (Field Axioms)\nThese axioms define the properties of real numbers under addition and multiplication.\n\n\n\n\n\n\n\n\nAxiom\nDefinition\nExample\n\n\n\n\n1. Closure\nSum/product of two real numbers is real\n\\(a + b\\) is real, \\(ab\\) is real\n\n\n2. Commutativity\nOrder doesn’t affect sum/product\n\\(a + b = b + a\\), \\(ab = ba\\)\n\n\n3. Associativity\nGrouping doesn’t affect sum/product\n\\((a + b) + c = a + (b + c)\\)\n\n\n4. Identity\nExists an identity element for addition and multiplication\n\\(a + 0 = a\\), \\(a \\times 1 = a\\)\n\n\n5. Inverse\nAdditive and multiplicative inverses exist\n\\(a + (-a) = 0\\), \\(a \\times \\frac{1}{a} = 1\\)\n\n\n6. Distributivity\nMultiplication distributes over addition\n\\(a(b+c) = ab + ac\\)\n\n\n\n\n\n\n2. Axioms of Equality\nThese define the properties of equality used in equations and proofs.\n\n\n\n\n\n\n\n\nAxiom\nDefinition\nExample\n\n\n\n\n1. Reflexive\nAnything is equal to itself\n\\(a = a\\)\n\n\n2. Symmetric\nIf \\(a = b\\), then \\(b = a\\)\nIf \\(x = y\\), then \\(y = x\\)\n\n\n3. Transitive\nIf \\(a = b\\) and \\(b = c\\), then \\(a = c\\)\nIf \\(x = y\\) and \\(y = z\\), then \\(x = z\\)\n\n\n4. Substitution\nIf \\(a = b\\), then \\(a\\) can be substituted for \\(b\\) in any expression\nIf \\(x = 5\\), then \\(x + 2 = 7\\)\n\n\n5. Addition Property\nAdding same number to both sides preserves equality\nIf \\(x = y\\), then \\(x + c = y + c\\)\n\n\n6. Multiplication Property\nMultiplying both sides by same number preserves equality\nIf \\(x = y\\), then \\(cx = cy\\)\n\n\n\n\n\n\n3. Axioms of Order\nThese define the properties of inequalities among real numbers.\n\n\n\n\n\n\n\n\nAxiom\nDefinition\nExample\n\n\n\n\n1. Trichotomy\nExactly one is true: \\(a &lt; b\\), \\(a = b\\), or \\(a &gt; b\\)\n\\(3 &lt; 4\\), \\(4 &gt; 3\\), \\(3 = 3\\)\n\n\n2. Transitivity\nIf \\(a &lt; b\\) and \\(b &lt; c\\), then \\(a &lt; c\\)\nIf \\(2 &lt; 4\\) and \\(4 &lt; 6\\), then \\(2 &lt; 6\\)\n\n\n3. Addition Property\nAdding same number to both sides of inequality maintains order\nIf \\(a &lt; b\\), then \\(a+c &lt; b+c\\)\n\n\n4. Multiplication Property\nMultiplying both sides by positive preserves order; negative reverses order\n\\(2 &lt; 3 \\Rightarrow 2 \\times 4 &lt; 3 \\times 4\\)\n\n\n5. Density\nBetween any two real numbers, there’s another real number\nBetween 1 and 2, there’s 1.5\n\n\n\n\n\n\n4. Peano’s Axioms (Axioms of Natural Numbers)\nPeano’s axioms define the properties of natural numbers (0, 1, 2, …).\n\n\n\n\n\n\n\n\nAxiom\nDefinition\nExample\n\n\n\n\n1. Zero Axiom\n0 is a natural number\n\\(0 \\in \\mathbb{N}\\)\n\n\n2. Successor Axiom\nEvery natural number has a successor\n\\(S(0) = 1, S(1) = 2\\)\n\n\n3. Distinctness\nNo two numbers have the same successor\n\\(S(n) \\neq S(m)\\) if \\(n \\neq m\\)\n\n\n4. Zero is Not Successor\n0 is not the successor of any number\n\\(\\neg \\exists n, S(n) = 0\\)\n\n\n5. Induction\nIf 0 has property \\(P\\), and \\(n\\) having \\(P\\) implies \\(S(n)\\) has \\(P\\), then all natural numbers have \\(P\\)\nInductive proofs\n\n\n\n\n\n\n5. Axioms of Set Theory (Zermelo-Fraenkel Axioms)\nThese form the foundation of modern set theory.\n\n\n\n\n\n\n\n\nAxiom\nDefinition\nExample\n\n\n\n\n1. Axiom of Extensionality\nTwo sets are equal if they have the same elements\n\\(A = B\\) if \\(\\forall x (x \\in A \\Leftrightarrow x \\in B)\\)\n\n\n2. Axiom of Empty Set\nThere exists a set with no elements\n\\(\\emptyset = \\{\\}\\)\n\n\n3. Axiom of Pairing\nFor any two sets, there exists a set containing exactly those two\n\\(\\{a, b\\}\\)\n\n\n4. Axiom of Union\nFor any set, there exists a union set containing all elements of its subsets\n\\(A \\cup B\\)\n\n\n5. Axiom of Power Set\nFor any set, there exists a set of all its subsets\n\\(P(A)\\)\n\n\n6. Axiom of Infinity\nThere exists an infinite set\n\\(\\mathbb{N} = \\{0, 1, 2, ...\\}\\)\n\n\n7. Axiom of Replacement\nElements can be replaced by other elements based on a rule\n\\(f: A \\to B\\)\n\n\n8. Axiom of Choice\nFrom any set of non-empty sets, one element can be chosen from each\nWell-ordering theorem\n\n\n\n\n\n\n6. Euclidean Geometry Axioms (Euclid’s Postulates)\nThese are the foundations of Euclidean geometry.\n\n\n\n\n\n\n\n\nAxiom\nDefinition\nExample\n\n\n\n\n1. Line Postulate\nA line can be drawn through any two points\nThrough \\(A\\) and \\(B\\), draw \\(AB\\)\n\n\n2. Line Segment Extension\nAny line segment can be extended indefinitely\n\\(AB \\to A'B'\\)\n\n\n3. Circle Postulate\nA circle can be drawn with any center and radius\nCircle with center \\(O\\) and radius \\(r\\)\n\n\n4. Right Angle Postulate\nAll right angles are congruent\n\\(\\angle A = 90^\\circ, \\angle B = 90^\\circ \\Rightarrow \\angle A \\equiv \\angle B\\)\n\n\n5. Parallel Postulate\nIf a line intersects two lines and the interior angles sum to less than 180°, the two lines will intersect\nBasis of Euclidean geometry",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Mathematical Symbols and Foundations"
+    ]
+  },
+  {
+    "objectID": "Theory/0_mathematics_foundations.html#major-topics-in-mathematics",
+    "href": "Theory/0_mathematics_foundations.html#major-topics-in-mathematics",
+    "title": "Mathematical Symbols and Foundations",
+    "section": "Major Topics in Mathematics",
+    "text": "Major Topics in Mathematics\n\nMathematics is a vast field with numerous branches, each with its own set of concepts, theories, and applications. Here is a comprehensive overview of the major topics in mathematics.\n\n\n1. Arithmetic\nStudy of numbers and basic operations.\n\n\n\n\n\n\n\n\nSubtopic\nDescription\nExample\n\n\n\n\nNatural Numbers\nCounting numbers (1, 2, 3, …)\n\\(\\mathbb{N} = \\{1, 2, 3, ...\\}\\)\n\n\nIntegers\nPositive, negative, and zero\n\\(\\mathbb{Z} = \\{...,-2, -1, 0, 1, 2,...\\}\\)\n\n\nFractions\nDivision of integers\n\\(\\frac{3}{4}, \\frac{7}{2}\\)\n\n\nDecimals\nFractional numbers in decimal form\n\\(0.75, 3.14\\)\n\n\nOrder of Operations\nSequence for operations (PEMDAS)\n\\(2 + 3 \\times 4 = 14\\)\n\n\nPrime Numbers\nNumbers with only two factors (1, itself)\n\\(2, 3, 5, 7, 11\\)\n\n\nDivisibility Rules\nRules to check if one number divides another\n\\(4 \\mid 12\\)\n\n\n\n\n\n\n2. Algebra\nStudy of mathematical symbols and rules for manipulating them.\n\n\n\n\n\n\n\n\nSubtopic\nDescription\nExample\n\n\n\n\nVariables and Expressions\nSymbols representing numbers\n\\(x + 2, 3y - 7\\)\n\n\nEquations\nMathematical statements of equality\n\\(x + 3 = 7\\)\n\n\nInequalities\nMathematical statements of inequality\n\\(x &gt; 5, y \\leq 2\\)\n\n\nPolynomials\nExpressions with multiple terms\n\\(x^2 + 3x + 2\\)\n\n\nFactoring\nBreaking down expressions into factors\n\\(x^2 - 4 = (x-2)(x+2)\\)\n\n\nFunctions\nRelations between inputs and outputs\n\\(f(x) = x^2 + 2x + 1\\)\n\n\nLinear Algebra\nStudy of vectors, matrices, and systems of equations\n\\(Ax = b\\)\n\n\nQuadratic Equations\nEquations of the form \\(ax^2 + bx + c = 0\\)\n\\(x^2 - 5x + 6 = 0\\)\n\n\n\n\n\n\n3. Geometry\nStudy of shapes, sizes, and properties of space.\n\n\n\n\n\n\n\n\nSubtopic\nDescription\nExample\n\n\n\n\nEuclidean Geometry\nStudy of flat surfaces and shapes\nPoints, lines, angles, triangles\n\n\nCoordinate Geometry\nGeometry using the Cartesian plane\nDistance, midpoint, slope\n\n\nSolid Geometry\nStudy of 3D shapes\nCubes, spheres, cones\n\n\nTrigonometry\nStudy of angles and lengths in triangles\n\\(\\sin \\theta, \\cos \\theta, \\tan \\theta\\)\n\n\nCongruence and Similarity\nComparisons of shapes\n\\(\\triangle ABC \\cong \\triangle DEF\\), \\(\\triangle PQR \\sim \\triangle XYZ\\)\n\n\nTransformations\nTranslations, rotations, reflections, scaling\n\\(T(x, y) = (x+2, y-3)\\)\n\n\nArea and Volume\nMeasure of space inside shapes\nArea of circle: \\(\\pi r^2\\)\n\n\n\n\n\n\n4. Calculus\nStudy of change and motion.\n\n\n\n\n\n\n\n\nSubtopic\nDescription\nExample\n\n\n\n\nLimits\nBehavior of functions as inputs approach a value\n\\(\\lim_{x \\to 0} \\frac{\\sin(x)}{x} = 1\\)\n\n\nDerivatives\nRate of change of a function\n\\(f'(x) = 2x\\) for \\(f(x) = x^2\\)\n\n\nIntegration\nAccumulation of quantities\n\\(\\int x dx = \\frac{x^2}{2} + C\\)\n\n\nDifferential Equations\nEquations involving derivatives\n\\(y' + y = 0\\)\n\n\nMultivariable Calculus\nCalculus with more than one variable\n\\(f(x, y) = x^2 + y^2\\)\n\n\nVector Calculus\nCalculus of vector fields\n\\(\\nabla \\cdot F\\), \\(\\nabla \\times F\\)\n\n\nSeries and Sequences\nSummation of sequences\n\\(\\sum_{n=1}^{\\infty} \\frac{1}{n^2}\\)\n\n\n\n\n\n\n5. Probability and Statistics\nStudy of randomness, data analysis, and interpretation.\n\n\n\n\n\n\n\n\nSubtopic\nDescription\nExample\n\n\n\n\nProbability Theory\nStudy of random events and likelihoods\n\\(P(A) = \\frac{\\text{Favorable}}{\\text{Total}}\\)\n\n\nRandom Variables\nVariables representing outcomes\n\\(X: \\text{Number of heads in 3 flips}\\)\n\n\nDistributions\nPatterns of data spread\nNormal, Binomial, Poisson\n\n\nDescriptive Statistics\nMeasures of central tendency and spread\nMean, Median, Mode, Variance\n\n\nInferential Statistics\nDrawing conclusions from data samples\nHypothesis testing, Confidence Intervals\n\n\nRegression Analysis\nRelationship between variables\nLinear Regression: \\(y = mx + c\\)\n\n\nCorrelation\nDegree of relationship between variables\n\\(-1 \\leq r \\leq 1\\)\n\n\n\n\n\n\n6. Number Theory\nStudy of integers and their properties.\n\n\n\n\n\n\n\n\nSubtopic\nDescription\nExample\n\n\n\n\nPrime Numbers\nNumbers divisible only by 1 and itself\n\\(2, 3, 5, 7, 11\\)\n\n\nDivisibility\nRules for determining divisibility\n\\(4 \\mid 12\\)\n\n\nGCD and LCM\nGreatest Common Divisor, Least Common Multiple\n\\(\\gcd(12, 15) = 3\\)\n\n\nModular Arithmetic\nRemainders in division\n\\(7 \\equiv 1 \\mod 3\\)\n\n\nDiophantine Equations\nEquations with integer solutions\n\\(x^2 + y^2 = z^2\\)\n\n\nFermat’s Last Theorem\n\\(x^n + y^n \\neq z^n\\) for \\(n &gt; 2\\)\nProved by Andrew Wiles\n\n\n\n\n\n\n7. Discrete Mathematics\nStudy of countable structures and logic.\n\n\n\n\n\n\n\n\nSubtopic\nDescription\nExample\n\n\n\n\nLogic and Propositions\nBoolean logic, truth values\n\\(P \\wedge Q, \\neg P, P \\Rightarrow Q\\)\n\n\nSet Theory\nStudy of collections of objects\n\\(A = \\{1, 2, 3\\}\\)\n\n\nCombinatorics\nCounting and arrangement techniques\nPermutations, Combinations\n\n\nGraph Theory\nStudy of graphs and networks\nNodes, Edges, Eulerian Path\n\n\nBoolean Algebra\nAlgebra of true/false values\n\\(A \\wedge B, A \\vee B, \\neg A\\)\n\n\nAlgorithms and Complexity\nStudy of problem-solving methods and efficiency\nSorting, Searching Algorithms\n\n\n\n\n\n\n8. Applied Mathematics\nMathematics used in practical fields.\n\n\n\n\n\n\n\n\nSubtopic\nDescription\nExample\n\n\n\n\nMathematical Physics\nEquations describing physical phenomena\nMaxwell’s Equations, Schrödinger’s Equation\n\n\nEngineering Mathematics\nMath in engineering applications\nControl systems, Signal processing\n\n\nFinancial Mathematics\nMath for finance and investment\nCompound Interest, Derivatives\n\n\nCryptography\nSecure communication using mathematics\nRSA Algorithm, Hash Functions\n\n\nGame Theory\nStrategic decision-making\nNash Equilibrium",
+    "crumbs": [
+      "Blog",
+      "Theory",
+      "Mathematical Symbols and Foundations"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/summarization.html",
+    "href": "Natural_Language_Processing/summarization.html",
+    "title": "Summarization",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Summarization"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/summarization.html#overview",
+    "href": "Natural_Language_Processing/summarization.html#overview",
+    "title": "Summarization",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Summarization"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/question_answering.html",
+    "href": "Natural_Language_Processing/question_answering.html",
+    "title": "Question Answering",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Question Answering"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/question_answering.html#overview",
+    "href": "Natural_Language_Processing/question_answering.html#overview",
+    "title": "Question Answering",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Question Answering"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/zero_shot_classification.html",
+    "href": "Natural_Language_Processing/zero_shot_classification.html",
+    "title": "Zero-Shot Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Zero-Shot Classification"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/zero_shot_classification.html#overview",
+    "href": "Natural_Language_Processing/zero_shot_classification.html#overview",
+    "title": "Zero-Shot Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Zero-Shot Classification"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/translation.html",
+    "href": "Natural_Language_Processing/translation.html",
+    "title": "Translation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Translation"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/translation.html#overview",
+    "href": "Natural_Language_Processing/translation.html#overview",
+    "title": "Translation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Translation"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/sentence_similarity.html",
+    "href": "Natural_Language_Processing/sentence_similarity.html",
+    "title": "Sentence Similarity",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Sentence Similarity"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/sentence_similarity.html#overview",
+    "href": "Natural_Language_Processing/sentence_similarity.html#overview",
+    "title": "Sentence Similarity",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Sentence Similarity"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/text_classification.html",
+    "href": "Natural_Language_Processing/text_classification.html",
+    "title": "Text Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Text Classification"
+    ]
+  },
+  {
+    "objectID": "Natural_Language_Processing/text_classification.html#overview",
+    "href": "Natural_Language_Processing/text_classification.html#overview",
+    "title": "Text Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Natural Language Processing",
+      "Text Classification"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DL_tasks",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "Blog",
+      "DL_tasks"
+    ]
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "DL_tasks",
+    "section": "Install",
+    "text": "Install\npip install DL_tasks",
+    "crumbs": [
+      "Blog",
+      "DL_tasks"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "DL_tasks",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "Blog",
+      "DL_tasks"
+    ]
+  },
+  {
+    "objectID": "Audio/audio_to_audio.html",
+    "href": "Audio/audio_to_audio.html",
+    "title": "Audio-to-Audio",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Audio-to-Audio"
+    ]
+  },
+  {
+    "objectID": "Audio/audio_to_audio.html#overview",
+    "href": "Audio/audio_to_audio.html#overview",
+    "title": "Audio-to-Audio",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Audio-to-Audio"
+    ]
+  },
+  {
+    "objectID": "Audio/text_to_speech.html",
+    "href": "Audio/text_to_speech.html",
+    "title": "Text-to-Speech",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Text-to-Speech"
+    ]
+  },
+  {
+    "objectID": "Audio/text_to_speech.html#overview",
+    "href": "Audio/text_to_speech.html#overview",
+    "title": "Text-to-Speech",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Text-to-Speech"
+    ]
+  },
+  {
+    "objectID": "Audio/text_to_audio.html",
+    "href": "Audio/text_to_audio.html",
+    "title": "Text-to-Audio",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Text-to-Audio"
+    ]
+  },
+  {
+    "objectID": "Audio/text_to_audio.html#overview",
+    "href": "Audio/text_to_audio.html#overview",
+    "title": "Text-to-Audio",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Audio",
+      "Text-to-Audio"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/video_to_video.html",
+    "href": "Computer_Vision/video_to_video.html",
+    "title": "Video-to-Video",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Video-to-Video"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/video_to_video.html#overview",
+    "href": "Computer_Vision/video_to_video.html#overview",
+    "title": "Video-to-Video",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Video-to-Video"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/text_to_image.html",
+    "href": "Computer_Vision/text_to_image.html",
+    "title": "Text-to-Image",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Text-to-Image"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/text_to_image.html#overview",
+    "href": "Computer_Vision/text_to_image.html#overview",
+    "title": "Text-to-Image",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Text-to-Image"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_to_image.html",
+    "href": "Computer_Vision/image_to_image.html",
+    "title": "Image-to-Image",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image-to-Image"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/image_to_image.html#overview",
+    "href": "Computer_Vision/image_to_image.html#overview",
+    "title": "Image-to-Image",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Image-to-Image"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/keypoint_detection.html",
+    "href": "Computer_Vision/keypoint_detection.html",
+    "title": "Keypoint Detection",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Keypoint Detection"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/keypoint_detection.html#overview",
+    "href": "Computer_Vision/keypoint_detection.html#overview",
+    "title": "Keypoint Detection",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Keypoint Detection"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/mask_generation.html",
+    "href": "Computer_Vision/mask_generation.html",
+    "title": "Mask Generation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Mask Generation"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/mask_generation.html#overview",
+    "href": "Computer_Vision/mask_generation.html#overview",
+    "title": "Mask Generation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Mask Generation"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/depth_estimation.html",
+    "href": "Computer_Vision/depth_estimation.html",
+    "title": "Depth Estimation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Depth Estimation"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/depth_estimation.html#overview",
+    "href": "Computer_Vision/depth_estimation.html#overview",
+    "title": "Depth Estimation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Depth Estimation"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/text_to_video.html",
+    "href": "Computer_Vision/text_to_video.html",
+    "title": "Text-to-Video",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Text-to-Video"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/text_to_video.html#overview",
+    "href": "Computer_Vision/text_to_video.html#overview",
+    "title": "Text-to-Video",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Text-to-Video"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/unconditional_image_generation.html",
+    "href": "Computer_Vision/unconditional_image_generation.html",
+    "title": "Unconditional Image Generation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Unconditional Image Generation"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/unconditional_image_generation.html#overview",
+    "href": "Computer_Vision/unconditional_image_generation.html#overview",
+    "title": "Unconditional Image Generation",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Unconditional Image Generation"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/video_classification.html",
+    "href": "Computer_Vision/video_classification.html",
+    "title": "Video Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Video Classification"
+    ]
+  },
+  {
+    "objectID": "Computer_Vision/video_classification.html#overview",
+    "href": "Computer_Vision/video_classification.html#overview",
+    "title": "Video Classification",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Computer Vision",
+      "Video Classification"
+    ]
+  },
+  {
+    "objectID": "Reinforcement_Learning/reinforcement_learning.html",
+    "href": "Reinforcement_Learning/reinforcement_learning.html",
+    "title": "Reinforcement Learning",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Reinforcement Learning",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "objectID": "Reinforcement_Learning/reinforcement_learning.html#overview",
+    "href": "Reinforcement_Learning/reinforcement_learning.html#overview",
+    "title": "Reinforcement Learning",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Reinforcement Learning",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "objectID": "Tabular/tabular_regression.html",
+    "href": "Tabular/tabular_regression.html",
+    "title": "Tabular Regression",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Tabular",
+      "Tabular Regression"
+    ]
+  },
+  {
+    "objectID": "Tabular/tabular_regression.html#overview",
+    "href": "Tabular/tabular_regression.html#overview",
+    "title": "Tabular Regression",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Tabular",
+      "Tabular Regression"
+    ]
+  },
+  {
+    "objectID": "Tabular/time_series_forecasting.html",
+    "href": "Tabular/time_series_forecasting.html",
+    "title": "Time Series Forecasting",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Tabular",
+      "Time Series Forecasting"
+    ]
+  },
+  {
+    "objectID": "Tabular/time_series_forecasting.html#overview",
+    "href": "Tabular/time_series_forecasting.html#overview",
+    "title": "Time Series Forecasting",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Tabular",
+      "Time Series Forecasting"
+    ]
+  },
+  {
+    "objectID": "Multimodal/image_text_to_video.html",
+    "href": "Multimodal/image_text_to_video.html",
+    "title": "Image-Text-to-Video",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Image-Text-to-Video"
+    ]
+  },
+  {
+    "objectID": "Multimodal/image_text_to_video.html#overview",
+    "href": "Multimodal/image_text_to_video.html#overview",
+    "title": "Image-Text-to-Video",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Image-Text-to-Video"
+    ]
+  },
+  {
+    "objectID": "Multimodal/audio_text_to_text.html",
+    "href": "Multimodal/audio_text_to_text.html",
+    "title": "Audio-Text-to-Text",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Audio-Text-to-Text"
+    ]
+  },
+  {
+    "objectID": "Multimodal/audio_text_to_text.html#overview",
+    "href": "Multimodal/audio_text_to_text.html#overview",
+    "title": "Audio-Text-to-Text",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Audio-Text-to-Text"
+    ]
+  },
+  {
+    "objectID": "Multimodal/visual_question_answering.html",
+    "href": "Multimodal/visual_question_answering.html",
+    "title": "Visual Question Answering",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Visual Question Answering"
+    ]
+  },
+  {
+    "objectID": "Multimodal/visual_question_answering.html#overview",
+    "href": "Multimodal/visual_question_answering.html#overview",
+    "title": "Visual Question Answering",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Visual Question Answering"
+    ]
+  },
+  {
+    "objectID": "Multimodal/document_question_answering.html",
+    "href": "Multimodal/document_question_answering.html",
+    "title": "Document Question Answering",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Document Question Answering"
+    ]
+  },
+  {
+    "objectID": "Multimodal/document_question_answering.html#overview",
+    "href": "Multimodal/document_question_answering.html#overview",
+    "title": "Document Question Answering",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Blog",
+      "Multimodal",
+      "Document Question Answering"
+    ]
+  }
+]

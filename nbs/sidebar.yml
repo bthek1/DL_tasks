@@ -1,0 +1,79 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - section: Audio
+        contents:
+          - Audio/00_Text_to_Speech.ipynb
+          - Audio/01_Text_to_Audio.ipynb
+          - Audio/02_Automatic_Speech_Recognition.ipynb
+          - Audio/03_Audio_to_Audio.ipynb
+          - Audio/04_Audio_Classification.ipynb
+          - Audio/05_Voice_Activity_Detection.ipynb
+      - section: Computer_Vision
+        contents:
+          - Computer_Vision/00_Depth_Estimation.ipynb
+          - Computer_Vision/01_Image_Classification.ipynb
+          - Computer_Vision/02_Object_Detection.ipynb
+          - Computer_Vision/03_Image_Segmentation.ipynb
+          - Computer_Vision/04_Text_to_Image.ipynb
+          - Computer_Vision/05_Image_to_Text.ipynb
+          - Computer_Vision/06_Image_to_Image.ipynb
+          - Computer_Vision/07_Image_to_Video.ipynb
+          - Computer_Vision/08_Unconditional_Image_Generation.ipynb
+          - Computer_Vision/09_Video_Classification.ipynb
+          - Computer_Vision/10_Text_to_Video.ipynb
+          - Computer_Vision/11_Zero_Shot_Image_Classification.ipynb
+          - Computer_Vision/12_Mask_Generation.ipynb
+          - Computer_Vision/13_Zero_Shot_Object_Detection.ipynb
+          - Computer_Vision/14_Text_to_3D.ipynb
+          - Computer_Vision/15_Image_to_3D.ipynb
+          - Computer_Vision/16_Image_Feature_Extraction.ipynb
+          - Computer_Vision/17_Keypoint_Detection.ipynb
+          - Computer_Vision/18_Video_to_Video.ipynb
+      - section: Multimodal
+        contents:
+          - Multimodal/00_Audio_Text_to_Text.ipynb
+          - Multimodal/01_Image_Text_to_Text.ipynb
+          - Multimodal/02_Image_Text_to_Image.ipynb
+          - Multimodal/03_Image_Text_to_Video.ipynb
+          - Multimodal/04_Visual_Question_Answering.ipynb
+          - Multimodal/05_Document_Question_Answering.ipynb
+          - Multimodal/06_Video_Text_to_Text.ipynb
+          - Multimodal/07_Visual_Document_Retrieval.ipynb
+          - Multimodal/08_Any_to_Any.ipynb
+      - section: Natural_Language_Processing
+        contents:
+          - Natural_Language_Processing/00_Text_Classification.ipynb
+          - Natural_Language_Processing/01_Token_Classification.ipynb
+          - Natural_Language_Processing/02_Table_Question_Answering.ipynb
+          - Natural_Language_Processing/03_Question_Answering.ipynb
+          - Natural_Language_Processing/04_Zero_Shot_Classification.ipynb
+          - Natural_Language_Processing/05_Translation.ipynb
+          - Natural_Language_Processing/06_Summarization.ipynb
+          - Natural_Language_Processing/07_Feature_Extraction.ipynb
+          - Natural_Language_Processing/08_Text_Generation.ipynb
+          - Natural_Language_Processing/09_Fill_Mask.ipynb
+          - Natural_Language_Processing/10_Sentence_Similarity.ipynb
+          - Natural_Language_Processing/11_Text_Ranking.ipynb
+      - section: Other
+        contents:
+          - Other/00_Graph_Machine_Learning.ipynb
+      - section: Reinforcement_Learning
+        contents:
+          - Reinforcement_Learning/00_Reinforcement_Learning.ipynb
+          - Reinforcement_Learning/01_Robotics.ipynb
+      - section: Tabular
+        contents:
+          - Tabular/00_Tabular_Classification.ipynb
+          - Tabular/01_Tabular_Regression.ipynb
+          - Tabular/02_Time_Series_Forecasting.ipynb
+      - section: Theory
+        contents:
+          - Theory/00_0_Mathematics_Foundations.ipynb
+          - Theory/00_1_Discrete_Maths.ipynb
+          - Theory/01_0_Physics_Equations.ipynb
+          - Theory/01_1_Electromagnetic_Equations.ipynb
+          - Theory/01_2_Deep_Learning_Equations.ipynb
+          - Theory/02_Electricity_Equations.ipynb
+          - Theory/11_ForResNet.ipynb
