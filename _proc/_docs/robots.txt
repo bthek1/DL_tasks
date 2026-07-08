@@ -1,1 +1,1 @@
-Sitemap: https://bthek1.github.io/Research/sitemap.xml
+Sitemap: https://bthek1.github.io/DL_tasks/sitemap.xml

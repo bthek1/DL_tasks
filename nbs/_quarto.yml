@@ -37,8 +37,8 @@ website:
           href: https://bthek1.github.io/FastAI_course/
         - text: "DL Methods"
           href: https://bthek1.github.io/DL_methods/
-        - text: "Research"
-          href: https://bthek1.github.io/Research/
+        - text: "DL Tasks"
+          href: https://bthek1.github.io/DL_tasks/
           
       - text: "ML Techniques"
         menu:

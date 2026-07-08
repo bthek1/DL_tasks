@@ -3,7 +3,7 @@ requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Research"
+name = "DL_tasks"
 dynamic = ["version"]
 description = "Research into Deep Learning Models"
 readme = "README.md"
@@ -15,16 +15,16 @@ classifiers = ["Natural Language :: English", "Intended Audience :: Developers",
 dependencies = []
 
 [project.urls]
-Repository = "https://github.com/bthek1/Research"
-Documentation = "https://bthek1.github.io/Research"
+Repository = "https://github.com/bthek1/DL_tasks"
+Documentation = "https://bthek1.github.io/DL_tasks"
 
 [project.entry-points.nbdev]
-Research = "Research._modidx:d"
+DL_tasks = "DL_tasks._modidx:d"
 
 [tool.setuptools.dynamic]
-version = {attr = "Research.__version__"}
+version = {attr = "DL_tasks.__version__"}
 
 [tool.setuptools.packages.find]
-include = ["Research"]
+include = ["DL_tasks"]
 
 [tool.nbdev]

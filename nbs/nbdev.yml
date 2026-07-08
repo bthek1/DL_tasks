@@ -2,8 +2,8 @@ project:
   output-dir: _docs
 
 website:
-  title: "Research"
-  site-url: "https://bthek1.github.io/Research"
+  title: "DL_tasks"
+  site-url: "https://bthek1.github.io/DL_tasks"
   description: "Research into Deep Learning Models"
   repo-branch: main
-  repo-url: "https://github.com/bthek1/Research"
+  repo-url: "https://github.com/bthek1/DL_tasks"
