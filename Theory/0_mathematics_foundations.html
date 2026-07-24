@@ -1,0 +1,2738 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Benedict Thekkel">
+<meta name="description" content="Mathematics uses a vast array of symbols to express numbers, operations, relations, and abstract concepts. Here is a complete glossary of the most commonly used math symbols along with their meanings and examples.">
+
+<title>Mathematical Symbols and Foundations – DL_tasks</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Theory/1_discrete_maths.html" rel="next">
+<link href="../Tabular/time_series_forecasting.html" rel="prev">
+<link href="../favi.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-8e6bb74c5449693feffed99ccb3abc15.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0a0af1a8bd48d52fbe470bacd6643b05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-8e6bb74c5449693feffed99ccb3abc15.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Mathematical Symbols and Foundations – DL_tasks">
+<meta property="og:description" content="Mathematics uses a vast array of symbols to express numbers, operations, relations, and abstract concepts. Here is a complete glossary of the most commonly used math symbols along with their meanings and examples.">
+<meta property="og:image" content="https://bthek1.github.io/DL_tasks/Theory/Logo.svg">
+<meta property="og:site_name" content="DL_tasks">
+<meta name="twitter:title" content="Mathematical Symbols and Foundations – DL_tasks">
+<meta name="twitter:description" content="Mathematics uses a vast array of symbols to express numbers, operations, relations, and abstract concepts. Here is a complete glossary of the most commonly used math symbols along with their meanings and examples.">
+<meta name="twitter:image" content="https://bthek1.github.io/DL_tasks/Theory/Logo.svg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../Logo.svg" alt="Quarto logo." class="navbar-logo light-content">
+    <img src="../Logo.svg" alt="Quarto logo." class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-deep-learning" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Deep Learning</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-deep-learning">    
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/FastAI_course/">
+ <span class="dropdown-text">Fast AI course</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/DL_methods/">
+ <span class="dropdown-text">DL Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/DL_tasks/">
+ <span class="dropdown-text">DL Tasks</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ml-techniques" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">ML Techniques</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ml-techniques">    
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/ML_methods/">
+ <span class="dropdown-text">ML Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/TimeSeriesML/">
+ <span class="dropdown-text">Time series</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-web" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Web</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-web">    
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/WEB_doc/">
+ <span class="dropdown-text">Web Development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Front_End/">
+ <span class="dropdown-text">Front End</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Back_End/">
+ <span class="dropdown-text">Back End</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Docker_Containers/">
+ <span class="dropdown-text">Docker Containers</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tools</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tools">    
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Software_Tools/">
+ <span class="dropdown-text">Software Tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Hardware_Tools/">
+ <span class="dropdown-text">Hardware Tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Python_Libs/">
+ <span class="dropdown-text">Python Libraries</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/nbdevAuto/">
+ <span class="dropdown-text">Nbdev Automation</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-business" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Business</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-business">    
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Business_doc/">
+ <span class="dropdown-text">Business Doc</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Philosophy_doc/">
+ <span class="dropdown-text">Ideas Doc</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Finances/">
+ <span class="dropdown-text">Finances</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Other/">
+ <span class="dropdown-text">Other</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://bthek1.github.io/bthek1_blog/"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-help" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Help</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-help">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/bthek1/bthek1_blog/issues"><i class="bi bi-bug" role="img">
+</i> 
+ <span class="dropdown-text">Report a Bug</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/bthek1/bthek1_blog/issues"><i class="bi bi-chat-right-text" role="img">
+</i> 
+ <span class="dropdown-text">Ask a Question</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/bthek1/bthek1_blog/issues"><i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com/bthek1" title="" class="quarto-navigation-tool px-1" aria-label="Github"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/benedict-thekkel/" title="" class="quarto-navigation-tool px-1" aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Theory/0_mathematics_foundations.html">Theory</a></li><li class="breadcrumb-item"><a href="../Theory/0_mathematics_foundations.html">Mathematical Symbols and Foundations</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DL_tasks</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Audio</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/text_to_speech.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-to-Speech</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/text_to_audio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-to-Audio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/automatic_speech_recognition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Automatic Speech Recognition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/audio_to_audio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Audio-to-Audio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/audio_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Audio Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/voice_activity_detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Voice Activity Detection</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Computer Vision</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/depth_estimation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Depth Estimation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/object_detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Object Detection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_segmentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image Segmentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/text_to_image.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-to-Image</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_to_text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-to-Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_to_image.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-to-Image</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_to_video.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-to-Video</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/unconditional_image_generation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unconditional Image Generation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/video_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Video Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/text_to_video.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-to-Video</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/zero_shot_image_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zero-Shot Image Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/mask_generation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mask Generation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/zero_shot_object_detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zero-Shot Object Detection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/text_to_3d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-to-3D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_to_3d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-to-3D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_feature_extraction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image Feature Extraction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/keypoint_detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Keypoint Detection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/video_to_video.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Video-to-Video</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Multimodal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/audio_text_to_text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Audio-Text-to-Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/image_text_to_text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-Text-to-Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/image_text_to_image.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-Text-to-Image</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/image_text_to_video.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-Text-to-Video</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/visual_question_answering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visual Question Answering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/document_question_answering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Document Question Answering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/video_text_to_text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Video-Text-to-Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/visual_document_retrieval.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visual Document Retrieval</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/any_to_any.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Any-to-Any</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Natural Language Processing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/text_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/token_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Token Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/table_question_answering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table Question Answering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/question_answering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Question Answering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/zero_shot_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zero-Shot Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/translation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Translation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/summarization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summarization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/feature_extraction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Feature Extraction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/text_generation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text Generation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/fill_mask.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fill-Mask</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/sentence_similarity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sentence Similarity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/text_ranking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text Ranking</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Other</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Other/graph_machine_learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Graph Machine Learning</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Reinforcement Learning</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Reinforcement_Learning/reinforcement_learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reinforcement Learning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Reinforcement_Learning/robotics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Robotics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tabular</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Tabular/tabular_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tabular Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Tabular/tabular_regression.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tabular Regression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Tabular/time_series_forecasting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Time Series Forecasting</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Theory</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/0_mathematics_foundations.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Mathematical Symbols and Foundations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/1_discrete_maths.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discrete Maths</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/0_physics_equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Physics Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/1_electromagnetic_equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Electromagnetic Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/2_deep_learning_equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Deep Learning Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/electricity_equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Electricity Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/forresnet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Idea - ForResNet (coming soon)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#symbols" id="toc-symbols" class="nav-link active" data-scroll-target="#symbols">Symbols</a>
+  <ul class="collapse">
+  <li><a href="#basic-arithmetic-symbols" id="toc-basic-arithmetic-symbols" class="nav-link" data-scroll-target="#basic-arithmetic-symbols"><strong>1. Basic Arithmetic Symbols</strong></a></li>
+  <li><a href="#algebra-symbols" id="toc-algebra-symbols" class="nav-link" data-scroll-target="#algebra-symbols"><strong>2. Algebra Symbols</strong></a></li>
+  <li><a href="#set-theory-symbols" id="toc-set-theory-symbols" class="nav-link" data-scroll-target="#set-theory-symbols"><strong>3. Set Theory Symbols</strong></a></li>
+  <li><a href="#logic-symbols" id="toc-logic-symbols" class="nav-link" data-scroll-target="#logic-symbols"><strong>4. Logic Symbols</strong></a></li>
+  <li><a href="#calculus-symbols" id="toc-calculus-symbols" class="nav-link" data-scroll-target="#calculus-symbols"><strong>5. Calculus Symbols</strong></a></li>
+  <li><a href="#probability-statistics-symbols" id="toc-probability-statistics-symbols" class="nav-link" data-scroll-target="#probability-statistics-symbols"><strong>6. Probability &amp; Statistics Symbols</strong></a></li>
+  <li><a href="#complex-numbers-linear-algebra" id="toc-complex-numbers-linear-algebra" class="nav-link" data-scroll-target="#complex-numbers-linear-algebra"><strong>7. Complex Numbers &amp; Linear Algebra</strong></a></li>
+  </ul></li>
+  <li><a href="#summary-of-mathematical-axioms-in-table-format" id="toc-summary-of-mathematical-axioms-in-table-format" class="nav-link" data-scroll-target="#summary-of-mathematical-axioms-in-table-format"><strong>Summary of Mathematical Axioms in Table Format</strong></a>
+  <ul class="collapse">
+  <li><a href="#axioms-of-real-numbers-field-axioms" id="toc-axioms-of-real-numbers-field-axioms" class="nav-link" data-scroll-target="#axioms-of-real-numbers-field-axioms"><strong>1. Axioms of Real Numbers (Field Axioms)</strong></a></li>
+  <li><a href="#axioms-of-equality" id="toc-axioms-of-equality" class="nav-link" data-scroll-target="#axioms-of-equality"><strong>2. Axioms of Equality</strong></a></li>
+  <li><a href="#axioms-of-order" id="toc-axioms-of-order" class="nav-link" data-scroll-target="#axioms-of-order"><strong>3. Axioms of Order</strong></a></li>
+  <li><a href="#peanos-axioms-axioms-of-natural-numbers" id="toc-peanos-axioms-axioms-of-natural-numbers" class="nav-link" data-scroll-target="#peanos-axioms-axioms-of-natural-numbers"><strong>4. Peano’s Axioms (Axioms of Natural Numbers)</strong></a></li>
+  <li><a href="#axioms-of-set-theory-zermelo-fraenkel-axioms" id="toc-axioms-of-set-theory-zermelo-fraenkel-axioms" class="nav-link" data-scroll-target="#axioms-of-set-theory-zermelo-fraenkel-axioms"><strong>5. Axioms of Set Theory (Zermelo-Fraenkel Axioms)</strong></a></li>
+  <li><a href="#euclidean-geometry-axioms-euclids-postulates" id="toc-euclidean-geometry-axioms-euclids-postulates" class="nav-link" data-scroll-target="#euclidean-geometry-axioms-euclids-postulates"><strong>6. Euclidean Geometry Axioms (Euclid’s Postulates)</strong></a></li>
+  </ul></li>
+  <li><a href="#major-topics-in-mathematics" id="toc-major-topics-in-mathematics" class="nav-link" data-scroll-target="#major-topics-in-mathematics"><strong>Major Topics in Mathematics</strong></a>
+  <ul class="collapse">
+  <li><a href="#arithmetic" id="toc-arithmetic" class="nav-link" data-scroll-target="#arithmetic"><strong>1. Arithmetic</strong></a></li>
+  <li><a href="#algebra" id="toc-algebra" class="nav-link" data-scroll-target="#algebra"><strong>2. Algebra</strong></a></li>
+  <li><a href="#geometry" id="toc-geometry" class="nav-link" data-scroll-target="#geometry"><strong>3. Geometry</strong></a></li>
+  <li><a href="#calculus" id="toc-calculus" class="nav-link" data-scroll-target="#calculus"><strong>4. Calculus</strong></a></li>
+  <li><a href="#probability-and-statistics" id="toc-probability-and-statistics" class="nav-link" data-scroll-target="#probability-and-statistics"><strong>5. Probability and Statistics</strong></a></li>
+  <li><a href="#number-theory" id="toc-number-theory" class="nav-link" data-scroll-target="#number-theory"><strong>6. Number Theory</strong></a></li>
+  <li><a href="#discrete-mathematics" id="toc-discrete-mathematics" class="nav-link" data-scroll-target="#discrete-mathematics"><strong>7. Discrete Mathematics</strong></a></li>
+  <li><a href="#applied-mathematics" id="toc-applied-mathematics" class="nav-link" data-scroll-target="#applied-mathematics"><strong>8. Applied Mathematics</strong></a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.dev/bthek1/DL_tasks/blob/main/Theory/00_0_Mathematics_Foundations.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/bthek1/DL_tasks/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Theory/0_mathematics_foundations.html">Theory</a></li><li class="breadcrumb-item"><a href="../Theory/0_mathematics_foundations.html">Mathematical Symbols and Foundations</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Mathematical Symbols and Foundations</h1>
+</div>
+
+<div>
+  <div class="description">
+    Mathematics uses a vast array of symbols to express numbers, operations, relations, and abstract concepts. Here is a <strong>complete glossary</strong> of the most commonly used math symbols along with their <strong>meanings and examples</strong>.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Benedict Thekkel </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
+<section id="symbols" class="level2">
+<h2 class="anchored" data-anchor-id="symbols">Symbols</h2>
+<section id="basic-arithmetic-symbols" class="level3">
+<h3 class="anchored" data-anchor-id="basic-arithmetic-symbols"><strong>1. Basic Arithmetic Symbols</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 20%">
+<col style="width: 37%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(+\)</span></td>
+<td>Plus</td>
+<td>Addition</td>
+<td><span class="math inline">\(5 + 3 = 8\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-\)</span></td>
+<td>Minus</td>
+<td>Subtraction</td>
+<td><span class="math inline">\(10 - 4 = 6\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\times\)</span> or <span class="math inline">\(*\)</span></td>
+<td>Multiply</td>
+<td>Multiplication</td>
+<td><span class="math inline">\(4 \times 3 = 12\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\div\)</span> or <span class="math inline">\(/\)</span></td>
+<td>Divide</td>
+<td>Division</td>
+<td><span class="math inline">\(12 \div 4 = 3\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(=\)</span></td>
+<td>Equals</td>
+<td>Equality</td>
+<td><span class="math inline">\(7 + 2 = 9\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\neq\)</span></td>
+<td>Not equal</td>
+<td>Inequality</td>
+<td><span class="math inline">\(5 \neq 3\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(&lt;\)</span></td>
+<td>Less than</td>
+<td>Comparison</td>
+<td><span class="math inline">\(2 &lt; 5\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(&gt;\)</span></td>
+<td>Greater than</td>
+<td>Comparison</td>
+<td><span class="math inline">\(8 &gt; 6\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\leq\)</span></td>
+<td>Less than or equal</td>
+<td>Comparison</td>
+<td><span class="math inline">\(4 \leq 4\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\geq\)</span></td>
+<td>Greater than or equal</td>
+<td>Comparison</td>
+<td><span class="math inline">\(10 \geq 7\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="algebra-symbols" class="level3">
+<h3 class="anchored" data-anchor-id="algebra-symbols"><strong>2. Algebra Symbols</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 20%">
+<col style="width: 30%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x, y, z\)</span></td>
+<td>Variables</td>
+<td>Unknown values</td>
+<td><span class="math inline">\(x + 2 = 5\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(a^n\)</span></td>
+<td>Power</td>
+<td>Exponentiation</td>
+<td><span class="math inline">\(2^3 = 8\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\sqrt{x}\)</span></td>
+<td>Square Root</td>
+<td>Root of a number</td>
+<td><span class="math inline">\(\sqrt{9} = 3\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sqrt[3]{x}\)</span></td>
+<td>Cube Root</td>
+<td>Cube root of a number</td>
+<td><span class="math inline">\(\sqrt[3]{27} = 3\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(|x|\)</span></td>
+<td>Absolute Value</td>
+<td>Distance from zero</td>
+<td><span class="math inline">\(|-5| = 5\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sum\)</span></td>
+<td>Summation</td>
+<td>Sum of a sequence</td>
+<td><span class="math inline">\(\sum_{i=1}^{n} i = 1 + 2 + ... + n\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\prod\)</span></td>
+<td>Product</td>
+<td>Product of a sequence</td>
+<td><span class="math inline">\(\prod_{i=1}^{n} i = 1 \cdot 2 \cdot ... \cdot n\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\approx\)</span></td>
+<td>Approximately equal</td>
+<td>Approximate value</td>
+<td><span class="math inline">\(\pi \approx 3.14\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\equiv\)</span></td>
+<td>Identical to</td>
+<td>Congruent or equivalent</td>
+<td><span class="math inline">\(a \equiv b \mod n\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\Rightarrow\)</span></td>
+<td>Implies</td>
+<td>Logical implication</td>
+<td><span class="math inline">\(x &gt; 2 \Rightarrow x^2 &gt; 4\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\Leftrightarrow\)</span></td>
+<td>If and only if</td>
+<td>Logical equivalence</td>
+<td><span class="math inline">\(x^2 = 4 \Leftrightarrow x = \pm2\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="set-theory-symbols" class="level3">
+<h3 class="anchored" data-anchor-id="set-theory-symbols"><strong>3. Set Theory Symbols</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 20%">
+<col style="width: 31%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\{\}\)</span></td>
+<td>Set</td>
+<td>Collection of elements</td>
+<td><span class="math inline">\(A = \{1, 2, 3\}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\in\)</span></td>
+<td>Element of</td>
+<td>Belongs to a set</td>
+<td><span class="math inline">\(2 \in A\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\notin\)</span></td>
+<td>Not an element of</td>
+<td>Not in a set</td>
+<td><span class="math inline">\(4 \notin A\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\emptyset\)</span></td>
+<td>Empty Set</td>
+<td>No elements</td>
+<td><span class="math inline">\(B = \emptyset\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\cup\)</span></td>
+<td>Union</td>
+<td>Elements in either set</td>
+<td><span class="math inline">\(A \cup B\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\cap\)</span></td>
+<td>Intersection</td>
+<td>Common elements in sets</td>
+<td><span class="math inline">\(A \cap B\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\subseteq\)</span></td>
+<td>Subset</td>
+<td>All elements in another set</td>
+<td><span class="math inline">\(A \subseteq B\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\subset\)</span></td>
+<td>Proper Subset</td>
+<td>Strictly contained</td>
+<td><span class="math inline">\(A \subset B\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\supseteq\)</span></td>
+<td>Superset</td>
+<td>Contains all elements</td>
+<td><span class="math inline">\(B \supseteq A\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\setminus\)</span></td>
+<td>Set Difference</td>
+<td>Elements in one but not both</td>
+<td><span class="math inline">\(A \setminus B\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\times\)</span></td>
+<td>Cartesian Product</td>
+<td>Ordered pairs of elements</td>
+<td><span class="math inline">\(A \times B\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(|A|\)</span></td>
+<td>Cardinality</td>
+<td>Number of elements</td>
+<td><span class="math inline">\(|A| = 3\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="logic-symbols" class="level3">
+<h3 class="anchored" data-anchor-id="logic-symbols"><strong>4. Logic Symbols</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 20%">
+<col style="width: 31%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\neg\)</span></td>
+<td>Not</td>
+<td>Negation</td>
+<td><span class="math inline">\(\neg P\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\wedge\)</span></td>
+<td>And</td>
+<td>Conjunction</td>
+<td><span class="math inline">\(P \wedge Q\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\vee\)</span></td>
+<td>Or</td>
+<td>Disjunction</td>
+<td><span class="math inline">\(P \vee Q\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\Rightarrow\)</span></td>
+<td>Implies</td>
+<td>Conditional statement</td>
+<td><span class="math inline">\(P \Rightarrow Q\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\Leftrightarrow\)</span></td>
+<td>If and only if</td>
+<td>Biconditional</td>
+<td><span class="math inline">\(P \Leftrightarrow Q\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\forall\)</span></td>
+<td>For all</td>
+<td>Universal quantifier</td>
+<td><span class="math inline">\(\forall x, x &gt; 0\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\exists\)</span></td>
+<td>There exists</td>
+<td>Existential quantifier</td>
+<td><span class="math inline">\(\exists x, x^2 = 4\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\exists!\)</span></td>
+<td>There exists exactly one</td>
+<td>Unique existence</td>
+<td><span class="math inline">\(\exists! x, x^2 = 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="calculus-symbols" class="level3">
+<h3 class="anchored" data-anchor-id="calculus-symbols"><strong>5. Calculus Symbols</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 20%">
+<col style="width: 31%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\frac{d}{dx}\)</span></td>
+<td>Derivative</td>
+<td>Rate of change</td>
+<td><span class="math inline">\(\frac{d}{dx} x^2 = 2x\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\int\)</span></td>
+<td>Integral</td>
+<td>Area under curve</td>
+<td><span class="math inline">\(\int x dx = \frac{x^2}{2} + C\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\nabla\)</span></td>
+<td>Nabla (Gradient)</td>
+<td>Vector derivative</td>
+<td><span class="math inline">\(\nabla f(x, y)\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\partial\)</span></td>
+<td>Partial Derivative</td>
+<td>Derivative of multivariable</td>
+<td><span class="math inline">\(\frac{\partial f}{\partial x}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\infty\)</span></td>
+<td>Infinity</td>
+<td>Unbounded value</td>
+<td><span class="math inline">\(\lim_{x\to\infty} \frac{1}{x} = 0\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\lim\)</span></td>
+<td>Limit</td>
+<td>Approaching a value</td>
+<td><span class="math inline">\(\lim_{x\to0} \frac{\sin(x)}{x} = 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="probability-statistics-symbols" class="level3">
+<h3 class="anchored" data-anchor-id="probability-statistics-symbols"><strong>6. Probability &amp; Statistics Symbols</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 20%">
+<col style="width: 31%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(P(A)\)</span></td>
+<td>Probability</td>
+<td>Likelihood of event A</td>
+<td><span class="math inline">\(P(A) = 0.5\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(E(X)\)</span></td>
+<td>Expected Value</td>
+<td>Mean of random variable X</td>
+<td><span class="math inline">\(E(X) = \mu\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\text{Var}(X)\)</span></td>
+<td>Variance</td>
+<td>Spread of random variable X</td>
+<td><span class="math inline">\(\text{Var}(X) = \sigma^2\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sigma\)</span></td>
+<td>Standard Deviation</td>
+<td>Square root of variance</td>
+<td><span class="math inline">\(\sigma = \sqrt{\text{Var}(X)}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\sum\)</span></td>
+<td>Summation</td>
+<td>Sum of values</td>
+<td><span class="math inline">\(\sum X_i\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(n!\)</span></td>
+<td>Factorial</td>
+<td>Product of first n integers</td>
+<td><span class="math inline">\(4! = 4\times3\times2\times1 = 24\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\binom{n}{k}\)</span></td>
+<td>Combination</td>
+<td>Ways to choose k from n</td>
+<td><span class="math inline">\(\binom{5}{2} = 10\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(P(n, k)\)</span></td>
+<td>Permutation</td>
+<td>Ordered arrangements</td>
+<td><span class="math inline">\(P(5, 2) = 20\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="complex-numbers-linear-algebra" class="level3">
+<h3 class="anchored" data-anchor-id="complex-numbers-linear-algebra"><strong>7. Complex Numbers &amp; Linear Algebra</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 20%">
+<col style="width: 31%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(i\)</span></td>
+<td>Imaginary Unit</td>
+<td><span class="math inline">\(\sqrt{-1}\)</span></td>
+<td><span class="math inline">\(i^2 = -1\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(|v|\)</span></td>
+<td>Vector Magnitude</td>
+<td>Length of vector</td>
+<td><span class="math inline">\(|v| = \sqrt{x^2 + y^2}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\cdot\)</span></td>
+<td>Dot Product</td>
+<td>Scalar product of vectors</td>
+<td><span class="math inline">\(u \cdot v = u_x v_x + u_y v_y\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\times\)</span></td>
+<td>Cross Product</td>
+<td>Vector product</td>
+<td><span class="math inline">\(u \times v\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(A^T\)</span></td>
+<td>Transpose</td>
+<td>Flip matrix dimensions</td>
+<td><span class="math inline">\(A^T\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="summary-of-mathematical-axioms-in-table-format" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-mathematical-axioms-in-table-format"><strong>Summary of Mathematical Axioms in Table Format</strong></h2>
+<blockquote class="blockquote">
+<p>Mathematical axioms are <strong>fundamental truths</strong> that serve as the building blocks for all mathematical reasoning. Here is a comprehensive table summarizing the main <strong>axioms of mathematics</strong> along with <strong>examples</strong>.</p>
+</blockquote>
+<hr>
+<section id="axioms-of-real-numbers-field-axioms" class="level3">
+<h3 class="anchored" data-anchor-id="axioms-of-real-numbers-field-axioms"><strong>1. Axioms of Real Numbers (Field Axioms)</strong></h3>
+<p>These axioms define the properties of real numbers under addition and multiplication.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 44%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Axiom</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Closure</strong></td>
+<td>Sum/product of two real numbers is real</td>
+<td><span class="math inline">\(a + b\)</span> is real, <span class="math inline">\(ab\)</span> is real</td>
+</tr>
+<tr class="even">
+<td><strong>2. Commutativity</strong></td>
+<td>Order doesn’t affect sum/product</td>
+<td><span class="math inline">\(a + b = b + a\)</span>, <span class="math inline">\(ab = ba\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>3. Associativity</strong></td>
+<td>Grouping doesn’t affect sum/product</td>
+<td><span class="math inline">\((a + b) + c = a + (b + c)\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>4. Identity</strong></td>
+<td>Exists an identity element for addition and multiplication</td>
+<td><span class="math inline">\(a + 0 = a\)</span>, <span class="math inline">\(a \times 1 = a\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>5. Inverse</strong></td>
+<td>Additive and multiplicative inverses exist</td>
+<td><span class="math inline">\(a + (-a) = 0\)</span>, <span class="math inline">\(a \times \frac{1}{a} = 1\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>6. Distributivity</strong></td>
+<td>Multiplication distributes over addition</td>
+<td><span class="math inline">\(a(b+c) = ab + ac\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="axioms-of-equality" class="level3">
+<h3 class="anchored" data-anchor-id="axioms-of-equality"><strong>2. Axioms of Equality</strong></h3>
+<p>These define the properties of equality used in equations and proofs.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 40%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Axiom</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Reflexive</strong></td>
+<td>Anything is equal to itself</td>
+<td><span class="math inline">\(a = a\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>2. Symmetric</strong></td>
+<td>If <span class="math inline">\(a = b\)</span>, then <span class="math inline">\(b = a\)</span></td>
+<td>If <span class="math inline">\(x = y\)</span>, then <span class="math inline">\(y = x\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>3. Transitive</strong></td>
+<td>If <span class="math inline">\(a = b\)</span> and <span class="math inline">\(b = c\)</span>, then <span class="math inline">\(a = c\)</span></td>
+<td>If <span class="math inline">\(x = y\)</span> and <span class="math inline">\(y = z\)</span>, then <span class="math inline">\(x = z\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>4. Substitution</strong></td>
+<td>If <span class="math inline">\(a = b\)</span>, then <span class="math inline">\(a\)</span> can be substituted for <span class="math inline">\(b\)</span> in any expression</td>
+<td>If <span class="math inline">\(x = 5\)</span>, then <span class="math inline">\(x + 2 = 7\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>5. Addition Property</strong></td>
+<td>Adding same number to both sides preserves equality</td>
+<td>If <span class="math inline">\(x = y\)</span>, then <span class="math inline">\(x + c = y + c\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>6. Multiplication Property</strong></td>
+<td>Multiplying both sides by same number preserves equality</td>
+<td>If <span class="math inline">\(x = y\)</span>, then <span class="math inline">\(cx = cy\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="axioms-of-order" class="level3">
+<h3 class="anchored" data-anchor-id="axioms-of-order"><strong>3. Axioms of Order</strong></h3>
+<p>These define the properties of inequalities among real numbers.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 40%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Axiom</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Trichotomy</strong></td>
+<td>Exactly one is true: <span class="math inline">\(a &lt; b\)</span>, <span class="math inline">\(a = b\)</span>, or <span class="math inline">\(a &gt; b\)</span></td>
+<td><span class="math inline">\(3 &lt; 4\)</span>, <span class="math inline">\(4 &gt; 3\)</span>, <span class="math inline">\(3 = 3\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>2. Transitivity</strong></td>
+<td>If <span class="math inline">\(a &lt; b\)</span> and <span class="math inline">\(b &lt; c\)</span>, then <span class="math inline">\(a &lt; c\)</span></td>
+<td>If <span class="math inline">\(2 &lt; 4\)</span> and <span class="math inline">\(4 &lt; 6\)</span>, then <span class="math inline">\(2 &lt; 6\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>3. Addition Property</strong></td>
+<td>Adding same number to both sides of inequality maintains order</td>
+<td>If <span class="math inline">\(a &lt; b\)</span>, then <span class="math inline">\(a+c &lt; b+c\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>4. Multiplication Property</strong></td>
+<td>Multiplying both sides by positive preserves order; negative reverses order</td>
+<td><span class="math inline">\(2 &lt; 3 \Rightarrow 2 \times 4 &lt; 3 \times 4\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>5. Density</strong></td>
+<td>Between any two real numbers, there’s another real number</td>
+<td>Between 1 and 2, there’s 1.5</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="peanos-axioms-axioms-of-natural-numbers" class="level3">
+<h3 class="anchored" data-anchor-id="peanos-axioms-axioms-of-natural-numbers"><strong>4. Peano’s Axioms (Axioms of Natural Numbers)</strong></h3>
+<p>Peano’s axioms define the properties of natural numbers (0, 1, 2, …).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 40%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Axiom</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Zero Axiom</strong></td>
+<td>0 is a natural number</td>
+<td><span class="math inline">\(0 \in \mathbb{N}\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>2. Successor Axiom</strong></td>
+<td>Every natural number has a successor</td>
+<td><span class="math inline">\(S(0) = 1, S(1) = 2\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>3. Distinctness</strong></td>
+<td>No two numbers have the same successor</td>
+<td><span class="math inline">\(S(n) \neq S(m)\)</span> if <span class="math inline">\(n \neq m\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>4. Zero is Not Successor</strong></td>
+<td>0 is not the successor of any number</td>
+<td><span class="math inline">\(\neg \exists n, S(n) = 0\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>5. Induction</strong></td>
+<td>If 0 has property <span class="math inline">\(P\)</span>, and <span class="math inline">\(n\)</span> having <span class="math inline">\(P\)</span> implies <span class="math inline">\(S(n)\)</span> has <span class="math inline">\(P\)</span>, then all natural numbers have <span class="math inline">\(P\)</span></td>
+<td>Inductive proofs</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="axioms-of-set-theory-zermelo-fraenkel-axioms" class="level3">
+<h3 class="anchored" data-anchor-id="axioms-of-set-theory-zermelo-fraenkel-axioms"><strong>5. Axioms of Set Theory (Zermelo-Fraenkel Axioms)</strong></h3>
+<p>These form the foundation of modern set theory.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 40%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Axiom</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Axiom of Extensionality</strong></td>
+<td>Two sets are equal if they have the same elements</td>
+<td><span class="math inline">\(A = B\)</span> if <span class="math inline">\(\forall x (x \in A \Leftrightarrow x \in B)\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>2. Axiom of Empty Set</strong></td>
+<td>There exists a set with no elements</td>
+<td><span class="math inline">\(\emptyset = \{\}\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>3. Axiom of Pairing</strong></td>
+<td>For any two sets, there exists a set containing exactly those two</td>
+<td><span class="math inline">\(\{a, b\}\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>4. Axiom of Union</strong></td>
+<td>For any set, there exists a union set containing all elements of its subsets</td>
+<td><span class="math inline">\(A \cup B\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>5. Axiom of Power Set</strong></td>
+<td>For any set, there exists a set of all its subsets</td>
+<td><span class="math inline">\(P(A)\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>6. Axiom of Infinity</strong></td>
+<td>There exists an infinite set</td>
+<td><span class="math inline">\(\mathbb{N} = \{0, 1, 2, ...\}\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>7. Axiom of Replacement</strong></td>
+<td>Elements can be replaced by other elements based on a rule</td>
+<td><span class="math inline">\(f: A \to B\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>8. Axiom of Choice</strong></td>
+<td>From any set of non-empty sets, one element can be chosen from each</td>
+<td>Well-ordering theorem</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="euclidean-geometry-axioms-euclids-postulates" class="level3">
+<h3 class="anchored" data-anchor-id="euclidean-geometry-axioms-euclids-postulates"><strong>6. Euclidean Geometry Axioms (Euclid’s Postulates)</strong></h3>
+<p>These are the foundations of Euclidean geometry.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 40%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Axiom</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Line Postulate</strong></td>
+<td>A line can be drawn through any two points</td>
+<td>Through <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, draw <span class="math inline">\(AB\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>2. Line Segment Extension</strong></td>
+<td>Any line segment can be extended indefinitely</td>
+<td><span class="math inline">\(AB \to A'B'\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>3. Circle Postulate</strong></td>
+<td>A circle can be drawn with any center and radius</td>
+<td>Circle with center <span class="math inline">\(O\)</span> and radius <span class="math inline">\(r\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>4. Right Angle Postulate</strong></td>
+<td>All right angles are congruent</td>
+<td><span class="math inline">\(\angle A = 90^\circ, \angle B = 90^\circ \Rightarrow \angle A \equiv \angle B\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>5. Parallel Postulate</strong></td>
+<td>If a line intersects two lines and the interior angles sum to less than 180°, the two lines will intersect</td>
+<td>Basis of Euclidean geometry</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="major-topics-in-mathematics" class="level2">
+<h2 class="anchored" data-anchor-id="major-topics-in-mathematics"><strong>Major Topics in Mathematics</strong></h2>
+<blockquote class="blockquote">
+<p>Mathematics is a vast field with numerous branches, each with its own set of concepts, theories, and applications. Here is a <strong>comprehensive overview</strong> of the <strong>major topics</strong> in mathematics.</p>
+</blockquote>
+<section id="arithmetic" class="level3">
+<h3 class="anchored" data-anchor-id="arithmetic"><strong>1. Arithmetic</strong></h3>
+<p><strong>Study of numbers and basic operations.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 44%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subtopic</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Natural Numbers</strong></td>
+<td>Counting numbers (1, 2, 3, …)</td>
+<td><span class="math inline">\(\mathbb{N} = \{1, 2, 3, ...\}\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Integers</strong></td>
+<td>Positive, negative, and zero</td>
+<td><span class="math inline">\(\mathbb{Z} = \{...,-2, -1, 0, 1, 2,...\}\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Fractions</strong></td>
+<td>Division of integers</td>
+<td><span class="math inline">\(\frac{3}{4}, \frac{7}{2}\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Decimals</strong></td>
+<td>Fractional numbers in decimal form</td>
+<td><span class="math inline">\(0.75, 3.14\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Order of Operations</strong></td>
+<td>Sequence for operations (PEMDAS)</td>
+<td><span class="math inline">\(2 + 3 \times 4 = 14\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Prime Numbers</strong></td>
+<td>Numbers with only two factors (1, itself)</td>
+<td><span class="math inline">\(2, 3, 5, 7, 11\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Divisibility Rules</strong></td>
+<td>Rules to check if one number divides another</td>
+<td><span class="math inline">\(4 \mid 12\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="algebra" class="level3">
+<h3 class="anchored" data-anchor-id="algebra"><strong>2. Algebra</strong></h3>
+<p><strong>Study of mathematical symbols and rules for manipulating them.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 44%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subtopic</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Variables and Expressions</strong></td>
+<td>Symbols representing numbers</td>
+<td><span class="math inline">\(x + 2, 3y - 7\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Equations</strong></td>
+<td>Mathematical statements of equality</td>
+<td><span class="math inline">\(x + 3 = 7\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Inequalities</strong></td>
+<td>Mathematical statements of inequality</td>
+<td><span class="math inline">\(x &gt; 5, y \leq 2\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Polynomials</strong></td>
+<td>Expressions with multiple terms</td>
+<td><span class="math inline">\(x^2 + 3x + 2\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Factoring</strong></td>
+<td>Breaking down expressions into factors</td>
+<td><span class="math inline">\(x^2 - 4 = (x-2)(x+2)\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Functions</strong></td>
+<td>Relations between inputs and outputs</td>
+<td><span class="math inline">\(f(x) = x^2 + 2x + 1\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Linear Algebra</strong></td>
+<td>Study of vectors, matrices, and systems of equations</td>
+<td><span class="math inline">\(Ax = b\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Quadratic Equations</strong></td>
+<td>Equations of the form <span class="math inline">\(ax^2 + bx + c = 0\)</span></td>
+<td><span class="math inline">\(x^2 - 5x + 6 = 0\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="geometry" class="level3">
+<h3 class="anchored" data-anchor-id="geometry"><strong>3. Geometry</strong></h3>
+<p><strong>Study of shapes, sizes, and properties of space.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 44%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subtopic</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Euclidean Geometry</strong></td>
+<td>Study of flat surfaces and shapes</td>
+<td>Points, lines, angles, triangles</td>
+</tr>
+<tr class="even">
+<td><strong>Coordinate Geometry</strong></td>
+<td>Geometry using the Cartesian plane</td>
+<td>Distance, midpoint, slope</td>
+</tr>
+<tr class="odd">
+<td><strong>Solid Geometry</strong></td>
+<td>Study of 3D shapes</td>
+<td>Cubes, spheres, cones</td>
+</tr>
+<tr class="even">
+<td><strong>Trigonometry</strong></td>
+<td>Study of angles and lengths in triangles</td>
+<td><span class="math inline">\(\sin \theta, \cos \theta, \tan \theta\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Congruence and Similarity</strong></td>
+<td>Comparisons of shapes</td>
+<td><span class="math inline">\(\triangle ABC \cong \triangle DEF\)</span>, <span class="math inline">\(\triangle PQR \sim \triangle XYZ\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Transformations</strong></td>
+<td>Translations, rotations, reflections, scaling</td>
+<td><span class="math inline">\(T(x, y) = (x+2, y-3)\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Area and Volume</strong></td>
+<td>Measure of space inside shapes</td>
+<td>Area of circle: <span class="math inline">\(\pi r^2\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="calculus" class="level3">
+<h3 class="anchored" data-anchor-id="calculus"><strong>4. Calculus</strong></h3>
+<p><strong>Study of change and motion.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 44%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subtopic</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Limits</strong></td>
+<td>Behavior of functions as inputs approach a value</td>
+<td><span class="math inline">\(\lim_{x \to 0} \frac{\sin(x)}{x} = 1\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Derivatives</strong></td>
+<td>Rate of change of a function</td>
+<td><span class="math inline">\(f'(x) = 2x\)</span> for <span class="math inline">\(f(x) = x^2\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Integration</strong></td>
+<td>Accumulation of quantities</td>
+<td><span class="math inline">\(\int x dx = \frac{x^2}{2} + C\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Differential Equations</strong></td>
+<td>Equations involving derivatives</td>
+<td><span class="math inline">\(y' + y = 0\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Multivariable Calculus</strong></td>
+<td>Calculus with more than one variable</td>
+<td><span class="math inline">\(f(x, y) = x^2 + y^2\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Vector Calculus</strong></td>
+<td>Calculus of vector fields</td>
+<td><span class="math inline">\(\nabla \cdot F\)</span>, <span class="math inline">\(\nabla \times F\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Series and Sequences</strong></td>
+<td>Summation of sequences</td>
+<td><span class="math inline">\(\sum_{n=1}^{\infty} \frac{1}{n^2}\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="probability-and-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="probability-and-statistics"><strong>5. Probability and Statistics</strong></h3>
+<p><strong>Study of randomness, data analysis, and interpretation.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 44%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subtopic</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Probability Theory</strong></td>
+<td>Study of random events and likelihoods</td>
+<td><span class="math inline">\(P(A) = \frac{\text{Favorable}}{\text{Total}}\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Random Variables</strong></td>
+<td>Variables representing outcomes</td>
+<td><span class="math inline">\(X: \text{Number of heads in 3 flips}\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Distributions</strong></td>
+<td>Patterns of data spread</td>
+<td>Normal, Binomial, Poisson</td>
+</tr>
+<tr class="even">
+<td><strong>Descriptive Statistics</strong></td>
+<td>Measures of central tendency and spread</td>
+<td>Mean, Median, Mode, Variance</td>
+</tr>
+<tr class="odd">
+<td><strong>Inferential Statistics</strong></td>
+<td>Drawing conclusions from data samples</td>
+<td>Hypothesis testing, Confidence Intervals</td>
+</tr>
+<tr class="even">
+<td><strong>Regression Analysis</strong></td>
+<td>Relationship between variables</td>
+<td>Linear Regression: <span class="math inline">\(y = mx + c\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Correlation</strong></td>
+<td>Degree of relationship between variables</td>
+<td><span class="math inline">\(-1 \leq r \leq 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="number-theory" class="level3">
+<h3 class="anchored" data-anchor-id="number-theory"><strong>6. Number Theory</strong></h3>
+<p><strong>Study of integers and their properties.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 44%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subtopic</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prime Numbers</strong></td>
+<td>Numbers divisible only by 1 and itself</td>
+<td><span class="math inline">\(2, 3, 5, 7, 11\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Divisibility</strong></td>
+<td>Rules for determining divisibility</td>
+<td><span class="math inline">\(4 \mid 12\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>GCD and LCM</strong></td>
+<td>Greatest Common Divisor, Least Common Multiple</td>
+<td><span class="math inline">\(\gcd(12, 15) = 3\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Modular Arithmetic</strong></td>
+<td>Remainders in division</td>
+<td><span class="math inline">\(7 \equiv 1 \mod 3\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Diophantine Equations</strong></td>
+<td>Equations with integer solutions</td>
+<td><span class="math inline">\(x^2 + y^2 = z^2\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Fermat’s Last Theorem</strong></td>
+<td><span class="math inline">\(x^n + y^n \neq z^n\)</span> for <span class="math inline">\(n &gt; 2\)</span></td>
+<td>Proved by Andrew Wiles</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="discrete-mathematics" class="level3">
+<h3 class="anchored" data-anchor-id="discrete-mathematics"><strong>7. Discrete Mathematics</strong></h3>
+<p><strong>Study of countable structures and logic.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 44%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subtopic</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Logic and Propositions</strong></td>
+<td>Boolean logic, truth values</td>
+<td><span class="math inline">\(P \wedge Q, \neg P, P \Rightarrow Q\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Set Theory</strong></td>
+<td>Study of collections of objects</td>
+<td><span class="math inline">\(A = \{1, 2, 3\}\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Combinatorics</strong></td>
+<td>Counting and arrangement techniques</td>
+<td>Permutations, Combinations</td>
+</tr>
+<tr class="even">
+<td><strong>Graph Theory</strong></td>
+<td>Study of graphs and networks</td>
+<td>Nodes, Edges, Eulerian Path</td>
+</tr>
+<tr class="odd">
+<td><strong>Boolean Algebra</strong></td>
+<td>Algebra of true/false values</td>
+<td><span class="math inline">\(A \wedge B, A \vee B, \neg A\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Algorithms and Complexity</strong></td>
+<td>Study of problem-solving methods and efficiency</td>
+<td>Sorting, Searching Algorithms</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="applied-mathematics" class="level3">
+<h3 class="anchored" data-anchor-id="applied-mathematics"><strong>8. Applied Mathematics</strong></h3>
+<p><strong>Mathematics used in practical fields.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 44%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subtopic</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Mathematical Physics</strong></td>
+<td>Equations describing physical phenomena</td>
+<td>Maxwell’s Equations, Schrödinger’s Equation</td>
+</tr>
+<tr class="even">
+<td><strong>Engineering Mathematics</strong></td>
+<td>Math in engineering applications</td>
+<td>Control systems, Signal processing</td>
+</tr>
+<tr class="odd">
+<td><strong>Financial Mathematics</strong></td>
+<td>Math for finance and investment</td>
+<td>Compound Interest, Derivatives</td>
+</tr>
+<tr class="even">
+<td><strong>Cryptography</strong></td>
+<td>Secure communication using mathematics</td>
+<td>RSA Algorithm, Hash Functions</td>
+</tr>
+<tr class="odd">
+<td><strong>Game Theory</strong></td>
+<td>Strategic decision-making</td>
+<td>Nash Equilibrium</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/bthek1\.github\.io\/DL_tasks");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<script src="https://utteranc.es/client.js" repo="quarto-dev/quarto-web" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Tabular/time_series_forecasting.html" class="pagination-link" aria-label="Time Series Forecasting">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Time Series Forecasting</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Theory/1_discrete_maths.html" class="pagination-link" aria-label="Discrete Maths">
+        <span class="nav-page-text">Discrete Maths</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page">
+<p>Trademark</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/bthek1/bthek1_blog/issues">
+<p>FAQ</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://bthek1.github.io/bthek1_blog/index.html">
+<p>License</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+<p>Trademark</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.dev/bthek1/DL_tasks/blob/main/Theory/00_0_Mathematics_Foundations.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/bthek1/DL_tasks/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/bthek1">
+      <i class="bi bi-github" role="img" aria-label="Github">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/benedict-thekkel/">
+      <i class="bi bi-linkedin" role="img" aria-label="Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

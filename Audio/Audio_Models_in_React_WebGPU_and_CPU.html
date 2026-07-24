@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Benedict Thekkel">
+
+<title>audio_models_in_react_webgpu_and_cpu – DL_tasks</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favi.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-8e6bb74c5449693feffed99ccb3abc15.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0a0af1a8bd48d52fbe470bacd6643b05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-8e6bb74c5449693feffed99ccb3abc15.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="DL_tasks">
+<meta property="og:description" content="Research into Deep Learning Models">
+<meta property="og:image" content="https://bthek1.github.io/DL_tasks/Audio/Logo.svg">
+<meta property="og:site_name" content="DL_tasks">
+<meta name="twitter:title" content="DL_tasks">
+<meta name="twitter:description" content="Research into Deep Learning Models">
+<meta name="twitter:image" content="https://bthek1.github.io/DL_tasks/Audio/Logo.svg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../Logo.svg" alt="Quarto logo." class="navbar-logo light-content">
+    <img src="../Logo.svg" alt="Quarto logo." class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-deep-learning" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Deep Learning</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-deep-learning">    
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/FastAI_course/">
+ <span class="dropdown-text">Fast AI course</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/DL_methods/">
+ <span class="dropdown-text">DL Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/DL_tasks/">
+ <span class="dropdown-text">DL Tasks</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ml-techniques" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">ML Techniques</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ml-techniques">    
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/ML_methods/">
+ <span class="dropdown-text">ML Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/TimeSeriesML/">
+ <span class="dropdown-text">Time series</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-web" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Web</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-web">    
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/WEB_doc/">
+ <span class="dropdown-text">Web Development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Front_End/">
+ <span class="dropdown-text">Front End</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Back_End/">
+ <span class="dropdown-text">Back End</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Docker_Containers/">
+ <span class="dropdown-text">Docker Containers</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tools</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tools">    
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Software_Tools/">
+ <span class="dropdown-text">Software Tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Hardware_Tools/">
+ <span class="dropdown-text">Hardware Tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Python_Libs/">
+ <span class="dropdown-text">Python Libraries</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/nbdevAuto/">
+ <span class="dropdown-text">Nbdev Automation</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-business" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Business</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-business">    
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Business_doc/">
+ <span class="dropdown-text">Business Doc</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Philosophy_doc/">
+ <span class="dropdown-text">Ideas Doc</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Finances/">
+ <span class="dropdown-text">Finances</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bthek1.github.io/Other/">
+ <span class="dropdown-text">Other</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://bthek1.github.io/bthek1_blog/"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-help" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Help</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-help">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/bthek1/bthek1_blog/issues"><i class="bi bi-bug" role="img">
+</i> 
+ <span class="dropdown-text">Report a Bug</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/bthek1/bthek1_blog/issues"><i class="bi bi-chat-right-text" role="img">
+</i> 
+ <span class="dropdown-text">Ask a Question</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/bthek1/bthek1_blog/issues"><i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com/bthek1" title="" class="quarto-navigation-tool px-1" aria-label="Github"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/benedict-thekkel/" title="" class="quarto-navigation-tool px-1" aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DL_tasks</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Audio</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/text_to_speech.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-to-Speech</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/text_to_audio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-to-Audio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/automatic_speech_recognition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Automatic Speech Recognition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/audio_to_audio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Audio-to-Audio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/audio_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Audio Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Audio/voice_activity_detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Voice Activity Detection</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Computer Vision</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/depth_estimation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Depth Estimation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/object_detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Object Detection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_segmentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image Segmentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/text_to_image.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-to-Image</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_to_text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-to-Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_to_image.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-to-Image</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_to_video.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-to-Video</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/unconditional_image_generation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unconditional Image Generation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/video_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Video Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/text_to_video.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-to-Video</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/zero_shot_image_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zero-Shot Image Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/mask_generation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mask Generation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/zero_shot_object_detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zero-Shot Object Detection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/text_to_3d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-to-3D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_to_3d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-to-3D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/image_feature_extraction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image Feature Extraction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/keypoint_detection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Keypoint Detection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Computer_Vision/video_to_video.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Video-to-Video</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Multimodal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/audio_text_to_text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Audio-Text-to-Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/image_text_to_text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-Text-to-Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/image_text_to_image.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-Text-to-Image</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/image_text_to_video.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image-Text-to-Video</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/visual_question_answering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visual Question Answering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/document_question_answering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Document Question Answering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/video_text_to_text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Video-Text-to-Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/visual_document_retrieval.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visual Document Retrieval</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Multimodal/any_to_any.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Any-to-Any</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Natural Language Processing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/text_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/token_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Token Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/table_question_answering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table Question Answering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/question_answering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Question Answering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/zero_shot_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zero-Shot Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/translation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Translation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/summarization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summarization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/feature_extraction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Feature Extraction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/text_generation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text Generation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/fill_mask.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fill-Mask</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/sentence_similarity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sentence Similarity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Natural_Language_Processing/text_ranking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text Ranking</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Other</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Other/graph_machine_learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Graph Machine Learning</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Reinforcement Learning</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Reinforcement_Learning/reinforcement_learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reinforcement Learning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Reinforcement_Learning/robotics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Robotics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tabular</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Tabular/tabular_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tabular Classification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Tabular/tabular_regression.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tabular Regression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Tabular/time_series_forecasting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Time Series Forecasting</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Theory</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/0_mathematics_foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mathematical Symbols and Foundations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/1_discrete_maths.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discrete Maths</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/0_physics_equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Physics Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/1_electromagnetic_equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Electromagnetic Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/2_deep_learning_equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Deep Learning Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/electricity_equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Electricity Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Theory/forresnet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Idea - ForResNet (coming soon)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#running-the-audio-models-in-a-react-frontend-webgpu-or-cpu" id="toc-running-the-audio-models-in-a-react-frontend-webgpu-or-cpu" class="nav-link active" data-scroll-target="#running-the-audio-models-in-a-react-frontend-webgpu-or-cpu">Running the Audio Models in a React Frontend (WebGPU or CPU)</a>
+  <ul class="collapse">
+  <li><a href="#the-core-stack" id="toc-the-core-stack" class="nav-link" data-scroll-target="#the-core-stack">1. The core stack</a>
+  <ul class="collapse">
+  <li><a href="#device-selection-feature-detection" id="toc-device-selection-feature-detection" class="nav-link" data-scroll-target="#device-selection-feature-detection">Device selection + feature detection</a></li>
+  </ul></li>
+  <li><a href="#audio-io-helpers-the-browsers-soundfile-librosa" id="toc-audio-io-helpers-the-browsers-soundfile-librosa" class="nav-link" data-scroll-target="#audio-io-helpers-the-browsers-soundfile-librosa">2. Audio I/O helpers (the browser’s <code>soundfile</code> + <code>librosa</code>)</a>
+  <ul class="collapse">
+  <li><a href="#always-run-models-in-a-web-worker" id="toc-always-run-models-in-a-web-worker" class="nav-link" data-scroll-target="#always-run-models-in-a-web-worker">Always run models in a Web Worker</a></li>
+  </ul></li>
+  <li><a href="#task-by-task" id="toc-task-by-task" class="nav-link" data-scroll-target="#task-by-task">3. Task-by-task</a>
+  <ul class="collapse">
+  <li><a href="#automatic-speech-recognition---best-in-browser-task" id="toc-automatic-speech-recognition---best-in-browser-task" class="nav-link" data-scroll-target="#automatic-speech-recognition---best-in-browser-task">3.1 Automatic Speech Recognition -&gt; <strong>best in-browser task</strong></a></li>
+  <li><a href="#audio-classification---works-fully-in-browser" id="toc-audio-classification---works-fully-in-browser" class="nav-link" data-scroll-target="#audio-classification---works-fully-in-browser">3.2 Audio Classification -&gt; <strong>works fully in-browser</strong></a></li>
+  <li><a href="#text-to-speech---works-in-browser-pick-the-right-model" id="toc-text-to-speech---works-in-browser-pick-the-right-model" class="nav-link" data-scroll-target="#text-to-speech---works-in-browser-pick-the-right-model">3.3 Text-to-Speech -&gt; <strong>works in-browser</strong> (pick the right model)</a></li>
+  <li><a href="#text-to-audio-music-sfx---partial-usually-server-side" id="toc-text-to-audio-music-sfx---partial-usually-server-side" class="nav-link" data-scroll-target="#text-to-audio-music-sfx---partial-usually-server-side">3.4 Text-to-Audio (music / SFX) -&gt; <strong>partial; usually server-side</strong></a></li>
+  <li><a href="#audio-to-audio-separation-enhancement---custom-onnx-not-a-pipeline" id="toc-audio-to-audio-separation-enhancement---custom-onnx-not-a-pipeline" class="nav-link" data-scroll-target="#audio-to-audio-separation-enhancement---custom-onnx-not-a-pipeline">3.5 Audio-to-Audio (separation / enhancement) -&gt; <strong>custom ONNX, not a pipeline</strong></a></li>
+  <li><a href="#audio-text-to-text-multimodal---server-side" id="toc-audio-text-to-text-multimodal---server-side" class="nav-link" data-scroll-target="#audio-text-to-text-multimodal---server-side">3.6 Audio-Text-to-Text (multimodal) -&gt; <strong>server-side</strong></a></li>
+  </ul></li>
+  <li><a href="#feasibility-summary" id="toc-feasibility-summary" class="nav-link" data-scroll-target="#feasibility-summary">4. Feasibility summary</a></li>
+  <li><a href="#memory-performance-notes-the-browsers-version-of-the-12-gb-budget" id="toc-memory-performance-notes-the-browsers-version-of-the-12-gb-budget" class="nav-link" data-scroll-target="#memory-performance-notes-the-browsers-version-of-the-12-gb-budget">5. Memory &amp; performance notes (the browser’s version of the 12 GB budget)</a></li>
+  <li><a href="#minimal-react-hook-tying-it-together" id="toc-minimal-react-hook-tying-it-together" class="nav-link" data-scroll-target="#minimal-react-hook-tying-it-together">6. Minimal React hook tying it together</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">7. Reference</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/bthek1/DL_tasks/edit/main/Audio/Audio_Models_in_React_WebGPU_and_CPU.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/bthek1/DL_tasks/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Benedict Thekkel </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="running-the-audio-models-in-a-react-frontend-webgpu-or-cpu" class="level1">
+<h1>Running the Audio Models in a React Frontend (WebGPU or CPU)</h1>
+<blockquote class="blockquote">
+<p>How each audio task from the <code>DL_tasks/nbs/Audio/</code> notebooks maps to an in-browser React + TypeScript app, running the model <strong>client-side</strong> on the user’s GPU (WebGPU) or CPU (WebAssembly). No Python server in the inference path.</p>
+</blockquote>
+<p>The Python notebooks load every model through Hugging Face <code>transformers</code>. The browser equivalent is <strong>Transformers.js</strong> (<code>@huggingface/transformers</code>), which runs the <em>same</em> Hugging Face checkpoints (exported to ONNX) on <strong>ONNX Runtime Web</strong>, with two execution backends:</p>
+<ul>
+<li><strong>WebGPU</strong> - runs the model on the GPU. 5-30x faster than CPU; needs a Chromium-based browser (or Safari 18+ / Firefox with the flag) and a machine with WebGPU enabled.</li>
+<li><strong>WASM (CPU)</strong> - WebAssembly + SIMD + multithreading. Works everywhere, slower, but the universal fallback.</li>
+</ul>
+<p>Tasks with no ONNX / Transformers.js path (source separation, diffusion audio) drop down to <strong>ONNX Runtime Web directly</strong> with a hand-exported model, or stay server-side. The feasibility table at the end says which is which.</p>
+<hr>
+<section id="the-core-stack" class="level2">
+<h2 class="anchored" data-anchor-id="the-core-stack">1. The core stack</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> i @huggingface/transformers          <span class="co"># pipelines, WebGPU + WASM backends</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># onnxruntime-web is pulled in transitively; install directly only for</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># custom (non-pipeline) models such as source separation:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> i onnxruntime-web</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Key idea from the notebooks that carries straight over: <strong>hold one large model live at a time and free it before loading the next.</strong> The browser tab has a memory budget every bit as tight as the 12 GB container the notebooks target - a WebGPU context can OOM the tab. Same discipline: dispose (<code>await model.dispose()</code>), null the reference, let GC run.</p>
+<section id="device-selection-feature-detection" class="level3">
+<h3 class="anchored" data-anchor-id="device-selection-feature-detection">Device selection + feature detection</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// src/lib/device.ts</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">export type</span> Backend <span class="op">=</span> <span class="st">"webgpu"</span> <span class="op">|</span> <span class="st">"wasm"</span><span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">pickBackend</span>()<span class="op">:</span> <span class="bu">Promise</span><span class="op">&lt;</span>Backend<span class="op">&gt;</span> {</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">// WebGPU is exposed as navigator.gpu; requesting an adapter confirms a</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">// usable GPU (some browsers expose the API but have no adapter).</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="st">"gpu"</span> <span class="kw">in</span> <span class="bu">navigator</span>) {</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span> {</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> adapter <span class="op">=</span> <span class="cf">await</span> (<span class="bu">navigator</span> <span class="im">as</span> <span class="dt">any</span>)<span class="op">.</span><span class="at">gpu</span><span class="op">.</span><span class="fu">requestAdapter</span>()<span class="op">;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (adapter) <span class="cf">return</span> <span class="st">"webgpu"</span><span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">catch</span> {</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>      <span class="co">/* fall through to wasm */</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="st">"wasm"</span><span class="op">;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Transformers.js takes the backend as <code>device</code> and the weight precision as <code>dtype</code>. On WebGPU prefer <code>fp16</code> (half the memory, matches the notebooks’ <code>torch.float16</code>); on WASM use a quantized <code>q8</code>/<code>q4</code> to keep the download and RAM small:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// src/lib/loadOpts.ts</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="im">type</span> { Backend } <span class="im">from</span> <span class="st">"./device"</span><span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">function</span> <span class="fu">loadOpts</span>(backend<span class="op">:</span> Backend) {</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> backend <span class="op">===</span> <span class="st">"webgpu"</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">?</span> { device<span class="op">:</span> <span class="st">"webgpu"</span> <span class="im">as</span> <span class="kw">const</span><span class="op">,</span> dtype<span class="op">:</span> <span class="st">"fp16"</span> <span class="im">as</span> <span class="kw">const</span> }</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">:</span> { device<span class="op">:</span> <span class="st">"wasm"</span> <span class="im">as</span> <span class="kw">const</span><span class="op">,</span>   dtype<span class="op">:</span> <span class="st">"q8"</span>   <span class="im">as</span> <span class="kw">const</span> }<span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="audio-io-helpers-the-browsers-soundfile-librosa" class="level2">
+<h2 class="anchored" data-anchor-id="audio-io-helpers-the-browsers-soundfile-librosa">2. Audio I/O helpers (the browser’s <code>soundfile</code> + <code>librosa</code>)</h2>
+<p>Every ASR/classification model in the notebooks wants <strong>16 kHz mono <code>Float32</code></strong>. The notebooks do this with <code>librosa.resample</code> / <code>soundfile</code>; in the browser the Web Audio API does the decode and resample.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// src/lib/audio.ts</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">/** Decode any audio File/Blob/ArrayBuffer to mono Float32 at a target rate. */</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">decodeToMono</span>(</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  data<span class="op">:</span> <span class="bu">ArrayBuffer</span><span class="op">,</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  targetRate <span class="op">=</span> <span class="dv">16000</span><span class="op">,</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>)<span class="op">:</span> <span class="bu">Promise</span><span class="op">&lt;</span><span class="bu">Float32Array</span><span class="op">&gt;</span> {</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">// OfflineAudioContext resamples for free: create it at the target rate and</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">// render the decoded buffer through it.</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> tmp <span class="op">=</span> <span class="kw">new</span> <span class="bu">AudioContext</span>()<span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> decoded <span class="op">=</span> <span class="cf">await</span> tmp<span class="op">.</span><span class="fu">decodeAudioData</span>(data<span class="op">.</span><span class="fu">slice</span>(<span class="dv">0</span>))<span class="op">;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> tmp<span class="op">.</span><span class="fu">close</span>()<span class="op">;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> off <span class="op">=</span> <span class="kw">new</span> <span class="bu">OfflineAudioContext</span>(<span class="dv">1</span><span class="op">,</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">ceil</span>(decoded<span class="op">.</span><span class="at">duration</span> <span class="op">*</span> targetRate)<span class="op">,</span> targetRate)<span class="op">;</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> src <span class="op">=</span> off<span class="op">.</span><span class="fu">createBufferSource</span>()<span class="op">;</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  src<span class="op">.</span><span class="at">buffer</span> <span class="op">=</span> decoded<span class="op">;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  src<span class="op">.</span><span class="fu">connect</span>(off<span class="op">.</span><span class="at">destination</span>)<span class="op">;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  src<span class="op">.</span><span class="fu">start</span>()<span class="op">;</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> rendered <span class="op">=</span> <span class="cf">await</span> off<span class="op">.</span><span class="fu">startRendering</span>()<span class="op">;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> rendered<span class="op">.</span><span class="fu">getChannelData</span>(<span class="dv">0</span>)<span class="op">;</span> <span class="co">// mono Float32 @ targetRate</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co">/** Capture N seconds from the mic as mono Float32 at targetRate. */</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">recordMic</span>(seconds<span class="op">:</span> <span class="dt">number</span><span class="op">,</span> targetRate <span class="op">=</span> <span class="dv">16000</span>)<span class="op">:</span> <span class="bu">Promise</span><span class="op">&lt;</span><span class="bu">Float32Array</span><span class="op">&gt;</span> {</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> stream <span class="op">=</span> <span class="cf">await</span> <span class="bu">navigator</span><span class="op">.</span><span class="at">mediaDevices</span><span class="op">.</span><span class="fu">getUserMedia</span>({ audio<span class="op">:</span> <span class="kw">true</span> })<span class="op">;</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> rec <span class="op">=</span> <span class="kw">new</span> <span class="bu">MediaRecorder</span>(stream)<span class="op">;</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> chunks<span class="op">:</span> <span class="bu">Blob</span>[] <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  rec<span class="op">.</span><span class="at">ondataavailable</span> <span class="op">=</span> (e) <span class="kw">=&gt;</span> chunks<span class="op">.</span><span class="fu">push</span>(e<span class="op">.</span><span class="at">data</span>)<span class="op">;</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  rec<span class="op">.</span><span class="fu">start</span>()<span class="op">;</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> <span class="kw">new</span> <span class="bu">Promise</span>((r) <span class="kw">=&gt;</span> <span class="pp">setTimeout</span>(r<span class="op">,</span> seconds <span class="op">*</span> <span class="dv">1000</span>))<span class="op">;</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  rec<span class="op">.</span><span class="fu">stop</span>()<span class="op">;</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> <span class="kw">new</span> <span class="bu">Promise</span><span class="op">&lt;</span><span class="dt">void</span><span class="op">&gt;</span>((r) <span class="kw">=&gt;</span> (rec<span class="op">.</span><span class="at">onstop</span> <span class="op">=</span> () <span class="kw">=&gt;</span> <span class="fu">r</span>()))<span class="op">;</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  stream<span class="op">.</span><span class="fu">getTracks</span>()<span class="op">.</span><span class="fu">forEach</span>((t) <span class="kw">=&gt;</span> t<span class="op">.</span><span class="fu">stop</span>())<span class="op">;</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> buf <span class="op">=</span> <span class="cf">await</span> <span class="kw">new</span> <span class="bu">Blob</span>(chunks)<span class="op">.</span><span class="fu">arrayBuffer</span>()<span class="op">;</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">decodeToMono</span>(buf<span class="op">,</span> targetRate)<span class="op">;</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For <strong>playback of generated audio</strong> (TTS, music) the models return a <code>Float32Array</code> plus a sampling rate. Turn it into an <code>AudioBuffer</code> and play, or encode a WAV blob to download - the browser analog of the notebooks’ <code>save_wav</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">// src/lib/audio.ts (cont.)</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">function</span> <span class="fu">play</span>(samples<span class="op">:</span> <span class="bu">Float32Array</span><span class="op">,</span> sampleRate<span class="op">:</span> <span class="dt">number</span>) {</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> ctx <span class="op">=</span> <span class="kw">new</span> <span class="bu">AudioContext</span>()<span class="op">;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> buf <span class="op">=</span> ctx<span class="op">.</span><span class="fu">createBuffer</span>(<span class="dv">1</span><span class="op">,</span> samples<span class="op">.</span><span class="at">length</span><span class="op">,</span> sampleRate)<span class="op">;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  buf<span class="op">.</span><span class="fu">getChannelData</span>(<span class="dv">0</span>)<span class="op">.</span><span class="fu">set</span>(samples)<span class="op">;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> src <span class="op">=</span> ctx<span class="op">.</span><span class="fu">createBufferSource</span>()<span class="op">;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  src<span class="op">.</span><span class="at">buffer</span> <span class="op">=</span> buf<span class="op">;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  src<span class="op">.</span><span class="fu">connect</span>(ctx<span class="op">.</span><span class="at">destination</span>)<span class="op">;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  src<span class="op">.</span><span class="fu">start</span>()<span class="op">;</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co">/** Minimal 16-bit PCM WAV encoder -&gt; a downloadable Blob. */</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">function</span> <span class="fu">toWavBlob</span>(samples<span class="op">:</span> <span class="bu">Float32Array</span><span class="op">,</span> sampleRate<span class="op">:</span> <span class="dt">number</span>)<span class="op">:</span> <span class="bu">Blob</span> {</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> buf <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayBuffer</span>(<span class="dv">44</span> <span class="op">+</span> samples<span class="op">.</span><span class="at">length</span> <span class="op">*</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> view <span class="op">=</span> <span class="kw">new</span> <span class="bu">DataView</span>(buf)<span class="op">;</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> wr <span class="op">=</span> (o<span class="op">:</span> <span class="dt">number</span><span class="op">,</span> s<span class="op">:</span> <span class="dt">string</span>) <span class="kw">=&gt;</span> [<span class="op">...</span>s]<span class="op">.</span><span class="fu">forEach</span>((c<span class="op">,</span> i) <span class="kw">=&gt;</span> view<span class="op">.</span><span class="fu">setUint8</span>(o <span class="op">+</span> i<span class="op">,</span> c<span class="op">.</span><span class="fu">charCodeAt</span>(<span class="dv">0</span>)))<span class="op">;</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">wr</span>(<span class="dv">0</span><span class="op">,</span> <span class="st">"RIFF"</span>)<span class="op">;</span> view<span class="op">.</span><span class="fu">setUint32</span>(<span class="dv">4</span><span class="op">,</span> <span class="dv">36</span> <span class="op">+</span> samples<span class="op">.</span><span class="at">length</span> <span class="op">*</span> <span class="dv">2</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span> <span class="fu">wr</span>(<span class="dv">8</span><span class="op">,</span> <span class="st">"WAVE"</span>)<span class="op">;</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">wr</span>(<span class="dv">12</span><span class="op">,</span> <span class="st">"fmt "</span>)<span class="op">;</span> view<span class="op">.</span><span class="fu">setUint32</span>(<span class="dv">16</span><span class="op">,</span> <span class="dv">16</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span> view<span class="op">.</span><span class="fu">setUint16</span>(<span class="dv">20</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  view<span class="op">.</span><span class="fu">setUint16</span>(<span class="dv">22</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span> view<span class="op">.</span><span class="fu">setUint32</span>(<span class="dv">24</span><span class="op">,</span> sampleRate<span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  view<span class="op">.</span><span class="fu">setUint32</span>(<span class="dv">28</span><span class="op">,</span> sampleRate <span class="op">*</span> <span class="dv">2</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span> view<span class="op">.</span><span class="fu">setUint16</span>(<span class="dv">32</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  view<span class="op">.</span><span class="fu">setUint16</span>(<span class="dv">34</span><span class="op">,</span> <span class="dv">16</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span> <span class="fu">wr</span>(<span class="dv">36</span><span class="op">,</span> <span class="st">"data"</span>)<span class="op">;</span> view<span class="op">.</span><span class="fu">setUint32</span>(<span class="dv">40</span><span class="op">,</span> samples<span class="op">.</span><span class="at">length</span> <span class="op">*</span> <span class="dv">2</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> o <span class="op">=</span> <span class="dv">44</span><span class="op">;</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">const</span> s <span class="kw">of</span> samples) {</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> c <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span>(<span class="op">-</span><span class="dv">1</span><span class="op">,</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(<span class="dv">1</span><span class="op">,</span> s))<span class="op">;</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    view<span class="op">.</span><span class="fu">setInt16</span>(o<span class="op">,</span> c <span class="op">&lt;</span> <span class="dv">0</span> <span class="op">?</span> c <span class="op">*</span> <span class="bn">0x8000</span> <span class="op">:</span> c <span class="op">*</span> <span class="bn">0x7fff</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    o <span class="op">+=</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="kw">new</span> <span class="bu">Blob</span>([view]<span class="op">,</span> { type<span class="op">:</span> <span class="st">"audio/wav"</span> })<span class="op">;</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="always-run-models-in-a-web-worker" class="level3">
+<h3 class="anchored" data-anchor-id="always-run-models-in-a-web-worker">Always run models in a Web Worker</h3>
+<p>Inference blocks the thread it runs on. To keep the React UI responsive, load and run the model in a <strong>Web Worker</strong> and post messages back. Every example below assumes this pattern; the worker skeleton:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">// src/workers/asr.worker.ts</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { pipeline<span class="op">,</span> <span class="kw">type</span> PipelineType } <span class="im">from</span> <span class="st">"@huggingface/transformers"</span><span class="op">;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> task<span class="op">:</span> <span class="dt">any</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>self<span class="op">.</span><span class="at">onmessage</span> <span class="op">=</span> <span class="kw">async</span> (e<span class="op">:</span> <span class="bu">MessageEvent</span>) <span class="kw">=&gt;</span> {</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> { <span class="kw">type</span><span class="op">,</span> payload } <span class="op">=</span> e<span class="op">.</span><span class="at">data</span><span class="op">;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="kw">type</span> <span class="op">===</span> <span class="st">"load"</span>) {</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    task <span class="op">=</span> <span class="cf">await</span> <span class="fu">pipeline</span>(</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>      <span class="st">"automatic-speech-recognition"</span><span class="op">,</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>      payload<span class="op">.</span><span class="at">model</span><span class="op">,</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>      { <span class="op">...</span>payload<span class="op">.</span><span class="at">opts</span><span class="op">,</span> progress_callback<span class="op">:</span> (p<span class="op">:</span> <span class="dt">any</span>) <span class="kw">=&gt;</span> self<span class="op">.</span><span class="fu">postMessage</span>({ type<span class="op">:</span> <span class="st">"progress"</span><span class="op">,</span> p }) }<span class="op">,</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    )<span class="op">;</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    self<span class="op">.</span><span class="fu">postMessage</span>({ type<span class="op">:</span> <span class="st">"ready"</span> })<span class="op">;</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="kw">type</span> <span class="op">===</span> <span class="st">"run"</span>) {</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> out <span class="op">=</span> <span class="cf">await</span> <span class="fu">task</span>(payload<span class="op">.</span><span class="at">audio</span><span class="op">,</span> payload<span class="op">.</span><span class="at">args</span>)<span class="op">;</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    self<span class="op">.</span><span class="fu">postMessage</span>({ type<span class="op">:</span> <span class="st">"result"</span><span class="op">,</span> out })<span class="op">;</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">// spawn from React:</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> worker <span class="op">=</span> <span class="kw">new</span> <span class="bu">Worker</span>(<span class="kw">new</span> <span class="fu">URL</span>(<span class="st">"../workers/asr.worker.ts"</span><span class="op">,</span> import<span class="op">.</span><span class="at">meta</span><span class="op">.</span><span class="at">url</span>)<span class="op">,</span> { type<span class="op">:</span> <span class="st">"module"</span> })<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Model weights are downloaded once and cached by the browser (Cache Storage / IndexedDB), so the second load is instant and works offline - the browser analog of the notebooks’ <code>DATA_DIR / "hf_cache"</code>.</p>
+<hr>
+</section>
+</section>
+<section id="task-by-task" class="level2">
+<h2 class="anchored" data-anchor-id="task-by-task">3. Task-by-task</h2>
+<p>Each subsection maps a notebook to its browser implementation: the recommended in-browser model, the backend, and a React/TypeScript snippet. Snippets show the <code>pipeline</code> call (main thread for brevity); wrap them in the worker above for production.</p>
+<section id="automatic-speech-recognition---best-in-browser-task" class="level3">
+<h3 class="anchored" data-anchor-id="automatic-speech-recognition---best-in-browser-task">3.1 Automatic Speech Recognition -&gt; <strong>best in-browser task</strong></h3>
+<p><code>02_Automatic_Speech_Recognition.ipynb</code> (Whisper, Qwen3-ASR, Parakeet, Moonshine).</p>
+<p>ASR is the flagship Transformers.js use case: Whisper and Moonshine have first-class ONNX + WebGPU support, run at faster-than-real-time on a laptop GPU, and stream. Qwen3-ASR / Parakeet from the notebook are <strong>not</strong> ONNX-exported yet - use Whisper or Moonshine in the browser.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 31%">
+<col style="width: 19%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Notebook model</th>
+<th>Browser model</th>
+<th>Backend</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>whisper-small/large</td>
+<td><code>onnx-community/whisper-base</code> (or <code>-small</code>)</td>
+<td>WebGPU / WASM</td>
+<td>timestamps, 99 langs, translate</td>
+</tr>
+<tr class="even">
+<td>Moonshine (edge)</td>
+<td><code>onnx-community/moonshine-tiny-ONNX</code></td>
+<td>WebGPU / WASM</td>
+<td>tiny, fast, English, low latency</td>
+</tr>
+</tbody>
+</table>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">// src/lib/asr.ts</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { pipeline } <span class="im">from</span> <span class="st">"@huggingface/transformers"</span><span class="op">;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { pickBackend } <span class="im">from</span> <span class="st">"./device"</span><span class="op">;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { loadOpts } <span class="im">from</span> <span class="st">"./loadOpts"</span><span class="op">;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { decodeToMono } <span class="im">from</span> <span class="st">"./audio"</span><span class="op">;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">makeTranscriber</span>() {</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> backend <span class="op">=</span> <span class="cf">await</span> <span class="fu">pickBackend</span>()<span class="op">;</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> asr <span class="op">=</span> <span class="cf">await</span> <span class="fu">pipeline</span>(</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"automatic-speech-recognition"</span><span class="op">,</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"onnx-community/whisper-base"</span><span class="op">,</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">loadOpts</span>(backend)<span class="op">,</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="kw">async</span> (file<span class="op">:</span> <span class="bu">ArrayBuffer</span>) <span class="kw">=&gt;</span> {</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> audio <span class="op">=</span> <span class="cf">await</span> <span class="fu">decodeToMono</span>(file<span class="op">,</span> <span class="dv">16000</span>)<span class="op">;</span> <span class="co">// Whisper wants 16 kHz mono</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> out <span class="op">=</span> <span class="cf">await</span> <span class="fu">asr</span>(audio<span class="op">,</span> {</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>      return_timestamps<span class="op">:</span> <span class="kw">true</span><span class="op">,</span>          <span class="co">// same flag as the notebook</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>      chunk_length_s<span class="op">:</span> <span class="dv">30</span><span class="op">,</span>               <span class="co">// long-form chunking, as in section 7</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>      language<span class="op">:</span> <span class="st">"en"</span><span class="op">,</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>      task<span class="op">:</span> <span class="st">"transcribe"</span><span class="op">,</span>               <span class="co">// "translate" -&gt; English out of any language</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> out<span class="op">;</span> <span class="co">// { text, chunks: [{ timestamp, text }] }</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Streaming / live mic</strong> (the notebook’s section 12): Transformers.js Whisper accepts a <code>streamer</code> / partial-decode loop, or use the community <code>whisper-web</code> worker pattern - feed rolling 5-30 s windows from <code>recordMic</code> and show incremental text. Moonshine is the better choice for low-latency live captioning (the notebook’s “edge / Raspberry Pi” row).</p>
+</section>
+<section id="audio-classification---works-fully-in-browser" class="level3">
+<h3 class="anchored" data-anchor-id="audio-classification---works-fully-in-browser">3.2 Audio Classification -&gt; <strong>works fully in-browser</strong></h3>
+<p><code>04_Audio_Classification.ipynb</code> (AST tagging, HuBERT emotion, wav2vec2 KWS, CLAP zero-shot).</p>
+<p>All four families export to ONNX and run through the <code>audio-classification</code> and <code>zero-shot-audio-classification</code> pipelines - a direct port of the notebook.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 36%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Notebook model</th>
+<th>Browser model</th>
+<th>Pipeline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AST AudioSet tagging</td>
+<td><code>onnx-community/ast-finetuned-audioset-10-10-0.4593</code></td>
+<td><code>audio-classification</code></td>
+</tr>
+<tr class="even">
+<td>wav2vec2 keyword spotting</td>
+<td><code>onnx-community/wav2vec2-base-superb-ks</code></td>
+<td><code>audio-classification</code></td>
+</tr>
+<tr class="odd">
+<td>CLAP zero-shot</td>
+<td><code>Xenova/clap-htsat-unfused</code></td>
+<td><code>zero-shot-audio-classification</code></td>
+</tr>
+</tbody>
+</table>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Fixed-label tagging (AST) - mirrors notebook section on AudioSet tagging</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { pipeline } <span class="im">from</span> <span class="st">"@huggingface/transformers"</span><span class="op">;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> tagger <span class="op">=</span> <span class="cf">await</span> <span class="fu">pipeline</span>(</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"audio-classification"</span><span class="op">,</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"onnx-community/ast-finetuned-audioset-10-10-0.4593"</span><span class="op">,</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  { <span class="op">...</span><span class="fu">loadOpts</span>(<span class="cf">await</span> <span class="fu">pickBackend</span>())<span class="op">,</span> topk<span class="op">:</span> <span class="dv">5</span> }<span class="op">,</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> audio <span class="op">=</span> <span class="cf">await</span> <span class="fu">decodeToMono</span>(fileBuf<span class="op">,</span> <span class="dv">16000</span>)<span class="op">;</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> preds <span class="op">=</span> <span class="cf">await</span> <span class="fu">tagger</span>(audio)<span class="op">;</span> <span class="co">// [{ label, score }, ...]</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co">// Zero-shot with CLAP - label from free-text prompts (notebook's CLAP section)</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> zsc <span class="op">=</span> <span class="cf">await</span> <span class="fu">pipeline</span>(<span class="st">"zero-shot-audio-classification"</span><span class="op">,</span> <span class="st">"Xenova/clap-htsat-unfused"</span><span class="op">,</span> <span class="fu">loadOpts</span>(backend))<span class="op">;</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> out <span class="op">=</span> <span class="cf">await</span> <span class="fu">zsc</span>(audio<span class="op">,</span> [<span class="st">"the sound of a dog barking"</span><span class="op">,</span> <span class="st">"the sound of rain"</span><span class="op">,</span> <span class="st">"a car engine"</span>])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This is a great always-on browser task (wake words, sound events) - small models, WebGPU optional, and the zero-shot CLAP path handles the open-set problem the notebook calls out.</p>
+</section>
+<section id="text-to-speech---works-in-browser-pick-the-right-model" class="level3">
+<h3 class="anchored" data-anchor-id="text-to-speech---works-in-browser-pick-the-right-model">3.3 Text-to-Speech -&gt; <strong>works in-browser</strong> (pick the right model)</h3>
+<p><code>00_Text_to_Speech.ipynb</code> (SpeechT5, MMS-VITS, Bark, Kokoro).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 30%">
+<col style="width: 19%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Notebook model</th>
+<th>Browser path</th>
+<th>Backend</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SpeechT5</td>
+<td><code>Xenova/speecht5_tts</code> via <code>text-to-speech</code> pipeline</td>
+<td>WASM (WebGPU partial)</td>
+<td>needs the x-vector speaker embedding, same as the notebook</td>
+</tr>
+<tr class="even">
+<td>MMS-VITS</td>
+<td><code>Xenova/mms-tts-eng</code></td>
+<td>WASM</td>
+<td>tiny, end-to-end, multilingual by swapping the model id</td>
+</tr>
+<tr class="odd">
+<td>Kokoro-82M</td>
+<td><strong><code>kokoro-js</code></strong> package</td>
+<td>WebGPU / WASM</td>
+<td>best small-model quality; purpose-built for the browser</td>
+</tr>
+<tr class="even">
+<td>Bark (1B codec LM)</td>
+<td>not recommended in-browser</td>
+<td>-</td>
+<td>too heavy; keep server-side</td>
+</tr>
+</tbody>
+</table>
+<p>Kokoro is the standout - the notebook’s “best small-model quality” recommendation ships as a dedicated WebGPU JS package:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">// npm i kokoro-js</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { KokoroTTS } <span class="im">from</span> <span class="st">"kokoro-js"</span><span class="op">;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> tts <span class="op">=</span> <span class="cf">await</span> KokoroTTS<span class="op">.</span><span class="fu">from_pretrained</span>(<span class="st">"onnx-community/Kokoro-82M-v1.0-ONNX"</span><span class="op">,</span> {</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  dtype<span class="op">:</span> <span class="st">"fp16"</span><span class="op">,</span>     <span class="co">// q8 on CPU-only machines</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  device<span class="op">:</span> (<span class="cf">await</span> <span class="fu">pickBackend</span>()) <span class="op">===</span> <span class="st">"webgpu"</span> <span class="op">?</span> <span class="st">"webgpu"</span> <span class="op">:</span> <span class="st">"wasm"</span><span class="op">,</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> audio <span class="op">=</span> <span class="cf">await</span> tts<span class="op">.</span><span class="fu">generate</span>(<span class="st">"Transformers dot js makes speech synthesis a one liner."</span><span class="op">,</span> {</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  voice<span class="op">:</span> <span class="st">"af_heart"</span><span class="op">,</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="fu">play</span>(audio<span class="op">.</span><span class="at">audio</span><span class="op">,</span> audio<span class="op">.</span><span class="at">sampling_rate</span>)<span class="op">;</span> <span class="co">// or audio.toBlob() for a WAV download</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>SpeechT5 via the standard pipeline, matching the notebook’s speaker-embedding approach:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> synth <span class="op">=</span> <span class="cf">await</span> <span class="fu">pipeline</span>(<span class="st">"text-to-speech"</span><span class="op">,</span> <span class="st">"Xenova/speecht5_tts"</span><span class="op">,</span> <span class="fu">loadOpts</span>(backend))<span class="op">;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> speaker_embeddings <span class="op">=</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://huggingface.co/datasets/Xenova/transformers.js-docs/resolve/main/speaker_embeddings.bin"</span><span class="op">;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> out <span class="op">=</span> <span class="cf">await</span> <span class="fu">synth</span>(<span class="st">"Hello from the browser."</span><span class="op">,</span> { speaker_embeddings })<span class="op">;</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">play</span>(out<span class="op">.</span><span class="at">audio</span><span class="op">,</span> out<span class="op">.</span><span class="at">sampling_rate</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="text-to-audio-music-sfx---partial-usually-server-side" class="level3">
+<h3 class="anchored" data-anchor-id="text-to-audio-music-sfx---partial-usually-server-side">3.4 Text-to-Audio (music / SFX) -&gt; <strong>partial; usually server-side</strong></h3>
+<p><code>01_Text_to_Audio.ipynb</code> (MusicGen codec LM; AudioLDM / Stable Audio diffusion).</p>
+<ul>
+<li><strong>MusicGen</strong> (<code>Xenova/musicgen-small</code>) <em>can</em> run via the <code>text-to-audio</code> pipeline in Transformers.js, but it is autoregressive at ~50 tokens/sec of audio and slow even on WebGPU - fine for a short 5-10 s demo, painful for anything longer. The notebook already flags TTA as “slow and offline”; that is doubly true in a tab.</li>
+<li><strong>AudioLDM / Stable Audio</strong> are <code>diffusers</code> latent-diffusion models with <strong>no Transformers.js path</strong>. Do not attempt in-browser; keep them on a GPU server and call an API.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">// MusicGen demo only - expect multi-second generation for a few seconds of audio</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> musicgen <span class="op">=</span> <span class="cf">await</span> <span class="fu">pipeline</span>(<span class="st">"text-to-audio"</span><span class="op">,</span> <span class="st">"Xenova/musicgen-small"</span><span class="op">,</span> <span class="fu">loadOpts</span>(backend))<span class="op">;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> out <span class="op">=</span> <span class="cf">await</span> <span class="fu">musicgen</span>(<span class="st">"a warm lo-fi hip hop beat with mellow piano"</span><span class="op">,</span> {</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  max_new_tokens<span class="op">:</span> <span class="dv">256</span><span class="op">,</span> <span class="co">// ~5 s; keep small in the browser</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">play</span>(out<span class="op">.</span><span class="at">audio</span><span class="op">,</span> out<span class="op">.</span><span class="at">sampling_rate</span>)<span class="op">;</span> <span class="co">// 32 kHz</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Recommendation: for a production music/SFX feature, run generation server-side (the notebook’s GPU code) and stream the resulting WAV to the React client. Use the in-browser MusicGen only for an offline/no-backend toy.</p>
+</section>
+<section id="audio-to-audio-separation-enhancement---custom-onnx-not-a-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="audio-to-audio-separation-enhancement---custom-onnx-not-a-pipeline">3.5 Audio-to-Audio (separation / enhancement) -&gt; <strong>custom ONNX, not a pipeline</strong></h3>
+<p><code>03_Audio_to_Audio.ipynb</code> (Demucs stem separation, DeepFilterNet enhancement, VC).</p>
+<p>The notebook itself notes <code>transformers</code> has <strong>no</strong> <code>audio-to-audio</code> pipeline - and neither does Transformers.js. Two browser options:</p>
+<ol type="1">
+<li><strong>Real-time speech enhancement</strong> - <strong>DeepFilterNet</strong> has an ONNX export and established WebAssembly/WebGPU demos. This is the realistic in-browser audio-to-audio task (live call denoise, the notebook’s “causal, ~10-20 ms” row). Run it with <code>onnxruntime-web</code> on framed audio.</li>
+<li><strong>Music stem separation (Demucs)</strong> - large and non-causal; the notebook already says it “wants the whole track.” Export to ONNX and run with <code>onnxruntime-web</code> if you must, but it is heavy for a tab - prefer server-side.</li>
+</ol>
+<p>Custom ONNX model skeleton (no pipeline wrapper):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">// src/lib/enhance.ts</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="op">*</span> <span class="im">as</span> ort <span class="im">from</span> <span class="st">"onnxruntime-web/webgpu"</span><span class="op">;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">makeEnhancer</span>(modelUrl<span class="op">:</span> <span class="dt">string</span>) {</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> session <span class="op">=</span> <span class="cf">await</span> ort<span class="op">.</span><span class="at">InferenceSession</span><span class="op">.</span><span class="fu">create</span>(modelUrl<span class="op">,</span> {</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    executionProviders<span class="op">:</span> [<span class="st">"webgpu"</span><span class="op">,</span> <span class="st">"wasm"</span>]<span class="op">,</span> <span class="co">// tries WebGPU, falls back to CPU</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="kw">async</span> (frame<span class="op">:</span> <span class="bu">Float32Array</span>) <span class="kw">=&gt;</span> {</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> input <span class="op">=</span> <span class="kw">new</span> ort<span class="op">.</span><span class="fu">Tensor</span>(<span class="st">"float32"</span><span class="op">,</span> frame<span class="op">,</span> [<span class="dv">1</span><span class="op">,</span> frame<span class="op">.</span><span class="at">length</span>])<span class="op">;</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> { output } <span class="op">=</span> <span class="cf">await</span> session<span class="op">.</span><span class="fu">run</span>({ input })<span class="op">;</span> <span class="co">// names come from the exported graph</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> output<span class="op">.</span><span class="at">data</span> <span class="im">as</span> <span class="bu">Float32Array</span><span class="op">;</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You own the pre/post-processing (STFT framing, overlap-add) that the Python toolkits (<code>torchaudio</code>, <code>speechbrain</code>) do for you - this is the most involved task to bring to the browser.</p>
+</section>
+<section id="audio-text-to-text-multimodal---server-side" class="level3">
+<h3 class="anchored" data-anchor-id="audio-text-to-text-multimodal---server-side">3.6 Audio-Text-to-Text (multimodal) -&gt; <strong>server-side</strong></h3>
+<p><code>Multimodal/00_Audio_Text_to_Text.ipynb</code> is a placeholder, but for completeness: audio LLMs (Qwen2-Audio, etc.) are multi-billion-parameter and have no browser runtime. Keep them behind an API.</p>
+<hr>
+</section>
+</section>
+<section id="feasibility-summary" class="level2">
+<h2 class="anchored" data-anchor-id="feasibility-summary">4. Feasibility summary</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 18%">
+<col style="width: 26%">
+<col style="width: 19%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task (notebook)</th>
+<th>In-browser?</th>
+<th>Recommended model</th>
+<th>Best backend</th>
+<th>If not</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ASR</strong> (<code>02</code>)</td>
+<td>Yes - excellent</td>
+<td>Whisper-base / Moonshine-tiny (ONNX)</td>
+<td>WebGPU (WASM ok)</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>Audio classification</strong> (<code>04</code>)</td>
+<td>Yes - full</td>
+<td>AST / wav2vec2 / CLAP (ONNX)</td>
+<td>WASM or WebGPU</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>TTS</strong> (<code>00</code>)</td>
+<td>Yes</td>
+<td>Kokoro-82M (<code>kokoro-js</code>), MMS-VITS, SpeechT5</td>
+<td>WebGPU (Kokoro) / WASM</td>
+<td>Bark -&gt; server</td>
+</tr>
+<tr class="even">
+<td><strong>Text-to-Audio</strong> (<code>01</code>)</td>
+<td>Partial</td>
+<td>MusicGen-small (short demos only)</td>
+<td>WebGPU</td>
+<td>AudioLDM / Stable Audio -&gt; server</td>
+</tr>
+<tr class="odd">
+<td><strong>Audio-to-Audio</strong> (<code>03</code>)</td>
+<td>Partial</td>
+<td>DeepFilterNet (custom ONNX)</td>
+<td>WebGPU / WASM</td>
+<td>Demucs / VC -&gt; server</td>
+</tr>
+<tr class="even">
+<td><strong>Audio-Text-to-Text</strong> (multimodal)</td>
+<td>No</td>
+<td>-</td>
+<td>-</td>
+<td>server API</td>
+</tr>
+</tbody>
+</table>
+<p>Rule of thumb: <strong>discriminative + small</strong> (ASR, classification, small TTS) runs great client-side; <strong>generative + large / diffusion</strong> (music, separation, audio LLMs) belongs on a server, with the browser as the UI.</p>
+<hr>
+</section>
+<section id="memory-performance-notes-the-browsers-version-of-the-12-gb-budget" class="level2">
+<h2 class="anchored" data-anchor-id="memory-performance-notes-the-browsers-version-of-the-12-gb-budget">5. Memory &amp; performance notes (the browser’s version of the 12 GB budget)</h2>
+<p>The notebooks are written for a 12 GB-VRAM box and free memory aggressively. A browser tab is tighter and less forgiving - apply the same rules:</p>
+<ul>
+<li><strong>One model live at a time.</strong> <code>await pipeline_or_session.dispose()</code> and null the reference before loading the next model - the browser analog of <code>del model; free_memory()</code>. There is no <code>torch.cuda.empty_cache()</code>; you rely on GC + WebGPU context teardown, so disposing is essential.</li>
+<li><strong>Quantize for CPU.</strong> <code>dtype: "q8"</code> (or <code>q4</code>) cuts the download and RAM 2-4x on the WASM backend; use <code>fp16</code> on WebGPU to match the notebooks’ half precision.</li>
+<li><strong>Size before you load.</strong> Same arithmetic as the notebooks: params x 2 bytes (fp16). A base Whisper (~74M) is ~150 MB; anything past a few hundred M params is a slow first load and a real memory risk in a tab.</li>
+<li><strong>Feature-detect and fall back.</strong> Always <code>pickBackend()</code> and degrade WebGPU -&gt; WASM; never assume WebGPU exists (Safari/Firefox coverage is still partial).</li>
+<li><strong>Warm up.</strong> First inference compiles WebGPU shaders / JITs WASM - run one dummy inference on load so the user’s first real request is fast.</li>
+<li><strong>Cache is your friend.</strong> Weights persist in Cache Storage after the first download, so the app works offline on repeat visits.</li>
+</ul>
+<hr>
+</section>
+<section id="minimal-react-hook-tying-it-together" class="level2">
+<h2 class="anchored" data-anchor-id="minimal-react-hook-tying-it-together">6. Minimal React hook tying it together</h2>
+<pre class="tsx"><code>// src/hooks/useAsr.ts
+import { useEffect, useRef, useState } from "react";
+
+export function useAsr(model = "onnx-community/whisper-base") {
+  const workerRef = useRef&lt;Worker | null&gt;(null);
+  const [ready, setReady] = useState(false);
+  const [text, setText] = useState("");
+
+  useEffect(() =&gt; {
+    const w = new Worker(new URL("../workers/asr.worker.ts", import.meta.url), { type: "module" });
+    w.onmessage = (e) =&gt; {
+      if (e.data.type === "ready") setReady(true);
+      if (e.data.type === "result") setText(e.data.out.text);
+    };
+    // backend/dtype chosen inside the worker via pickBackend()/loadOpts()
+    w.postMessage({ type: "load", payload: { model, opts: {} } });
+    workerRef.current = w;
+    return () =&gt; w.terminate(); // frees the model + backend context on unmount
+  }, [model]);
+
+  const transcribe = (audio: Float32Array) =&gt;
+    workerRef.current?.postMessage({ type: "run", payload: { audio, args: { chunk_length_s: 30 } } });
+
+  return { ready, text, transcribe };
+}</code></pre>
+<pre class="tsx"><code>// src/components/Transcriber.tsx
+import { useAsr } from "../hooks/useAsr";
+import { recordMic } from "../lib/audio";
+
+export function Transcriber() {
+  const { ready, text, transcribe } = useAsr();
+  return (
+    &lt;div&gt;
+      &lt;button disabled={!ready} onClick={async () =&gt; transcribe(await recordMic(5))}&gt;
+        {ready ? "Record 5 s" : "Loading model..."}
+      &lt;/button&gt;
+      &lt;p&gt;{text}&lt;/p&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+<hr>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">7. Reference</h2>
+<ul>
+<li><strong>Transformers.js</strong> - <code>@huggingface/transformers</code>, WebGPU + WASM audio pipelines (<code>automatic-speech-recognition</code>, <code>audio-classification</code>, <code>zero-shot-audio-classification</code>, <code>text-to-speech</code>, <code>text-to-audio</code>).</li>
+<li><strong>kokoro-js</strong> - browser-native Kokoro-82M TTS with WebGPU.</li>
+<li><strong>onnxruntime-web</strong> - direct ONNX inference for models with no pipeline (DeepFilterNet, Demucs, custom exports); <code>onnxruntime-web/webgpu</code> entry point.</li>
+<li><strong>ONNX model hubs</strong> - the <code>onnx-community/*</code> and <code>Xenova/*</code> orgs on the HF Hub mirror the notebook checkpoints in ONNX form.</li>
+<li>Source notebooks: <a href="../Audio/text_to_speech.html"><code>00_Text_to_Speech</code></a>, <a href="../Audio/text_to_audio.html"><code>01_Text_to_Audio</code></a>, <a href="../Audio/automatic_speech_recognition.html"><code>02_Automatic_Speech_Recognition</code></a>, <a href="../Audio/audio_to_audio.html"><code>03_Audio_to_Audio</code></a>, <a href="../Audio/audio_classification.html"><code>04_Audio_Classification</code></a>.</li>
+</ul>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/bthek1\.github\.io\/DL_tasks");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<script src="https://utteranc.es/client.js" repo="quarto-dev/quarto-web" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page">
+<p>Trademark</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/bthek1/bthek1_blog/issues">
+<p>FAQ</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://bthek1.github.io/bthek1_blog/index.html">
+<p>License</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+<p>Trademark</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/bthek1/DL_tasks/edit/main/Audio/Audio_Models_in_React_WebGPU_and_CPU.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/bthek1/DL_tasks/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/bthek1">
+      <i class="bi bi-github" role="img" aria-label="Github">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/benedict-thekkel/">
+      <i class="bi bi-linkedin" role="img" aria-label="Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
