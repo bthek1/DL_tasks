@@ -7,3 +7,8 @@ website:
   description: "Research into Deep Learning Models"
   repo-branch: main
   repo-url: "https://github.com/bthek1/DL_tasks"
+
+format-links:
+  - html
+  - format: commonmark
+    text: Markdown
