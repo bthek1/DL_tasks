@@ -26,7 +26,7 @@ website:
   navbar:
     background: dark
     logo: "Logo.svg"
-    logo-alt: "Quarto logo."
+    logo-alt: "Benedict Thekkel"
     collapse-below: lg
     title: false
     left:
@@ -129,9 +129,13 @@ website:
     utterances:
       repo: quarto-dev/quarto-web
         
+  # Visibility rule: only index.ipynb and digit-initial notebooks are public.
+  # "p_"-prefixed notebooks (p_04_Pay.ipynb) are private and deliberately fall
+  # outside the glob. Note this hides them from the menu only - Quarto still
+  # renders and publishes p_*.html.
   sidebar:
     style: floating
-    contents: 
+    contents:
       - "index.ipynb"
       - auto: "[0-9]*.ipynb"
 
