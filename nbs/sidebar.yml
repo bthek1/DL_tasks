@@ -70,10 +70,7 @@ website:
           - Tabular/02_Time_Series_Forecasting.ipynb
       - section: Theory
         contents:
-          - Theory/00_0_Mathematics_Foundations.ipynb
-          - Theory/00_1_Discrete_Maths.ipynb
-          - Theory/01_0_Physics_Equations.ipynb
-          - Theory/01_1_Electromagnetic_Equations.ipynb
-          - Theory/01_2_Deep_Learning_Equations.ipynb
-          - Theory/02_Electricity_Equations.ipynb
-          - Theory/11_ForResNet.ipynb
+          - Theory/01_Mathematics_Foundations.ipynb
+          - Theory/02_Discrete_Maths.ipynb
+          - Theory/03_Deep_Learning_Equations.ipynb
+          - Theory/04_ForResNet.ipynb

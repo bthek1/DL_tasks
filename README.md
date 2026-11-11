@@ -117,12 +117,11 @@ Where more than one modality goes in, which is where most current research sits.
 |----|----|
 | [Pipecat](Frameworks/01_pipecat.ipynb) | The framework for real-time voice and multimodal agents, which is what stitches the audio pages into a conversation |
 | [Piper vs Kokoro](Frameworks/02_Piper_vs_Kokoro.ipynb) | Both small TTS engines run on plain ONNX Runtime, with side-by-side audio, hard-text examples, and measured speed, memory and round-trip WER |
-| [Mathematical Foundations](Theory/00_0_Mathematics_Foundations.ipynb) | The symbols and notation the papers assume you already read |
-| [Deep Learning Equations](Theory/01_2_Deep_Learning_Equations.ipynb) | The equations behind the architectures |
-| [Discrete Maths](Theory/00_1_Discrete_Maths.ipynb) | Sets, logic, and combinatorics |
-| [Physics Equations](Theory/01_0_Physics_Equations.ipynb) | General reference |
-| [Electromagnetic Equations](Theory/01_1_Electromagnetic_Equations.ipynb) | Field theory reference |
-| [Electricity Equations](Theory/02_Electricity_Equations.ipynb) | Circuit reference |
+| [Mathematical Foundations](Theory/01_Mathematics_Foundations.ipynb) | The symbols and notation the papers assume you already read |
+| [Deep Learning Equations](Theory/03_Deep_Learning_Equations.ipynb) | The equations behind the architectures |
+| [Discrete Maths](Theory/02_Discrete_Maths.ipynb) | Sets, logic, and combinatorics |
+
+The physics, electromagnetism and electricity reference sheets moved to [Electrical Docs](https://bthek1.github.io/Electrical_Docs/).
 
 ------------------------------------------------------------------------
 
@@ -132,7 +131,7 @@ Where more than one modality goes in, which is where most current research sits.
 - **Nothing is fine-tuned.** Every page uses pretrained checkpoints as they come, so there is no coverage of adapting a model to a specific dataset.
 - **No deployment or serving.** The pages stop at a working model in a notebook. Nothing on inference servers, batching, quantisation for production, or latency budgets.
 - **Large models are described but not run.** Anything past roughly 3B parameters in half precision, or an 8 GB download, is discussed in prose rather than executed, so the biggest models in each category are unmeasured here.
-- **[ForResNet](Theory/11_ForResNet.ipynb) is a placeholder** marked “coming soon”.
-- The theory folder is a reference sheet rather than an explanation, and the physics and electromagnetism pages sit oddly against the rest of the site.
+- **[ForResNet](Theory/04_ForResNet.ipynb) is a placeholder** marked “coming soon”.
+- The theory folder is a reference sheet rather than an explanation.
 
 ------------------------------------------------------------------------
