@@ -28,3 +28,4 @@ version = {attr = "DL_tasks.__version__"}
 include = ["DL_tasks"]
 
 [tool.nbdev]
+custom_sidebar = true
