@@ -104,7 +104,7 @@ Where more than one modality goes in, which is where most current research sits.
 |----|----|
 | [Tabular Classification](Tabular/00_Tabular_Classification.ipynb) | Deep learning against the data type where gradient boosting usually still wins |
 | [Tabular Regression](Tabular/01_Tabular_Regression.ipynb) | The continuous version |
-| [Time Series Forecasting](Tabular/02_Time_Series_Forecasting.ipynb) | Foundation models for forecasting, complementing the classical treatment in [Time Series](https://bthek1.github.io/TimeSeriesML/) |
+| [Time Series Forecasting](Tabular/02_Time_Series_Forecasting.ipynb) | Foundation models for forecasting, complementing the classical treatment in [Time Series](https://bthek1.github.io/ML_Timeseries/) |
 | [Reinforcement Learning](Reinforcement_Learning/00_Reinforcement_Learning.ipynb) | Learning from reward rather than labels |
 | [Robotics](Reinforcement_Learning/01_Robotics.ipynb) | Policies that act on physical hardware |
 | [Graph Machine Learning](Other/00_Graph_Machine_Learning.ipynb) | Learning over nodes and edges |
